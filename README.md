@@ -25,7 +25,7 @@ To run __teknonaturalist__, open the setup and execution files, edit the header 
 teknonaturalist Setup (must be run once before initial use)
 ============================================================
 
-__[teknonaturalist Setup](/setup_resources/teknonaturalist.setup.txt)__ 
+__[teknonaturalist Setup](/setup_resources/teknonaturalist_setup.txt)__ 
 <br> This file contains key information for installing required software, including Mamba/Conda and Snakemake, and activation of the __teknonaturalist__ environment. It also includes information for running teknonaturalist without Snakemake.<br><br>
 __[environment.yaml](/environment.yaml)__ <br>
 This file is required for setting up the teknonaturalist environment along with required programs used. It does not need to be run, simply present in the teknonaturalist/ directory during environment activation. <br><br>
