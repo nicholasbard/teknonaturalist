@@ -19,7 +19,7 @@ Overview of the process
 ![teknonaturalist](/setup_resources/teknonaturalist.png)	 
 <br>
 
-To run __teknonaturalist__, open the setup and execution files, edit the header lines as needed, and save and run the scripts. Files contain annotations with important information to guide the user. We suggest that line-by-line command running of shell script and txt files may be particularly useful, particularly for new users and for troubleshooting. <br>
+To run __teknonaturalist__, open the setup and execution files, edit the header lines as needed, and save and run the scripts. Files contain annotations with important information to guide the user. We suggest that line-by-line command running of shell script and txt files may be useful, particularly for new users and for troubleshooting. <br>
 <br>
 
 Setup: Installation of Snakemake and teknonaturalist (must be run once before initial use)
@@ -44,8 +44,8 @@ Setup: Assembly and Databases (see individual files)
 __[Manual Prep of non-Taxon Specific Databases](/setup_resources/Manual_prep_of_non_taxon_specific_databases.txt)__ (must be run once before initial use)<br>
 This file may be re-used for different plant taxa. Refer to this file if using customized databases different from those provided at https://osf.io/8g6we/ <br><br>
 
-__[Prep Taxon Specific Assembly and Databases](/setup_resources/Prep_taxon_specific_assembly_and_databases.txt) and [bash script](/Prep_taxon_specific_assembly_and_databases.sh)__ (must be run for _each new plant taxon assesed_ with __teknonaturalist__; the PlanITS database only needs to be setup once for each taxon.) <br>
-This file is recommended for first-time users to be run line-by-line, but is also available as a [bash script]. <br><br>
+__[Prep Taxon Specific Assembly and Databases](/setup_resources/Prep_taxon_specific_assembly_and_databases.txt)__ (must be run for _each new plant taxon assesed_ with __teknonaturalist__; the PlanITS database only needs to be setup once for each genus.) <br>
+This file is recommended for first-time users to be run line-by-line, but is also available as a [bash script](/Prep_taxon_specific_assembly_and_databases.sh). <br><br>
 
 __[Extract Teknonaturalist Databases](extract_teknonaturalist_databases.py)__ <br>
 A python script to extract all databases and assemblies provided at https://osf.io/8g6we/ <br><br>
@@ -59,7 +59,7 @@ This image shows the basic directory structure in order to run teknonaturalist f
 Executing teknonaturalist: Preparing for fungal ITS detection
 ============================================================
 
-Almost ready! Before running __teknonaturalist__, make sure that the teknonaturalist Snakemake environment is activated:<br><br>
+Almost ready! Before running __teknonaturalist__ with Snakemake, make sure that the __teknonaturalist__ environment is activated:<br><br>
 mamba activate teknonaturalist 
 <br><br>OR<br><br>
 conda activate teknonaturalist
@@ -84,24 +84,24 @@ Each is a Snakemake execution files (Snakefile) for PE fastq files with equal re
 
 _Example commands to run Snakemake_:
 
-snakemake --cores {CORE NUMBER} --snakefile {Snakefile name} {Output file}<br><br>
-
+snakemake --cores {CORE NUMBER} --snakefile {Snakefile name} {Output file}
+<br><br>
 Dry runs are quite helpful to run to identify potential problems. To dry run, add '-np':<br><br>
-snakemake -np --cores {CORE NUMBER} --snakefile {Snakefile name} {Output file}<br><br>
-
+snakemake -np --cores {CORE NUMBER} --snakefile {Snakefile name} {Output file}
+<br><br>
 __Example commands For teknonaturalist (easiest way)__ <br>
 
 Using equal PE read fastq files:<br>
-snakemake --cores {CORE NUMBER} --snakefile Snakefile_equal_reads data/final/{SRRnumber}.ITSx<br><br>
-Using unequal PE read fastq files:<br>
-snakemake --cores {CORE NUMBER} --snakefile Snakefile_unequal_reads data/final/{SRRnumber}.ITSx<br><br>
-EXAMPLE (single fastq files):<br>
-snakemake --cores 4 --snakefile Snakefile_equal_reads data/final/ERR2026266.ITSx<br><br>
-EXAMPLE (multiple fastq files):<br>
-snakemake --cores 20 --snakefile Snakefile_equal_reads data/final/{ERR2026264,ERR2026266}.ITSx <br><br>
-
+snakemake --cores {CORE NUMBER} --snakefile Snakefile_equal_reads data/final/{SRRnumber}.ITSx
+<br><br>Using unequal PE read fastq files:<br>
+snakemake --cores {CORE NUMBER} --snakefile Snakefile_unequal_reads data/final/{SRRnumber}.ITSx
+<br><br>EXAMPLE (single fastq files):<br>
+snakemake --cores 4 --snakefile Snakefile_equal_reads data/final/ERR2026266.ITSx
+<br><br>EXAMPLE (multiple fastq files):<br>
+snakemake --cores 20 --snakefile Snakefile_equal_reads data/final/{ERR2026264,ERR2026266}.ITSx 
+<br><br>
 __(if using command line)__ <br>
-We also provide bash scripts to run the pipeline.<br><br>
+We also provide bash scripts to run the pipeline. Note that no __teknonnaturalist__ environment does not need to be activated if all required packages are installed.<br><br>
 See __[teknonaturalist Fungal ITS Detection Equal Reads](/teknonaturalist.Fungal.ITS.detection.equal.reads.sh)__ and __[teknonaturalist Fungal ITS Detection Unequal Reads](/teknonaturalist.Fungal.ITS.detection.unequal.reads.sh)__ <br>
 The teknonaturalist execution bash script [non-Snakemake] script for PE fastq.gz files with equal read count sand unequal read counts, respectively.
 
@@ -110,7 +110,7 @@ Executing DNAbarcoder: fungal taxonomic classification
 
 Following fungal ITS detection of a dataset (one to many samples), DNAbarcoder (Vu et al., 2022) may be employed for taxonomic classification.
 
-__[Fungal ITS Classifier bash Script](/Fungal.ITS.classifier.sh)__ (and __[Fungal ITS Classifier text file](/Fungal.ITS.classifier.txt)__ <br>
+__[Fungal ITS Classifier bash Script](/Fungal.ITS.classifier.sh)__ and __[Fungal ITS Classifier text file](/Fungal.ITS.classifier.txt)__ <br>
 A file to pool and classify fungal taxa in a dataset of plant genomes after fungal ITS detection.<br>
 
 Assessing classification support with flanking sequences 
