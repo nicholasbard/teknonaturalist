@@ -1,22 +1,22 @@
-#Note, for all: keep the [],'', and "". remove <>.
+# Note, for all: keep the [],'', and "". remove <>.
 ADAP_OUTPUTS = [".pair1.truncated",".pair2.truncated",".collapsed",".collapsed.truncated", ".singleton.truncated"]
 SRRS = ["<ENTER SRR NUMBER(s) HERE>"]
 CONGS = 'assembly/<ENTER CONSPECIFIC OR CONGENER FOR ASSEMBLY HERE, E.G., Betula.nana>.assembly/<ENTER CONSPECIFIC OR CONGENER AGAIN HERE>.bwa.index'
 FOCALS = 'database/genbank/<ENTER FOCAL SPECIES HERE, E.G., Betula.ermanii>.Genbank.nucl.fasta'
 
-#Note: Replace the uchime fasta files if providing your own
+# Note: Replace the uchime fasta files if providing your own
 UCHIME1S = 'database/uchime_datasets/uchime_reference_dataset_ITS1_28.06.2017.fasta'
 UCHIME2S = 'database/uchime_datasets/uchime_reference_dataset_ITS2_28.06.2017.fasta'
 
 GENS = 'database/PLANiTS/<ENTER FOCAL GENERA HERE>.fasta'
 THREADS = <HOW MANY THREADS/CPUs?>
-#Note: The THREADMEGAS value can be the same as the THREADS value in many cases. If Megahit malfunctions due to apparent issues with multithreading on some systems (e.g., Mac). If so, set this number to 1.
+# Note: The THREADMEGAS value can be the same as the THREADS value in many cases. If Megahit malfunctions due to apparent issues with multithreading on some systems (e.g., Mac). If so, set this number to 1.
 THREADMEGAS = <SAME AS THREADS VALUE, OR 1>
 
 MEMS = <HOW MUCH MEMORY FOR MEGAHIT? may be written with integer for bytes (e.g., 3400000) or as fraction of total machine memory (e.g., 0.1)>
 ADAP1S = 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCACNNNNNNATCTCGTATGCCGTCTTCTGCTTG'
 ADAP2S = 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT'
-#Note: Common adapters are included here, but these parameters may be changed.
+# Note: Common adapters are included here, but these parameters may be changed.
 
 # Advanced parameters must be edited directly in the corresponding rule of the Snakefile, if desired. Consult the material for the corresponding program for information.
 
@@ -185,7 +185,7 @@ rule blast1:
     input:
         krakenout1="data/krakenout2/kraken.classified.{srr}.fasta"
     output:
-        "data/blast/{srr}.{gen}.blast.txt"
+        "data/blast/{srr}.gen.blast.txt"
     params:
         thread=THREADS,
         gen=GENS

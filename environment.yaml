@@ -22,3 +22,4 @@ dependencies:
   - fastx_toolkit =0.0.14
   - megahit =1.2.9
   - itsx =1.1.3
+  - ncbi-genome-download =0.3.3

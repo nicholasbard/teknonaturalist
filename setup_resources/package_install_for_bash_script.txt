@@ -1,0 +1,25 @@
+##### Dependencies for manual package installation, if not using Snakemake "teknonaturalist" environment activation for package installation.
+
+# We recommend a package manager be used here for most bioinformatics packages. We provide instructions for Conda or Mamba installations.
+# These should install and load all dependencies. Additional work may be required if dependencies must be changed. 
+
+# Mamba installation guide here: https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html
+# Miniconda is available here: https://docs.conda.io/en/latest/miniconda.html
+# Anaconda is available here: https://docs.anaconda.com/free/anaconda/
+
+# The following commands may be run with Mamba by replacing "conda" with "mamba"
+
+conda install -c bioconda kraken2
+conda install -c bioconda seqtk
+conda install -c bioconda ncbi-genome-download
+conda install -c bioconda bwa
+conda install -c bioconda fastqc
+conda install -c bioconda sra-tools
+conda install -c bioconda adapterremoval
+conda install -c bioconda vsearch
+conda install -c bioconda cutadapt
+conda install -c bioconda fastx_toolkit
+conda install -c bioconda megahit
+conda install -c bioconda itsx
+
+# Download and install R: https://cloud.r-project.org

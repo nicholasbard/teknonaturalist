@@ -1,0 +1,21 @@
+# ~ Plant fastq.gz file preparation:
+# Edit directory locations and SRR file names; run fastqc.
+
+# Get genome:
+prefetch SRR<###>.sra
+
+# Split PE fastq files: 
+fastq-dump --split-files <PATH_TO_SRA FILE>/SRR<###>.sra -O <PATH_TO_TEKNONATURALIST_DIRECTORY>/data/orig.fastqs/
+# OR, alternatively, if PE reads create files with different read counts, run this option. This will require execution of the Fungal.ITS.detection.unequal.reads pipeline for fungal identification:
+fastq-dump --split-3 <PATH_TO_SRA FILE>/SRR<###>.sra -O <PATH_TO_TEKNONATURALIST_DIRECTORY>/data/orig.fastqs/
+
+#GZIP files to preserve space:
+gzip <PATH_TO_TEKNONATURALIST_DIRECTORY>/data/orig.fastqs/SRR<###>.fastq
+
+# Inspect fastq files prior to fungi detection:
+fastqc <PATH_TO_TEKNONATURALIST_DIRECTORY>/orig.fastqs/data/SRR<###>.fastq.gz
+
+# SRR files may be deleted as needed.
+rm <PATH_TO_SRA FILE>/SRR<###>.sra
+
+# If done correctly, there should be 2-3 fastq files in teknonaturalist/data/orig.fastqs directory: SRR<###>_1.fastq.gz, SRR<###>_2.fastq.gz, and, if read counts are unequal for paired end reads, SRR<###>.fastq.gz

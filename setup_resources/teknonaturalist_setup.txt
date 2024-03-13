@@ -1,0 +1,127 @@
+## teknonaturalist Setup.
+## This file provides instructions and commands for setting up teknonaturalist fungal detection pipeline, using Snakemake or bash. 
+## These instructions include quick sets of instructions for setting up Conda, Mamba, and Snakemake; 
+## please refer to their respective help pages if more extensive setup or troubleshooting is needed.
+## Conda: https://conda.io/projects/conda/en/latest/user-guide/index.html
+## Mamba: https://mamba.readthedocs.io/en/latest/index.html
+## Snakemake: https://snakemake.readthedocs.io/en/stable/
+
+
+#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
+Snakemake installation and setup instructions
+#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
+
+
+teknonaturalist may be run using provided Snakemake and bash scripts. The program requires several programs that can be installed
+### A. using Mamba (from mini forge) and Snakemake (recommended)
+### B. using Conda/Mamba and Snakemake (not recommended)
+### C. manually (may be used if Snakemake malfunctions)
+NOTE: Mac devices equipped with ARM may require additional steps, which we include below. 
+NOTE: Swapping the command 'conda' with 'mamba' (or vice versa) may be helpful in some cases. Ideally 'mamba' can be used for everything.
+
+### A. Mamba installation (recommended)
+	
+# 1. Install Mamba using Miniforge, as noted here: 
+# 	https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html
+# Miniforge is available here:
+#	https://github.com/conda-forge/miniforge
+
+# 2. Install Snakemake, as noted here:
+# 	https://snakemake.readthedocs.io/en/stable/getting_started/installation.html
+# using these commands (if 'mamba' doesn't work, try using 'conda')
+mamba activate base
+mamba create -c conda-forge -c bioconda -n snakemake snakemake
+
+##########
+
+### B. Conda/Mamba installation (not recommended)
+
+# 1. Install Conda, as noted here: 
+#	https://conda.io/projects/conda/en/latest/user-guide/index.html
+
+# 2. Once Conda is installed, install Mamba using Conda:
+conda install -n base -c conda-forge mamba
+
+# 3. Install Snakemake, as noted here:
+# 	https://snakemake.readthedocs.io/en/stable/getting_started/installation.html
+# using these commands (if 'mamba' doesn't work, try using 'conda')
+mamba activate base
+mamba create -c conda-forge -c bioconda -n snakemake snakemake
+
+#~#~#~# Troubleshooting for Mac ARM users (newer Macs): 
+## Mamba/conda or Snakemake installation on Mac ARM may require the shell name to be set to 'zsh' (instead of 'bash')
+eval "$(/Users/<username>/miniforge3/bin/conda shell.<YOUR SHELL, I.E., zsh> hook)"
+## Mac users may also try editing ~/.zshrc to include information for mambaforge (in ~/.bash_profile).
+## If this does not work and you are having trouble with conda activation, the following may be run to force activate Conda.
+source $PATH_TO_MINIFORGE3/miniforge3/bin/activate 
+conda activate base
+
+#######
+### C. manual installation (may be used if Snakemake malfunctions)
+First, the following directories should be created for intermediate files.
+mkdir data/trimmed1
+mkdir data/trimmed2
+mkdir data/trimmed3
+mkdir data/QC
+mkdir data/CQC
+mkdir data/bwa
+mkdir data/no.match
+mkdir data/krakenout
+mkdir data/krakenout2
+mkdir data/blast
+mkdir data/nonchimera
+mkdir data/meta
+
+# Then install all programs using the instructions provided in package_install_for_bash_script.txt. It is necessary that the directory setup stays the same (see snakemake_directory_structure.png)
+
+#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
+teknonaturalist environment creation with Snakemake setup to run pipeline (Only run after successful Snakemake setup)
+#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
+
+# 1. Navigate to provided 'teknonaturalist' directory. This is the working directory where virtually all commands will be run. The remaining setup and pipeline execution will be within this directory. There must be an environment.yaml file (provided) to activate the 'teknonaturalist' Snakemake environment. At least one Snakefile must also be present in order to run Snakemake.
+
+export PATH=$PATH:/location/of/teknonaturalist/directory
+
+cd $PATH/teknonaturalist
+
+# 2. Verify that the provided environment.yaml and Snakefile files to the working directory ($PATH/teknonaturalist/). The environment.yaml file is used to create the mamba environment. The Snakefile is the fungal identification pipeline. 
+
+# 3. Create the 'teknonaturalist' Snakemake environment. This will install the programs needed to set up and run the fungal detection pipeline in Snakemake. 
+#If not using Snakemake (i.e., instead using the teknonaturalist.Fungal.ITS.detection.{equal/unequal}.reads.sh bash script), you may install programs by setting up Snakemake, OR by installing all programs separately (using package_install_for_bash_script.txt). 
+#You may need to run 'mamba activate base'
+
+mamba env create --name teknonaturalist --file environment.yaml
+
+# 4. Activate teknonaturalist Snakemake environment.
+mamba activate teknonaturalist
+#or try
+conda activate teknonaturalist
+
+# Now that the teknonaturalist Snakemake environment is activated, all programs necessary are activated for database and assembly preparation (if desired), as well as fungal ITS detection with teknonaturalist! Note that teknonaturalist environment MUST BE ACTIVATED to run programs installed in this envirnment.
+
+
+#~#~#~# Troubleshooting for Mac ARM users (newer Macs) (try this first):
+Due to Python/Conda Forge issues with Mac osx-arm64, osx-64 environments can be created 
+
+CONDA_SUBDIR=osx-64 mamba env create --name teknonaturalist --file environment.yaml
+# then:
+mamba activate teknonaturalist
+#or try
+conda activate teknonaturalist
+
+# If these troubleshooting tips do not work, go back to the earlier Mac troubleshooting tips in "Snakemake installation", and reference Conda/Mamba/Snakemake resources.
+
+# Before teknonaturalist may be run, the assembly and database files need to be installed in the teknonaturalist/ directory. Please see the Prep_taxon_specific_assembly_and_databases.txt (or.sh) and Manual_prep_of_non_taxon_specific_databases.txt files for more. 
+
+# Note: Installation of DNAbarcoder for fungal classification is not included with Snakemake. 
+# (Github works best, see: see https://github.com/vuthuyduong/dnabarcoder)
+git clone https://github.com/vuthuyduong/dnabarcoder.git
+# See DNAbarcoder.setup.txt for more information.
+
+
+
+
+
+
+
+

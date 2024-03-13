@@ -196,7 +196,7 @@ rule blast1:
     input:
         krakenout1="data/krakenout2/kraken.classified.{srr}.fasta"
     output:
-        "data/blast/{srr}.{gen}.blast.txt"
+        "data/blast/{srr}.gen.blast.txt"
     params:
         thread=THREADS,
         gen=GENS

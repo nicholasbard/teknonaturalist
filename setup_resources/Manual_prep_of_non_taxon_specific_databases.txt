@@ -1,0 +1,71 @@
+## ~ Preparation of 'UniVec', 'UCHIME', and 'Fungi' databases (the "non-taxon-specific" databases) for the teknonaturalist fungi detection pipeline:
+
+## This file provides commands for manual database preparation, as an alternative to extracting the 'UniVec', 'UCHIME', and 'Fungi' databases, 
+## that were used in the Betula study (i.e., using extract_teknonaturalist_databases.py or otherwise extracting the tar.gz files provided at https://osf.io/8g6we/). 
+## We advise first-time users to use the prepared databases while getting started with Snakemake and teknonaturalist. 
+## This file provides users with steps to be run on the command line to create these "non-taxon-specific" databases using newer or different files. Contents inside <> must be replaced.
+## To prepare plant "taxon-specific" assemblies and databases, use the directions provided in the Prep_taxon_specific_assembly_and_databases.txt
+
+#~#~#~#~# All database prep here and must be completed prior to initial pipeline use, or one may use extracted pre-made databases #~#~#~#~#
+
+##########~~~~~~~~ Installation directions ~~~~~~~#########
+
+#### Prepare Kraken2
+# (recommended): Activate 'teknonaturalist' to use Kraken2 tools for database creation:
+mamba activate teknonaturalist
+# Or 
+conda activate teknonaturalist
+
+# (alternate): Verify that Kraken2 has been installed outside of teknonaturalist environment, proceed (see troubleshooting kraken2 section).
+
+
+#### Build Kraken FUNGI db and UNITE dbs. 
+
+# Navigate to teknonaturalist/database/ directory. All commands are run from this directory.
+cd teknonaturalist/database
+
+# Get UCHIME database for chimeras
+## Download from https://unite.ut.ee/repository.php
+## In the paper we used UCHIME reference dataset 7.2: https://unite.ut.ee/sh_files/uchime_reference_dataset_28.06.2017.zip
+## Unzip/extract if necessary
+## create teknonaturalist/database/uchime_datasets directory
+mkdir uchime_datasets
+
+## move uchime ITS1 and ITS2 datasets to teknonaturalist/database/uchime_datasets
+mv uchime_reference_dataset_<DD.MM.YYYY>/ITS1_ITS2_datasets/uchime* uchime_datasets
+
+# Build KRAKEN Fungi db
+kraken2-build --download-library fungi --db fungi --use-ftp
+kraken2-build --download-taxonomy --db fungi --use-ftp
+
+# ON UNITE WEBSITE: manually download sh_general_release_dynamic<***DD.MM.YYYY>.fasta (Betula example paper uses sh_general_release_dynamic_s_29.11.2022.fasta, includes global and 3% distance singletons)
+## Paper version is General FASTA release (Fungi) 9.0 2022-10-16, which can be downloaded at : https://doi.plutof.ut.ee/doi/10.15156/BIO/2483912 
+## OR different version may be found at: https://unite.ut.ee/repository.php 
+
+# Add UNITE TO KRAKEN Fungi db (rename fasta file if needed)
+kraken2-build --add-to-library sh_general_release_dynamic<***DD.MM.YYYY>.fasta --db fungi
+kraken2-build --build --db fungi
+
+# Build UniVec contaminants db
+kraken2-build --download-library UniVec --db univec
+ln -s fungi/taxonomy univec/
+kraken2-build --build --db univec
+
+
+
+
+ #########~~~~~~~~ (troubleshooting Kraken2)  ~~~~~~~#########
+# Note: Verify that Taxonomy and Library subdirectories are in each database folder (e.g., fungi, univec). 
+
+# Note: If Kraken2 has execution problems, see https://github.com/DerrickWood/kraken2/ 
+# If there are issues during Database Preparation, try manual installation of Kraken2 without activating 'teknonaturalist' environment. 
+
+# Conda or mamba may be used to install Kraken2, otherwise follow directions at https://github.com/DerrickWood/kraken2/blob/master/docs/MANUAL.markdown
+mamba install -c nanoporetech kraken2
+#OR
+conda install -c nanoporetech kraken2
+
+#OR TRY DIFFERENT REPO:
+mamba install -c bioconda kraken2
+OR
+conda install -c bioconda kraken2
