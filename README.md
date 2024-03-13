@@ -22,7 +22,7 @@ Overview of the process
 To run __teknonaturalist__, open the setup and execution files, edit the header lines as needed, and save and run the scripts. Files contain annotations with important information to guide the user. We suggest that line-by-line command running of shell script and txt files may be particularly useful, particularly for new users and for troubleshooting. <br>
 <br>
 
-teknonaturalist Setup (must be run once before initial use)
+Setup: Installation of Snakemake and teknonaturalist (must be run once before initial use)
 ============================================================
 
 __[teknonaturalist Setup](/setup_resources/teknonaturalist_setup.txt)__ 
@@ -32,13 +32,13 @@ This file is required for setting up the teknonaturalist environment along with 
 __[Package Install for bash Script Option](/setup_resources/package_install_for_bash_script.txt)__ <br>
 This file provides an alternative to Snakemake program installation with manual program installation instructions.
 
-DNAbarcoder Setup (must be run once before initial use)
+Setup: DNAbarcoder (must be run once before initial use)
 ============================================================
 
 __[DNAbarcoder Setup](/setup_resources/DNAbarcoder.setup.txt)__ <br>
 This provides instructions for setting up DNAbarcoder for fungal classification. DNAbarcoder must be installed in the __teknonaturalist__ directory (teknonaturalist/dnabarcoder/) prior to using classification scripts.<br> 
 
-Assembly and Databases Setup (see individual files) 
+Setup: Assembly and Databases (see individual files) 
 ============================================================
 
 __[Manual Prep of non-Taxon Specific Databases](/setup_resources/Manual_prep_of_non_taxon_specific_databases.txt)__ (must be run once before initial use)<br>
@@ -56,20 +56,22 @@ A python script to extract ITS reference database for DNAbarcoder (available at 
 This image shows the basic directory structure in order to run teknonaturalist for fungal detection. Note that teknonaturalist/dnabarcoder must be present for fungal classification. <br>
 ![Snakemake directory structure](/setup_resources/snakemake_directory_structure.png)<br>
 
-Preparing to run teknonaturalist for fungal ITS detection
+Executing teknonaturalist: Preparing for fungal ITS detection
 ============================================================
 
 Almost ready! Before running __teknonaturalist__, make sure that the teknonaturalist Snakemake environment is activated:<br><br>
-mamba activate teknonaturalist<br><br>
+mamba activate teknonaturalist 
+<br><br>OR<br><br>
+conda activate teknonaturalist
+<br><br>
 
 __[Fastq.gz file prep](/setup_resources/Fastq.file.prep.txt)__ <br>
 Instructions for obtaining and formatting input fastq.gz files are provided here. <br><br>
-
 __[Check Before Running teknonaturalist](check_before_running_teknonaturalist.py)__ <br>
  A python script to be used prior to executing __teknonaturalist__ that checks for input files, non-empty assembly and database directories, and an activated teknonaturalist environment.<br><br>
 Now you are ready to run __teknonaturalist__!
 
-Running teknonaturalist for fungal ITS detection (may be run on one to many conspecific genome files at once)
+Executing teknonaturalist: fungal ITS detection (to be run on 1+ conspecific genome files)
 ============================================================
 
 __(if using Snakemake)__<br>
@@ -80,12 +82,30 @@ This file provides a brief guide to fungal ITS detection with __teknonaturalist_
 __[Snakefile for Equal PE read fastqs](/Snakefile_equal_reads)__ and __[Snakefile for Unequal PE read fastqs](/Snakefile_unequal_reads)__ <br>
 Each is a Snakemake execution files (Snakefile) for PE fastq files with equal read counts and unequal read counts, respectively.<br><br>
 
+_Example commands to run Snakemake_:
+
+snakemake --cores {CORE NUMBER} --snakefile {Snakefile name} {Output file}<br><br>
+
+Dry runs are quite helpful to run to identify potential problems. To dry run, add '-np':<br><br>
+snakemake -np --cores {CORE NUMBER} --snakefile {Snakefile name} {Output file}<br><br>
+
+__Example commands For teknonaturalist (easiest way)__ <br>
+
+Using equal PE read fastq files:<br>
+snakemake --cores {CORE NUMBER} --snakefile Snakefile_equal_reads data/final/{SRRnumber}.ITSx<br><br>
+Using unequal PE read fastq files:<br>
+snakemake --cores {CORE NUMBER} --snakefile Snakefile_unequal_reads data/final/{SRRnumber}.ITSx<br><br>
+EXAMPLE (single fastq files):<br>
+snakemake --cores 4 --snakefile Snakefile_equal_reads data/final/ERR2026266.ITSx<br><br>
+EXAMPLE (multiple fastq files):<br>
+snakemake --cores 20 --snakefile Snakefile_equal_reads data/final/{ERR2026264,ERR2026266}.ITSx <br><br>
+
 __(if using command line)__ <br>
 We also provide bash scripts to run the pipeline.<br><br>
 See __[teknonaturalist Fungal ITS Detection Equal Reads](/teknonaturalist.Fungal.ITS.detection.equal.reads.sh)__ and __[teknonaturalist Fungal ITS Detection Unequal Reads](/teknonaturalist.Fungal.ITS.detection.unequal.reads.sh)__ <br>
 The teknonaturalist execution bash script [non-Snakemake] script for PE fastq.gz files with equal read count sand unequal read counts, respectively.
 
-Running DNAbarcoder for fungal taxonomic classification
+Executing DNAbarcoder: fungal taxonomic classification
 ============================================================
 
 Following fungal ITS detection of a dataset (one to many samples), DNAbarcoder (Vu et al., 2022) may be employed for taxonomic classification.
@@ -93,7 +113,7 @@ Following fungal ITS detection of a dataset (one to many samples), DNAbarcoder (
 __[Fungal ITS Classifier bash Script](/Fungal.ITS.classifier.sh)__ (and __[Fungal ITS Classifier text file](/Fungal.ITS.classifier.txt)__ <br>
 A file to pool and classify fungal taxa in a dataset of plant genomes after fungal ITS detection.<br>
 
-Assess flanking sequence support 
+Assessing classification support with flanking sequences 
 ============================================================
 
 [Analyze Flanking 5.8S and ITS Sequences](/R_scripts/analyze.5.8S.R) <br>
