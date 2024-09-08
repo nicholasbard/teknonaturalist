@@ -139,7 +139,7 @@ which are useful for an example with the Betula species used in the example pape
 Additional materials 
 ============================================================
 
-__[R Genus Heatmap](/R_scripts.create.Betula.genus.heatmap.w.supp.files.R)__ <br>
+__[R Genus Heatmap](/R_scripts/create.genus.heatmap.w.supp.files.R)__ <br>
 A script used for creating the supplemental files and figure used in the Betula example paper.
 
 Empty __assembly, database, data/orig.fastqs, and data/finalcombined__ directories as placeholders. <br>

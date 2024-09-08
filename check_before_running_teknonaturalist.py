@@ -30,9 +30,9 @@ def check_conditions():
 
     # files in database/fungi?
     fungi_directory = os.path.join(base_directory, "fungi")
-    fungi_files = glob.glob(os.path.join(fungi_directory, "*fasta*"))
-    if len(fungi_files) < 2:
-        print("Error: Less than 2 files matching the pattern '*fasta*' found in 'database/fungi'.")
+    fungi_files = glob.glob(os.path.join(fungi_directory, "*k2d*"))
+    if len(fungi_files) < 3:
+        print("Error: Less than 3 files matching the pattern '*k2d*' found in 'database/fungi'.")
         return False
 
     # is current directory 'teknonaturalist'?

@@ -25,7 +25,7 @@ def extract_and_save(file_path, output_directory):
         print(f"Error: {e}")
 
 # Specify file path and output directory
-file_to_extract = "./ITS.refs.tar.gz"
+file_to_extract = "./ITS.refs.dnabarcoder.tar.gz"
 output_directory = "./dnabarcoder"
 
 # Extract file

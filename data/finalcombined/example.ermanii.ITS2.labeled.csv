@@ -1,481 +1,481 @@
 ID,read,dir,region,taxon,kingdom,phylum,class,order,family,genus,species,rank,cut-off,confidence,referenceID,blast.score,blast.sim,blast.coverage
-SRR9211219,1728,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,KX516296,0.95238,0.95238,104.0
-SRR9211220,10500,F,ITS2,Agaricomycetes sp,Fungi,Basidiomycota,Agaricomycetes,Agaricomycetes_ord_Incertae_sedis,Agaricomycetes_fam_Incertae_sedis,Agaricomycetes_gen_Incertae_sedis,Agaricomycetes_sp,species,0.701,0.7281,UDB06360299,0.9871800000000001,0.9871800000000001,77.0
-SRR9211220,12696,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03389069,0.98,0.98,99.0
+SRR9211219,1728,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,KT160598,0.98387,0.98387,61.0
+SRR9211220,10500,F,ITS2,Trechisporales,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB06379080,1.0,1.0,77.0
+SRR9211220,12696,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389043,0.99,0.99,99.0
 SRR9211220,1859,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,UDB0748448,0.94565,0.94565,91.0
-SRR9211220,2813,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0468470,1.0,1.0,104.0
-SRR9211220,4016,F,ITS2,Agaricomycetes sp,Fungi,Basidiomycota,Agaricomycetes,Agaricomycetes_ord_Incertae_sedis,Agaricomycetes_fam_Incertae_sedis,Agaricomycetes_gen_Incertae_sedis,Agaricomycetes_sp,species,0.701,0.7281,UDB06360299,0.9871800000000001,0.9871800000000001,77.0
-SRR9211220,5634,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,KY522916,0.9703,0.9703,100.0
-SRR9211220,6519,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02977530,0.98214,0.98214,55.0
-SRR9211220,9210,F,ITS2,Brevicellicium sp,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,Hydnodontaceae,Brevicellicium,Brevicellicium_sp,species,0.943,0.7741,UDB0294388,0.99048,0.99048,104.0
-SRR9211220,9343,F,ITS2,Entorrhiza sp,Fungi,Entorrhizomycota,Entorrhizomycetes,Entorrhizales,Entorrhizaceae,Entorrhiza,Entorrhiza_sp,species,0.7,0.6804,UDB05340819,0.96667,0.96667,59.0
-SRR9211220,9472,F,ITS2,Brevicellicium sp,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,Hydnodontaceae,Brevicellicium,Brevicellicium_sp,species,0.943,0.7741,UDB0294388,1.0,1.0,104.0
-SRR9211221,1774,F,ITS2,Filobasidium magnum,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Filobasidiaceae,Filobasidium,Filobasidium_magnum,species,0.944,0.5213,AF190008,1.0,1.0,82.0
-SRR9211222,10042,F,ITS2,Entoloma pruinosum,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,Entoloma_pruinosum,species,0.943,0.4748,MZ611656,0.9444400000000001,0.9444400000000001,71.0
-SRR9211222,10185,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01658513,0.96296,0.96296,80.0
-SRR9211222,11032,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.95833,0.95833,71.0
-SRR9211222,11414,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,0.9881,0.9881,83.0
-SRR9211222,11576,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,0.96429,0.96429,81.0
-SRR9211222,12511,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,0.9881,0.9881,83.0
-SRR9211222,14341,F,ITS2,Entoloma,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,unidentified,genus,0.927,0.6279,MZ611656,0.9305599999999999,0.9305599999999999,71.0
-SRR9211222,14391,F,ITS2,Leotia lubrica,Fungi,Ascomycota,Leotiomycetes,Helotiales,Leotiaceae,Leotia,Leotia_lubrica,species,0.945,0.5292,UDB02809991,1.0,1.0,104.0
-SRR9211222,1659,F,ITS2,Piloderma sp,Fungi,Basidiomycota,Agaricomycetes,Atheliales,Pilodermataceae,Piloderma,Piloderma_sp,species,0.947,0.7286,UDB04653362,0.98958,0.98958,191.0
-SRR9211222,1839,F,ITS2,Russula sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,Russula_sp,species,0.7,0.7541,UDB05660394,0.9901000000000001,0.9901000000000001,100.0
-SRR9211222,1889,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,UDB0750685,0.90741,0.90741,53.0
-SRR9211222,1950,F,ITS2,Entoloma inusitatum,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,Entoloma_inusitatum,species,0.943,0.4748,LN850543,0.9538500000000001,0.9538500000000001,63.0
-SRR9211222,21,F,ITS2,Entoloma pruinosum,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,Entoloma_pruinosum,species,0.943,0.4748,MZ611656,0.95833,0.95833,71.0
-SRR9211222,2150,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.95833,0.95833,71.0
-SRR9211222,316,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01658513,0.9647100000000001,0.9647100000000001,84.0
-SRR9211222,3349,F,ITS2,Entoloma pruinosum,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,Entoloma_pruinosum,species,0.943,0.4748,MZ611656,0.9444400000000001,0.9444400000000001,71.0
-SRR9211222,3787,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.9718300000000001,0.9718300000000001,70.0
-SRR9211222,4012,F,ITS2,Agaricomycetes sp,Fungi,Basidiomycota,Agaricomycetes,Agaricomycetes_ord_Incertae_sedis,Agaricomycetes_fam_Incertae_sedis,Agaricomycetes_gen_Incertae_sedis,Agaricomycetes_sp,species,0.701,0.7281,UDB06360299,1.0,1.0,76.0
-SRR9211222,4055,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02718873,1.0,1.0,108.0
-SRR9211222,4480,F,ITS2,Entoloma griseorugulosum,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,Entoloma_griseorugulosum,species,0.943,0.4748,LN850588,0.9538500000000001,0.9538500000000001,63.0
-SRR9211222,4712,F,ITS2,Entoloma pruinosum,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,Entoloma_pruinosum,species,0.943,0.4748,MZ611656,0.95833,0.95833,71.0
-SRR9211222,473,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.97222,0.97222,71.0
-SRR9211222,558,F,ITS2,Piloderma sp,Fungi,Basidiomycota,Agaricomycetes,Atheliales,Pilodermataceae,Piloderma,Piloderma_sp,species,0.947,0.7286,UDB04653362,0.98953,0.98953,190.0
-SRR9211222,6018,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0190958,0.97059,0.97059,67.0
-SRR9211222,7820,F,ITS2,Entoloma,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,unidentified,genus,0.927,0.6279,MZ611656,0.9305599999999999,0.9305599999999999,71.0
-SRR9211222,8003,F,ITS2,Entoloma pruinosum,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,Entoloma_pruinosum,species,0.943,0.4748,MZ611656,0.95833,0.95833,71.0
-SRR9211222,8310,F,ITS2,Entoloma pruinosum,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,Entoloma_pruinosum,species,0.943,0.4748,MZ611656,0.9444400000000001,0.9444400000000001,71.0
-SRR9211222,8568,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01658513,0.95294,0.95294,84.0
-SRR9211222,9379,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,1.0,1.0,83.0
-SRR9211222,9463,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,0.95238,0.95238,83.0
-SRR9211222,k141_13,F,ITS2,Entoloma inusitatum,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,Entoloma_inusitatum,species,0.943,0.4748,LN850543,0.9538500000000001,0.9538500000000001,63.0
-SRR9211223,1008,F,ITS2,Helotiales sp,Fungi,Ascomycota,Leotiomycetes,Helotiales,Helotiales_fam_Incertae_sedis,Helotiales_gen_Incertae_sedis,Helotiales_sp,species,0.703,0.9068,KP889563,0.9230800000000001,0.9230800000000001,90.0
-SRR9211223,1013,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,0.9881,0.9881,83.0
-SRR9211223,10165,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211223,10578,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211223,10607,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211223,11178,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,1.0,1.0,83.0
-SRR9211223,11261,F,ITS2,Agaricales sp,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Agaricales_fam_Incertae_sedis,Agaricales_gen_Incertae_sedis,Agaricales_sp,species,0.7,0.9125,LC523854,1.0,1.0,83.0
-SRR9211223,1374,F,ITS2,Agaricomycetes sp,Fungi,Basidiomycota,Agaricomycetes,Agaricomycetes_ord_Incertae_sedis,Agaricomycetes_fam_Incertae_sedis,Agaricomycetes_gen_Incertae_sedis,Agaricomycetes_sp,species,0.701,0.7281,UDB06360299,0.9740300000000001,0.9740300000000001,76.0
-SRR9211223,2010,F,ITS2,Pseudotomentella sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Pseudotomentella,Pseudotomentella_sp,species,0.906,0.9692,UDB0613563,1.0,1.0,191.0
-SRR9211223,2059,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211223,2104,F,ITS2,Hydnodontaceae sp,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,Hydnodontaceae,Hydnodontaceae_gen_Incertae_sedis,Hydnodontaceae_sp,species,0.943,0.7741,UDB03485734,1.0,1.0,81.0
-SRR9211223,2110,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02800150,0.98113,0.98113,105.0
-SRR9211223,2196,F,ITS2,Pseudotomentella sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Pseudotomentella,Pseudotomentella_sp,species,0.906,0.9692,UDB0613563,0.99479,0.99479,191.0
-SRR9211223,220,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211223,2244,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03008554,1.0,1.0,58.0
-SRR9211223,2401,F,ITS2,Lachnum sp,Fungi,Ascomycota,Leotiomycetes,Helotiales,Hyaloscyphaceae,Lachnum,Lachnum_sp,species,0.959,0.6161,UDB0699927,1.0,1.0,86.0
-SRR9211223,2594,F,ITS2,Luellia sp,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,Hydnodontaceae,Luellia,Luellia_sp,species,0.943,0.7741,UDB03136092,0.9743600000000001,0.9743600000000001,76.0
-SRR9211223,2885,F,ITS2,Agaricomycetes sp,Fungi,Basidiomycota,Agaricomycetes,Agaricomycetes_ord_Incertae_sedis,Agaricomycetes_fam_Incertae_sedis,Agaricomycetes_gen_Incertae_sedis,Agaricomycetes_sp,species,0.701,0.7281,UDB06360299,1.0,1.0,76.0
-SRR9211223,6698,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02914033,1.0,1.0,108.0
-SRR9211223,7236,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,0.9881,0.9881,83.0
-SRR9211223,8006,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,0.9881,0.9881,83.0
-SRR9211223,9438,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211223,9537,F,ITS2,Agaricomycetes sp,Fungi,Basidiomycota,Agaricomycetes,Agaricomycetes_ord_Incertae_sedis,Agaricomycetes_fam_Incertae_sedis,Agaricomycetes_gen_Incertae_sedis,Agaricomycetes_sp,species,0.701,0.7281,UDB06360299,0.9870099999999999,0.9870099999999999,75.0
-SRR9211223,9898,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01648604,0.9764700000000001,0.9764700000000001,84.0
-SRR9211226,1655,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,KX516296,0.95238,0.95238,104.0
-SRR9211228,10193,F,ITS2,Lactarius tabidus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_tabidus,species,0.976,0.5127,MT908311,1.0,1.0,98.0
-SRR9211228,10579,F,ITS2,Lactarius tabidus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_tabidus,species,0.976,0.5127,MT908311,0.9899,0.9899,98.0
-SRR9211228,10946,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,58.0
-SRR9211228,11032,F,ITS2,Lactarius tabidus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_tabidus,species,0.976,0.5127,MT908311,0.9899,0.9899,98.0
-SRR9211228,11038,F,ITS2,Lactarius tabidus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_tabidus,species,0.976,0.5127,MT908311,1.0,1.0,98.0
-SRR9211228,11193,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,55.0
-SRR9211228,11595,F,ITS2,Helotiales sp,Fungi,Ascomycota,Leotiomycetes,Helotiales,Helotiales_fam_Incertae_sedis,Helotiales_gen_Incertae_sedis,Helotiales_sp,species,0.703,0.9068,KU727710,0.96552,0.96552,57.0
-SRR9211228,12245,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.912,0.6492,MT908311,0.95789,0.95789,94.0
-SRR9211228,13370,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,58.0
-SRR9211228,1412,F,ITS2,Helotiales sp,Fungi,Ascomycota,Leotiomycetes,Helotiales,Helotiales_fam_Incertae_sedis,Helotiales_gen_Incertae_sedis,Helotiales_sp,species,0.703,0.9068,KU727710,0.98276,0.98276,57.0
-SRR9211228,14276,F,ITS2,Filobasidium magnum,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Filobasidiaceae,Filobasidium,Filobasidium_magnum,species,0.944,0.5213,AF190008,1.0,1.0,82.0
-SRR9211228,1692,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,1.0,1.0,83.0
-SRR9211228,17,F,ITS2,Lactarius tabidus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_tabidus,species,0.976,0.5127,MT908311,1.0,1.0,98.0
-SRR9211228,2032,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,0.99438,0.99438,177.0
-SRR9211228,2423,F,ITS2,Hydnodontaceae sp,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,Hydnodontaceae,Hydnodontaceae_gen_Incertae_sedis,Hydnodontaceae_sp,species,0.943,0.7741,UDB03485734,0.9878,0.9878,81.0
-SRR9211228,2644,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,177.0
-SRR9211228,2727,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,0.99438,0.99438,177.0
-SRR9211228,3298,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,58.0
-SRR9211228,3317,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,58.0
-SRR9211228,332,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,177.0
-SRR9211228,4477,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,58.0
-SRR9211228,4490,F,ITS2,Lactarius tabidus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_tabidus,species,0.976,0.5127,MT908311,0.9899,0.9899,98.0
-SRR9211228,4947,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,58.0
-SRR9211228,5738,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,58.0
-SRR9211228,6095,F,ITS2,Lactarius tabidus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_tabidus,species,0.976,0.5127,MT908311,1.0,1.0,98.0
-SRR9211228,6856,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.912,0.6492,MT908311,0.9697,0.9697,98.0
-SRR9211228,7089,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,58.0
-SRR9211228,7373,F,ITS2,Cladosporium cladosporioides,Fungi,Ascomycota,Dothideomycetes,Capnodiales,Cladosporiaceae,Cladosporium,Cladosporium_cladosporioides,species,0.7,0.5467,MW723884,1.0,1.0,91.0
-SRR9211228,8061,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,58.0
-SRR9211228,8065,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,56.0
-SRR9211228,8219,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,55.0
-SRR9211228,8855,F,ITS2,Helotiales sp,Fungi,Ascomycota,Leotiomycetes,Helotiales,Helotiales_fam_Incertae_sedis,Helotiales_gen_Incertae_sedis,Helotiales_sp,species,0.703,0.9068,KU727710,0.98276,0.98276,57.0
-SRR9211228,893,F,ITS2,Umbelopsis sp,Fungi,Mucoromycota,Umbelopsidomycetes,Umbelopsidales,Umbelopsidaceae,Umbelopsis,Umbelopsis_sp,species,0.7,0.795,UDB07144133,0.9905700000000001,0.9905700000000001,104.0
-SRR9211228,8935,F,ITS2,Helotiales sp,Fungi,Ascomycota,Leotiomycetes,Helotiales,Helotiales_fam_Incertae_sedis,Helotiales_gen_Incertae_sedis,Helotiales_sp,species,0.703,0.9068,KU727710,0.96552,0.96552,57.0
-SRR9211228,8946,F,ITS2,Helotiales sp,Fungi,Ascomycota,Leotiomycetes,Helotiales,Helotiales_fam_Incertae_sedis,Helotiales_gen_Incertae_sedis,Helotiales_sp,species,0.703,0.9068,KU727710,0.98276,0.98276,57.0
-SRR9211228,9903,F,ITS2,Lactarius tabidus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_tabidus,species,0.976,0.5127,MT908311,0.9899,0.9899,98.0
-SRR9211228,k109_2,F,ITS2,Lactarius tabidus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_tabidus,species,0.976,0.5127,MT908311,1.0,1.0,98.0
-SRR9211229,1177,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,AF492089,0.9726,0.9726,72.0
-SRR9211229,2077,F,ITS2,Filobasidium magnum,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Filobasidiaceae,Filobasidium,Filobasidium_magnum,species,0.944,0.5213,AF190008,0.98795,0.98795,82.0
-SRR9211229,2391,F,ITS2,Filobasidium mucilaginum,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Filobasidiaceae,Filobasidium,Filobasidium_mucilaginum,species,0.944,0.5213,MK050349,1.0,1.0,76.0
-SRR9211229,971,F,ITS2,Taphrina truncicola,Fungi,Ascomycota,Taphrinomycetes,Taphrinales,Taphrinaceae,Taphrina,Taphrina_truncicola,species,0.984,0.6597,LC619230,1.0,1.0,211.0
-SRR9211229,992,F,ITS2,Ceramothyrium carniolicum,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Chaetothyriaceae,Ceramothyrium,Ceramothyrium_carniolicum,species,0.961,0.7336,KC455237,0.98276,0.98276,115.0
-SRR9211230,10,F,ITS2,Lactarius tabidus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_tabidus,species,0.976,0.5127,MT908311,1.0,1.0,98.0
-SRR9211230,10543,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,58.0
-SRR9211230,10564,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,58.0
-SRR9211230,10565,F,ITS2,Lactarius tabidus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_tabidus,species,0.976,0.5127,MT908311,1.0,1.0,96.0
-SRR9211230,11005,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,58.0
-SRR9211230,1352,F,ITS2,Hyaloscyphaceae sp,Fungi,Ascomycota,Leotiomycetes,Helotiales,Hyaloscyphaceae,Hyaloscyphaceae_gen_Incertae_sedis,Hyaloscyphaceae_sp,species,0.959,0.5226,UDB03473708,1.0,1.0,104.0
-SRR9211230,1910,F,ITS2,Lactarius tabidus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_tabidus,species,0.976,0.5127,EF493293,1.0,1.0,141.0
-SRR9211230,1940,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211230,2205,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02800150,0.9905700000000001,0.9905700000000001,105.0
-SRR9211230,2220,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02800150,0.9905700000000001,0.9905700000000001,105.0
-SRR9211230,2284,F,ITS2,Myxozyma sp,Fungi,Ascomycota,Saccharomycetes,Saccharomycetales,Lipomycetaceae,Myxozyma,Myxozyma_sp,species,0.946,0.5857,UDB01878650,1.0,1.0,100.0
-SRR9211230,2385,F,ITS2,Russula sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,Russula_sp,species,0.7,0.7541,UDB06169618,0.98214,0.98214,54.0
-SRR9211230,2421,F,ITS2,Luellia cystidiata,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,Hydnodontaceae,Luellia,Luellia_cystidiata,species,0.943,0.7741,DQ309220,1.0,1.0,68.0
-SRR9211230,2562,F,ITS2,Entoloma sericatum,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,Entoloma_sericatum,species,0.943,0.4748,LN850469,1.0,1.0,83.0
-SRR9211230,2565,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,UDB06293091,1.0,1.0,54.0
-SRR9211230,2667,F,ITS2,Entoloma sericatum,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,Entoloma_sericatum,species,0.943,0.4748,LN850469,0.99548,0.99548,220.0
-SRR9211230,2908,F,ITS2,Hydnodontaceae sp,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,Hydnodontaceae,Hydnodontaceae_gen_Incertae_sedis,Hydnodontaceae_sp,species,0.943,0.7741,UDB03485734,1.0,1.0,81.0
-SRR9211230,302,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,0.9881,0.9881,83.0
-SRR9211230,3294,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,58.0
-SRR9211230,3734,F,ITS2,Lactarius tabidus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_tabidus,species,0.976,0.5127,MT908311,1.0,1.0,98.0
-SRR9211230,4011,F,ITS2,Lactarius tabidus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_tabidus,species,0.976,0.5127,MT908311,1.0,1.0,98.0
-SRR9211230,417,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,177.0
-SRR9211230,435,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,1.0,1.0,83.0
-SRR9211230,4703,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,0.9881,0.9881,83.0
-SRR9211230,4953,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,58.0
-SRR9211230,5035,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,58.0
-SRR9211230,5392,F,ITS2,Lactarius tabidus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_tabidus,species,0.976,0.5127,MT908311,0.9899,0.9899,98.0
-SRR9211230,6556,F,ITS2,Lactarius tabidus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_tabidus,species,0.976,0.5127,MT908311,1.0,1.0,98.0
-SRR9211230,6720,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,0.9881,0.9881,83.0
-SRR9211230,721,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,177.0
-SRR9211230,7272,F,ITS2,Helotiales sp,Fungi,Ascomycota,Leotiomycetes,Helotiales,Helotiales_fam_Incertae_sedis,Helotiales_gen_Incertae_sedis,Helotiales_sp,species,0.703,0.9068,KU727710,0.9661,0.9661,58.0
-SRR9211230,7608,F,ITS2,Helotiales sp,Fungi,Ascomycota,Leotiomycetes,Helotiales,Helotiales_fam_Incertae_sedis,Helotiales_gen_Incertae_sedis,Helotiales_sp,species,0.703,0.9068,UDB03329235,0.9468099999999999,0.9468099999999999,93.0
-SRR9211230,8051,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,58.0
-SRR9211230,9121,F,ITS2,Lactarius tabidus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_tabidus,species,0.976,0.5127,MT908311,1.0,1.0,98.0
-SRR9211230,937,F,ITS2,Epicoccum italicum,Fungi,Ascomycota,Dothideomycetes,Pleosporales,Didymellaceae,Epicoccum,Epicoccum_italicum,species,0.994,0.3958,KY742099,1.0,1.0,93.0
-SRR9211230,9773,F,ITS2,Lactarius tabidus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_tabidus,species,0.976,0.5127,MT908311,0.9899,0.9899,98.0
-SRR9211230,9802,F,ITS2,Russula sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,Russula_sp,species,0.7,0.7541,UDB05592967,0.99048,0.99048,104.0
-SRR9211232,1099,F,ITS2,Lactarius tabidus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_tabidus,species,0.976,0.5127,MT908311,1.0,1.0,98.0
-SRR9211232,124,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01659934,1.0,1.0,78.0
-SRR9211232,13763,F,ITS2,Helotiales sp,Fungi,Ascomycota,Leotiomycetes,Helotiales,Helotiales_fam_Incertae_sedis,Helotiales_gen_Incertae_sedis,Helotiales_sp,species,0.703,0.9068,KU727710,0.9661,0.9661,58.0
-SRR9211232,14750,F,ITS2,Helotiales sp,Fungi,Ascomycota,Leotiomycetes,Helotiales,Helotiales_fam_Incertae_sedis,Helotiales_gen_Incertae_sedis,Helotiales_sp,species,0.703,0.9068,MH855510,0.98039,0.98039,50.0
-SRR9211232,15532,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01659934,0.9740300000000001,0.9740300000000001,76.0
-SRR9211232,16269,F,ITS2,Lactarius tabidus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_tabidus,species,0.976,0.5127,MT908311,0.9899,0.9899,98.0
-SRR9211232,17299,F,ITS2,Helotiales sp,Fungi,Ascomycota,Leotiomycetes,Helotiales,Helotiales_fam_Incertae_sedis,Helotiales_gen_Incertae_sedis,Helotiales_sp,species,0.703,0.9068,KU727710,0.9661,0.9661,58.0
-SRR9211232,176,F,ITS2,Helotiales sp,Fungi,Ascomycota,Leotiomycetes,Helotiales,Helotiales_fam_Incertae_sedis,Helotiales_gen_Incertae_sedis,Helotiales_sp,species,0.703,0.9068,KU727710,0.9661,0.9661,58.0
-SRR9211232,18276,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01659934,0.97468,0.97468,78.0
-SRR9211232,18339,F,ITS2,Umbelopsis sp,Fungi,Mucoromycota,Umbelopsidomycetes,Umbelopsidales,Umbelopsidaceae,Umbelopsis,Umbelopsis_sp,species,0.7,0.795,UDB06986834,1.0,1.0,103.0
-SRR9211232,18351,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01659934,0.98734,0.98734,78.0
-SRR9211232,2001,F,ITS2,Lactarius tabidus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_tabidus,species,0.976,0.5127,MT908311,0.9899,0.9899,97.0
-SRR9211232,3292,F,ITS2,Hydnodontaceae sp,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,Hydnodontaceae,Hydnodontaceae_gen_Incertae_sedis,Hydnodontaceae_sp,species,0.943,0.7741,UDB03485734,0.98734,0.98734,78.0
-SRR9211232,3713,F,ITS2,Clavulinaceae sp,Fungi,Basidiomycota,Agaricomycetes,Cantharellales,Clavulinaceae,Clavulinaceae_gen_Incertae_sedis,Clavulinaceae_sp,species,0.93,0.7535,KC679837,0.95402,0.95402,85.0
-SRR9211232,3855,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211232,3996,F,ITS2,Hydnodontaceae sp,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,Hydnodontaceae,Hydnodontaceae_gen_Incertae_sedis,Hydnodontaceae_sp,species,0.943,0.7741,UDB03485734,0.9878,0.9878,81.0
-SRR9211232,4128,F,ITS2,Hydnodontaceae sp,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,Hydnodontaceae,Hydnodontaceae_gen_Incertae_sedis,Hydnodontaceae_sp,species,0.943,0.7741,UDB03485734,0.9878,0.9878,81.0
-SRR9211232,4144,F,ITS2,Piloderma lanatum,Fungi,Basidiomycota,Agaricomycetes,Atheliales,Pilodermataceae,Piloderma,Piloderma_lanatum,species,0.947,0.7286,UDB001744,0.96447,0.96447,193.0
-SRR9211232,4156,F,ITS2,Piloderma lanatum,Fungi,Basidiomycota,Agaricomycetes,Atheliales,Pilodermataceae,Piloderma,Piloderma_lanatum,species,0.947,0.7286,UDB001744,0.96447,0.96447,193.0
-SRR9211232,4222,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211232,4382,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01659934,1.0,1.0,78.0
-SRR9211232,4383,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01659934,0.98734,0.98734,78.0
-SRR9211232,4554,F,ITS2,Entoloma sericatum,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,Entoloma_sericatum,species,0.943,0.4748,LN850469,1.0,1.0,83.0
-SRR9211232,5339,F,ITS2,Thelephoraceae sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Thelephoraceae_gen_Incertae_sedis,Thelephoraceae_sp,species,0.906,0.9692,UDB0487240,1.0,1.0,58.0
-SRR9211233,1224,F,ITS2,Hormonema macrosporum,Fungi,Ascomycota,Dothideomycetes,Dothideales,Dothioraceae,Hormonema,Hormonema_macrosporum,species,0.987,0.5467,AJ244247,1.0,1.0,101.0
-SRR9211233,21,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,1.0,1.0,50.0
-SRR9211233,2125,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,AF492089,0.9726,0.9726,72.0
-SRR9211233,2347,F,ITS2,Kabatina sp,Fungi,Ascomycota,Dothideomycetes,Dothideales,Dothioraceae,Kabatina,Kabatina_sp,species,0.987,0.5467,UDB02254156,1.0,1.0,102.0
-SRR9211233,2633,F,ITS2,Itersonilia perplexans,Fungi,Basidiomycota,Tremellomycetes,Cystofilobasidiales,Mrakiaceae,Itersonilia,Itersonilia_perplexans,species,0.979,0.5896,AB072233,0.9905200000000001,0.9905200000000001,210.0
-SRR9211233,2635,F,ITS2,Itersonilia perplexans,Fungi,Basidiomycota,Tremellomycetes,Cystofilobasidiales,Mrakiaceae,Itersonilia,Itersonilia_perplexans,species,0.979,0.5896,AB072233,0.9952599999999999,0.9952599999999999,210.0
-SRR9211233,2725,F,ITS2,Hormonema macrosporum,Fungi,Ascomycota,Dothideomycetes,Dothideales,Dothioraceae,Hormonema,Hormonema_macrosporum,species,0.987,0.5467,AJ244247,1.0,1.0,101.0
-SRR9211233,3356,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,1.0,1.0,50.0
-SRR9211233,3583,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,1.0,1.0,50.0
-SRR9211233,525,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,AF492089,0.9726,0.9726,72.0
-SRR9211233,6468,F,ITS2,Phaeosphaeria sp,Fungi,Ascomycota,Dothideomycetes,Pleosporales,Phaeosphaeriaceae,Phaeosphaeria,Phaeosphaeria_sp,species,0.897,0.58,UDB0429089,0.98182,0.98182,109.0
-SRR9211233,6596,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,1.0,1.0,50.0
-SRR9211233,8330,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,0.98039,0.98039,50.0
-SRR9211233,8566,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,0.98039,0.98039,50.0
-SRR9211233,9476,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,0.98039,0.98039,50.0
-SRR9211233,97,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,0.98039,0.98039,50.0
-SRR9211233,k129_8,F,ITS2,Phaeosphaeria sp,Fungi,Ascomycota,Dothideomycetes,Pleosporales,Phaeosphaeriaceae,Phaeosphaeria,Phaeosphaeria_sp,species,0.897,0.58,UDB0429089,0.98182,0.98182,109.0
-SRR9211234,1193,F,ITS2,Agaricomycetes sp,Fungi,Basidiomycota,Agaricomycetes,Agaricomycetes_ord_Incertae_sedis,Agaricomycetes_fam_Incertae_sedis,Agaricomycetes_gen_Incertae_sedis,Agaricomycetes_sp,species,0.701,0.7281,UDB06360299,0.9740300000000001,0.9740300000000001,76.0
-SRR9211234,14309,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02901765,1.0,1.0,53.0
-SRR9211234,15168,F,ITS2,Agaricomycetes sp,Fungi,Basidiomycota,Agaricomycetes,Agaricomycetes_ord_Incertae_sedis,Agaricomycetes_fam_Incertae_sedis,Agaricomycetes_gen_Incertae_sedis,Agaricomycetes_sp,species,0.701,0.7281,UDB06360299,1.0,1.0,76.0
-SRR9211234,15249,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02968247,1.0,1.0,53.0
-SRR9211234,15347,F,ITS2,Agaricomycetes sp,Fungi,Basidiomycota,Agaricomycetes,Agaricomycetes_ord_Incertae_sedis,Agaricomycetes_fam_Incertae_sedis,Agaricomycetes_gen_Incertae_sedis,Agaricomycetes_sp,species,0.701,0.7281,UDB06360299,1.0,1.0,76.0
-SRR9211234,15786,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02718873,0.99083,0.99083,108.0
-SRR9211234,16656,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02968247,1.0,1.0,53.0
-SRR9211234,2045,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211234,2050,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211234,2180,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02895754,1.0,1.0,86.0
-SRR9211234,2203,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03008554,1.0,1.0,58.0
-SRR9211234,246,F,ITS2,Piloderma lanatum,Fungi,Basidiomycota,Agaricomycetes,Atheliales,Pilodermataceae,Piloderma,Piloderma_lanatum,species,0.947,0.7286,UDB001744,0.96954,0.96954,193.0
-SRR9211234,2583,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03008554,1.0,1.0,58.0
-SRR9211234,2690,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,UDB01265101,0.38181780000000004,0.9090900000000001,21.0
-SRR9211234,2745,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02739680,0.9770099999999999,0.9770099999999999,86.0
-SRR9211234,2751,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211234,3549,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,1.0,1.0,83.0
-SRR9211234,430,F,ITS2,Agaricomycetes sp,Fungi,Basidiomycota,Agaricomycetes,Agaricomycetes_ord_Incertae_sedis,Agaricomycetes_fam_Incertae_sedis,Agaricomycetes_gen_Incertae_sedis,Agaricomycetes_sp,species,0.701,0.7281,UDB06360299,1.0,1.0,76.0
-SRR9211234,4573,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02718873,1.0,1.0,108.0
-SRR9211234,4997,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211234,941,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,1.0,1.0,83.0
-SRR9211235,1620,F,ITS2,Itersonilia perplexans,Fungi,Basidiomycota,Tremellomycetes,Cystofilobasidiales,Mrakiaceae,Itersonilia,Itersonilia_perplexans,species,0.979,0.5896,AB072233,0.9952599999999999,0.9952599999999999,210.0
-SRR9211235,1668,F,ITS2,Hormonema macrosporum,Fungi,Ascomycota,Dothideomycetes,Dothideales,Dothioraceae,Hormonema,Hormonema_macrosporum,species,0.987,0.5467,AJ244247,0.9902,0.9902,101.0
-SRR9211235,1771,F,ITS2,Hormonema macrosporum,Fungi,Ascomycota,Dothideomycetes,Dothideales,Dothioraceae,Hormonema,Hormonema_macrosporum,species,0.987,0.5467,AJ244247,1.0,1.0,101.0
-SRR9211235,1793,F,ITS2,Epithamnolia sp,Fungi,Ascomycota,Leotiomycetes,Leotiales,Mniaeciaceae,Epithamnolia,Epithamnolia_sp,species,0.959,0.434,UDB05366762,1.0,1.0,55.0
-SRR9211235,2164,F,ITS2,Chaetothyriales sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Chaetothyriales_fam_Incertae_sedis,Chaetothyriales_gen_Incertae_sedis,Chaetothyriales_sp,species,0.7,0.9085,MF976563,1.0,1.0,52.0
-SRR9211235,3238,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,0.98039,0.98039,50.0
-SRR9211235,5114,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,1.0,1.0,50.0
-SRR9211235,5990,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,0.9607800000000001,0.9607800000000001,50.0
-SRR9211236,1166,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,0.98039,0.98039,50.0
-SRR9211236,1457,F,ITS2,Kabatina sp,Fungi,Ascomycota,Dothideomycetes,Dothideales,Dothioraceae,Kabatina,Kabatina_sp,species,0.987,0.5467,UDB02254156,1.0,1.0,102.0
-SRR9211236,1490,F,ITS2,Itersonilia perplexans,Fungi,Basidiomycota,Tremellomycetes,Cystofilobasidiales,Mrakiaceae,Itersonilia,Itersonilia_perplexans,species,0.979,0.5896,AB072233,0.9952599999999999,0.9952599999999999,210.0
-SRR9211236,1624,F,ITS2,Taphrina communis,Fungi,Ascomycota,Taphrinomycetes,Taphrinales,Taphrinaceae,Taphrina,Taphrina_communis,species,0.984,0.6597,AF492086,0.9863,0.9863,72.0
-SRR9211236,1649,F,ITS2,Kabatina sp,Fungi,Ascomycota,Dothideomycetes,Dothideales,Dothioraceae,Kabatina,Kabatina_sp,species,0.987,0.5467,UDB02254156,1.0,1.0,102.0
-SRR9211236,1698,F,ITS2,Dothiora,Fungi,Ascomycota,Dothideomycetes,Dothideales,Dothioraceae,Dothiora,unidentified,genus,0.963,0.3882,UDB05274089,0.98,0.98,99.0
-SRR9211236,18,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,0.98039,0.98039,50.0
-SRR9211236,1925,F,ITS2,Kabatina sp,Fungi,Ascomycota,Dothideomycetes,Dothideales,Dothioraceae,Kabatina,Kabatina_sp,species,0.987,0.5467,UDB02254156,0.99029,0.99029,102.0
-SRR9211236,22,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,1.0,1.0,50.0
-SRR9211236,2318,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,1.0,1.0,50.0
-SRR9211236,2764,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,1.0,1.0,50.0
-SRR9211236,3873,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,1.0,1.0,50.0
-SRR9211236,3943,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,0.98039,0.98039,50.0
-SRR9211236,4053,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,1.0,1.0,50.0
-SRR9211236,5947,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,0.98039,0.98039,50.0
-SRR9211236,5991,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,0.9607800000000001,0.9607800000000001,50.0
-SRR9211236,6519,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,1.0,1.0,50.0
-SRR9211236,6565,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,0.98039,0.98039,50.0
-SRR9211236,7059,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,0.98039,0.98039,50.0
-SRR9211236,7097,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,1.0,1.0,50.0
-SRR9211236,733,F,ITS2,Taphrina sp,Fungi,Ascomycota,Taphrinomycetes,Taphrinales,Taphrinaceae,Taphrina,Taphrina_sp,species,0.984,0.6597,UDB05410213,0.98592,0.98592,70.0
-SRR9211236,7334,F,ITS2,Herpotrichiellaceae sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Herpotrichiellaceae_gen_Incertae_sedis,Herpotrichiellaceae_sp,species,0.891,0.8497,UDB03379107,0.98039,0.98039,50.0
-SRR9211236,735,F,ITS2,Dothiora sp,Fungi,Ascomycota,Dothideomycetes,Dothideales,Dothioraceae,Dothiora,Dothiora_sp,species,0.987,0.5467,UDB05274089,1.0,1.0,101.0
-SRR9211237,1027,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02901765,1.0,1.0,53.0
-SRR9211237,10980,F,ITS2,Trechisporales sp,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,Trechisporales_fam_Incertae_sedis,Trechisporales_gen_Incertae_sedis,Trechisporales_sp,species,0.7,0.9,UDB06367913,0.9868399999999999,0.9868399999999999,75.0
-SRR9211237,114,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01658513,0.9647100000000001,0.9647100000000001,84.0
-SRR9211237,11696,F,ITS2,Leccinum melaneum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,Leccinum_melaneum,species,0.983,0.4708,UDB019644,0.98936,0.98936,93.0
-SRR9211237,12561,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,1.0,1.0,83.0
-SRR9211237,12847,F,ITS2,Leccinum melaneum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,Leccinum_melaneum,species,0.983,0.4708,UDB019644,0.98936,0.98936,93.0
-SRR9211237,130,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211237,13649,F,ITS2,Leccinum subradicatum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,Leccinum_subradicatum,species,0.983,0.4708,KC552009,0.98551,0.98551,68.0
-SRR9211237,147,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,1.0,1.0,83.0
-SRR9211237,151,F,ITS2,Leccinum melaneum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,Leccinum_melaneum,species,0.983,0.4708,UDB019644,0.98936,0.98936,93.0
-SRR9211237,16113,F,ITS2,Lactarius ciliatus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_ciliatus,species,0.976,0.5127,MH984935,0.98958,0.98958,95.0
-SRR9211237,16223,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01658513,0.9647100000000001,0.9647100000000001,84.0
-SRR9211237,17595,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211237,17969,F,ITS2,Leccinum melaneum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,Leccinum_melaneum,species,0.983,0.4708,UDB019644,0.98936,0.98936,93.0
-SRR9211237,1799,F,ITS2,Leccinum melaneum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,Leccinum_melaneum,species,0.983,0.4708,UDB019644,0.98936,0.98936,93.0
-SRR9211237,251,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01648604,0.9764700000000001,0.9764700000000001,84.0
-SRR9211237,2744,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03008554,1.0,1.0,58.0
-SRR9211237,296,F,ITS2,Lactarius ciliatus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_ciliatus,species,0.976,0.5127,MH984935,1.0,1.0,95.0
-SRR9211237,3112,F,ITS2,Mucor piriformis,Fungi,Mucoromycota,Mucoromycetes,Mucorales,Mucoraceae,Mucor,Mucor_piriformis,species,0.936,0.4285,UDB04981699,1.0,1.0,74.0
-SRR9211237,3153,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.97222,0.97222,71.0
-SRR9211237,3172,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.97222,0.97222,71.0
-SRR9211237,3186,F,ITS2,Hydnodontaceae sp,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,Hydnodontaceae,Hydnodontaceae_gen_Incertae_sedis,Hydnodontaceae_sp,species,0.943,0.7741,UDB03485734,1.0,1.0,81.0
-SRR9211237,3350,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.97222,0.97222,71.0
-SRR9211237,3472,F,ITS2,Leccinum melaneum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,Leccinum_melaneum,species,0.983,0.4708,UDB019644,0.99419,0.99419,171.0
-SRR9211237,3556,F,ITS2,Lactarius ciliatus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_ciliatus,species,0.976,0.5127,MH984935,0.99401,0.99401,166.0
-SRR9211237,3582,F,ITS2,Leccinum melaneum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,Leccinum_melaneum,species,0.983,0.4708,UDB019644,1.0,1.0,171.0
-SRR9211237,3601,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.97222,0.97222,71.0
-SRR9211237,3907,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.97222,0.97222,71.0
-SRR9211237,3926,F,ITS2,Leccinum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,unidentified,genus,0.952,0.3067,UDB019644,0.97872,0.97872,93.0
-SRR9211237,4182,F,ITS2,Leccinum pseudoborneense,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,Leccinum_pseudoborneense,species,0.983,0.4708,MZ412903,0.98333,0.98333,59.0
-SRR9211237,4993,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01658513,0.9647100000000001,0.9647100000000001,84.0
-SRR9211237,5016,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02901765,0.9814799999999999,0.9814799999999999,53.0
-SRR9211237,5382,F,ITS2,Helotiaceae sp,Fungi,Ascomycota,Leotiomycetes,Helotiales,Helotiaceae,Helotiaceae_gen_Incertae_sedis,Helotiaceae_sp,species,0.968,0.4077,UDB03302542,0.97059,0.97059,101.0
-SRR9211237,591,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,0.9881,0.9881,83.0
-SRR9211237,593,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02977561,1.0,1.0,105.0
-SRR9211237,5953,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01648604,0.9764700000000001,0.9764700000000001,84.0
-SRR9211237,6041,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,KU839100,0.4216682,0.91667,23.0
-SRR9211237,6406,F,ITS2,Leccinum melaneum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,Leccinum_melaneum,species,0.983,0.4708,UDB019644,0.98936,0.98936,93.0
-SRR9211237,6417,F,ITS2,Leccinum melaneum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,Leccinum_melaneum,species,0.983,0.4708,UDB019644,0.98936,0.98936,93.0
-SRR9211237,699,F,ITS2,Helotiaceae sp,Fungi,Ascomycota,Leotiomycetes,Helotiales,Helotiaceae,Helotiaceae_gen_Incertae_sedis,Helotiaceae_sp,species,0.968,0.4077,UDB03302542,0.98039,0.98039,101.0
-SRR9211237,7292,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01648604,0.9647100000000001,0.9647100000000001,84.0
-SRR9211237,7547,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,0.9881,0.9881,83.0
-SRR9211237,8455,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.9718300000000001,0.9718300000000001,70.0
-SRR9211237,8716,F,ITS2,Trechisporales sp,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,Trechisporales_fam_Incertae_sedis,Trechisporales_gen_Incertae_sedis,Trechisporales_sp,species,0.7,0.9,UDB06367913,0.9868399999999999,0.9868399999999999,75.0
-SRR9211237,9304,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98592,0.98592,70.0
-SRR9211238,1032,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,0.9673900000000001,0.9673900000000001,91.0
-SRR9211238,11062,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,1.0,1.0,89.0
-SRR9211238,11093,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,0.9782599999999999,0.9782599999999999,91.0
-SRR9211238,11165,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,0.9888899999999999,0.9888899999999999,89.0
-SRR9211238,11229,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,1.0,1.0,89.0
-SRR9211238,11350,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0233395,0.98246,0.98246,56.0
-SRR9211238,11452,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,0.9888899999999999,0.9888899999999999,89.0
-SRR9211238,11853,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,0.9888899999999999,0.9888899999999999,89.0
-SRR9211238,11894,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,0.9888899999999999,0.9888899999999999,89.0
-SRR9211238,1205,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,1.0,1.0,83.0
-SRR9211238,12393,F,ITS2,Russula sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,Russula_sp,species,0.7,0.7541,UDB06255602,0.96875,0.96875,63.0
-SRR9211238,12663,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,0.96667,0.96667,89.0
-SRR9211238,1273,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,1.0,1.0,89.0
-SRR9211238,12845,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,0.9888899999999999,0.9888899999999999,89.0
-SRR9211238,12854,F,ITS2,Russula sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,Russula_sp,species,0.7,0.7541,UDB05658831,0.9782599999999999,0.9782599999999999,91.0
-SRR9211238,13256,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,0.9888899999999999,0.9888899999999999,89.0
-SRR9211238,13278,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,0.9673900000000001,0.9673900000000001,91.0
-SRR9211238,21,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,0.9782599999999999,0.9782599999999999,91.0
-SRR9211238,2196,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,UDB02086039,0.4216682,0.91667,23.0
-SRR9211238,2210,F,ITS2,Russula sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,Russula_sp,species,0.7,0.7541,UDB06006060,0.9901000000000001,0.9901000000000001,100.0
-SRR9211238,2237,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,0.9782599999999999,0.9782599999999999,91.0
-SRR9211238,23,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,1.0,1.0,89.0
-SRR9211238,2357,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02800150,0.9905700000000001,0.9905700000000001,105.0
-SRR9211238,2417,F,ITS2,Hyaloscypha vraolstadiae,Fungi,Ascomycota,Leotiomycetes,Helotiales,Hyaloscyphaceae,Hyaloscypha,Hyaloscypha_vraolstadiae,species,0.7,0.8881,UDB03472166,1.0,1.0,77.0
-SRR9211238,2534,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02895754,1.0,1.0,86.0
-SRR9211238,2826,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,0.9905700000000001,0.9905700000000001,105.0
-SRR9211238,2946,F,ITS2,Russula sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,Russula_sp,species,0.7,0.7541,UDB06006060,0.9901000000000001,0.9901000000000001,100.0
-SRR9211238,3990,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,1.0,1.0,89.0
-SRR9211238,4517,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,JQ347003,1.0,1.0,105.0
-SRR9211238,4662,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,JQ347003,0.9905700000000001,0.9905700000000001,105.0
-SRR9211238,4856,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0233395,0.9697,0.9697,65.0
-SRR9211238,6319,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,0.9881,0.9881,83.0
-SRR9211238,6512,F,ITS2,Russula cremicolor,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,Russula_cremicolor,species,0.7,0.7541,MN648955,0.97143,0.97143,69.0
-SRR9211238,6534,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0167261,1.0,1.0,78.0
-SRR9211238,7172,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,0.9780200000000001,0.9780200000000001,90.0
-SRR9211238,7765,F,ITS2,Russula cremicolor,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,Russula_cremicolor,species,0.7,0.7541,MN648955,0.9870099999999999,0.9870099999999999,76.0
-SRR9211238,7822,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,0.9888899999999999,0.9888899999999999,89.0
-SRR9211238,7834,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,1.0,1.0,86.0
-SRR9211238,8103,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0167261,0.98551,0.98551,68.0
-SRR9211238,8382,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,0.95652,0.95652,91.0
-SRR9211238,8613,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,0.9782599999999999,0.9782599999999999,91.0
-SRR9211238,9333,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0167261,0.98734,0.98734,78.0
-SRR9211238,963,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,0.9888899999999999,0.9888899999999999,89.0
-SRR9211238,9639,F,ITS2,Russulaceae sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russulaceae_gen_Incertae_sedis,Russulaceae_sp,species,0.956,0.6239,UDB0362866,0.9782599999999999,0.9782599999999999,91.0
-SRR9211238,k129_1,F,ITS2,Russula sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,Russula_sp,species,0.7,0.7541,UDB06006060,0.9814799999999999,0.9814799999999999,53.0
-SRR9211239,1359,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03008554,1.0,1.0,58.0
-SRR9211239,18,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01658513,0.9647100000000001,0.9647100000000001,84.0
-SRR9211239,2432,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01658577,0.9534900000000001,0.9534900000000001,84.0
-SRR9211239,3248,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.9577500000000001,0.9577500000000001,70.0
-SRR9211239,3543,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01658513,0.95294,0.95294,84.0
-SRR9211239,3986,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01658513,0.9647100000000001,0.9647100000000001,84.0
-SRR9211239,4299,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.95833,0.95833,71.0
-SRR9211239,4499,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01658513,0.95294,0.95294,84.0
-SRR9211239,5172,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.9444400000000001,0.9444400000000001,71.0
-SRR9211239,6656,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01658513,0.9647100000000001,0.9647100000000001,84.0
-SRR9211239,8370,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211241,11317,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98592,0.98592,70.0
-SRR9211241,12999,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,0.9881,0.9881,83.0
-SRR9211241,15437,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03022479,1.0,1.0,53.0
-SRR9211241,16050,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211241,163,F,ITS2,Leccinum melaneum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,Leccinum_melaneum,species,0.983,0.4708,UDB019644,1.0,1.0,93.0
-SRR9211241,170,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211241,17158,F,ITS2,Leccinum melaneum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,Leccinum_melaneum,species,0.983,0.4708,UDB019644,1.0,1.0,93.0
-SRR9211241,17418,F,ITS2,Sordariales sp,Fungi,Ascomycota,Sordariomycetes,Sordariales,Sordariales_fam_Incertae_sedis,Sordariales_gen_Incertae_sedis,Sordariales_sp,species,0.844,0.8632,UDB07327864,0.97143,0.97143,104.0
-SRR9211241,18440,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02977561,0.9905700000000001,0.9905700000000001,105.0
-SRR9211241,195,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211241,20659,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02901765,0.9814799999999999,0.9814799999999999,53.0
-SRR9211241,2102,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,0.9905700000000001,0.9905700000000001,105.0
-SRR9211241,21162,F,ITS2,Leccinum melaneum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,Leccinum_melaneum,species,0.983,0.4708,UDB019644,1.0,1.0,93.0
-SRR9211241,2245,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02977561,1.0,1.0,105.0
-SRR9211241,2751,F,ITS2,Umbelopsis sp,Fungi,Mucoromycota,Umbelopsidomycetes,Umbelopsidales,Umbelopsidaceae,Umbelopsis,Umbelopsis_sp,species,0.7,0.795,UDB07144133,0.9905700000000001,0.9905700000000001,104.0
-SRR9211241,3547,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98592,0.98592,70.0
-SRR9211241,3667,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03022479,1.0,1.0,53.0
-SRR9211241,3938,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211241,3940,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,0.9905700000000001,0.9905700000000001,105.0
-SRR9211241,3990,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211241,411,F,ITS2,Leccinum melaneum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,Leccinum_melaneum,species,0.983,0.4708,UDB019644,0.98936,0.98936,93.0
-SRR9211241,4219,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,102.0
-SRR9211241,4388,F,ITS2,Phialophora ellipsoidea,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Phialophora,Phialophora_ellipsoidea,species,0.891,0.8497,AF050282,1.0,1.0,60.0
-SRR9211241,4416,F,ITS2,Leccinum melaneum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,Leccinum_melaneum,species,0.983,0.4708,UDB019644,1.0,1.0,171.0
-SRR9211241,4432,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211241,4605,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211241,4701,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211241,4757,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211241,4758,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211241,4789,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211241,4869,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,101.0
-SRR9211241,4943,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211241,4994,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211241,5068,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211241,521,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211241,5253,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211241,5288,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,101.0
-SRR9211241,5289,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,0.9902,0.9902,101.0
-SRR9211241,5350,F,ITS2,Hydnodontaceae sp,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,Hydnodontaceae,Hydnodontaceae_gen_Incertae_sedis,Hydnodontaceae_sp,species,0.943,0.7741,UDB03485734,0.9871800000000001,0.9871800000000001,77.0
-SRR9211241,5414,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02895754,1.0,1.0,86.0
-SRR9211241,5504,F,ITS2,Russula sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,Russula_sp,species,0.7,0.7541,UDB05915635,0.9817400000000001,0.9817400000000001,218.0
-SRR9211241,5535,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211241,6789,F,ITS2,Leccinum melaneum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,Leccinum_melaneum,species,0.983,0.4708,UDB019644,1.0,1.0,93.0
-SRR9211241,6807,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02968247,1.0,1.0,53.0
-SRR9211241,6919,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02968247,0.9444400000000001,0.9444400000000001,53.0
-SRR9211241,7327,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02901776,0.98333,0.98333,59.0
-SRR9211241,868,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.92,0.4957,AF444350,1.0,1.0,83.0
-SRR9211241,9754,F,ITS2,Leccinum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,unidentified,genus,0.952,0.3067,UDB019644,0.97872,0.97872,93.0
-SRR9211241,k141_24,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211242,10103,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.9577500000000001,0.9577500000000001,70.0
-SRR9211242,10410,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98592,0.98592,70.0
-SRR9211242,10560,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,10705,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,11687,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.9718300000000001,0.9718300000000001,70.0
-SRR9211242,12317,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98592,0.98592,70.0
-SRR9211242,12909,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98551,0.98551,68.0
-SRR9211242,13062,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,69.0
-SRR9211242,13186,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98592,0.98592,70.0
-SRR9211242,13220,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,13434,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,13522,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,13652,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB02977530,0.96429,0.96429,55.0
-SRR9211242,13822,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,KX664700,0.9881,0.9881,83.0
-SRR9211242,13989,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98592,0.98592,70.0
-SRR9211242,14026,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,69.0
-SRR9211242,1431,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,14458,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98592,0.98592,70.0
-SRR9211242,15262,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01650944,0.94667,0.94667,74.0
-SRR9211242,15466,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,16265,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,16408,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,16450,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,68.0
-SRR9211242,16595,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98592,0.98592,70.0
-SRR9211242,1668,F,ITS2,Teratosphaeria sp,Fungi,Ascomycota,Dothideomycetes,Mycosphaerellales,Teratosphaeriaceae,Teratosphaeria,Teratosphaeria_sp,species,0.978,0.6505,UDB05437130,0.9845,0.9845,128.0
-SRR9211242,16685,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.9718300000000001,0.9718300000000001,70.0
-SRR9211242,16693,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,16753,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98571,0.98571,69.0
-SRR9211242,16895,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98592,0.98592,69.0
-SRR9211242,17059,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,17251,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.9718300000000001,0.9718300000000001,70.0
-SRR9211242,17447,F,ITS2,Russula sp,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,Russula_sp,species,0.7,0.7541,UDB06045483,1.0,1.0,102.0
-SRR9211242,1753,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,1774,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,18012,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,18222,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,18564,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,18901,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,18976,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,19012,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,68.0
-SRR9211242,19476,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,19723,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98592,0.98592,70.0
-SRR9211242,19724,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98592,0.98592,70.0
-SRR9211242,19752,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98592,0.98592,70.0
-SRR9211242,20224,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,69.0
-SRR9211242,20473,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,KX664700,0.9881,0.9881,83.0
-SRR9211242,20542,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,20653,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,20989,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,21297,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.95714,0.95714,69.0
-SRR9211242,21481,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98592,0.98592,70.0
-SRR9211242,21570,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,21913,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,27,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,2741,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,2972,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,2994,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,2996,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01658513,0.9764700000000001,0.9764700000000001,84.0
-SRR9211242,3109,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98592,0.98592,70.0
-SRR9211242,3396,F,ITS2,Chytridiales sp,Fungi,Chytridiomycota,Chytridiomycetes,Chytridiales,Chytridiales_fam_Incertae_sedis,Chytridiales_gen_Incertae_sedis,Chytridiales_sp,species,0.742,0.3282,UDB02246769,0.93458,0.93458,105.0
-SRR9211242,3572,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01650161,0.96341,0.96341,81.0
-SRR9211242,3960,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03012281,1.0,1.0,105.0
-SRR9211242,4047,F,ITS2,Tomentella sp,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Tomentella,Tomentella_sp,species,0.7,0.982,UDB05783663,1.0,1.0,76.0
-SRR9211242,4173,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB01650161,0.9756100000000001,0.9756100000000001,81.0
-SRR9211242,4300,F,ITS2,Lachnum pygmaeum,Fungi,Ascomycota,Leotiomycetes,Helotiales,Hyaloscyphaceae,Lachnum,Lachnum_pygmaeum,species,0.959,0.6161,AJ430219,0.98936,0.98936,93.0
-SRR9211242,4356,F,ITS2,Piloderma sp,Fungi,Basidiomycota,Agaricomycetes,Atheliales,Pilodermataceae,Piloderma,Piloderma_sp,species,0.947,0.7286,UDB001732,0.99099,0.99099,110.0
-SRR9211242,4779,F,ITS2,Cladophialophora sp,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,Cladophialophora_sp,species,0.7,0.9573,UDB03008554,1.0,1.0,58.0
-SRR9211242,4884,F,ITS2,Trechisporales sp,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,Trechisporales_fam_Incertae_sedis,Trechisporales_gen_Incertae_sedis,Trechisporales_sp,species,0.7,0.9,UDB06369808,0.98667,0.98667,74.0
-SRR9211242,4974,F,ITS2,Piloderma sp,Fungi,Basidiomycota,Agaricomycetes,Atheliales,Pilodermataceae,Piloderma,Piloderma_sp,species,0.947,0.7286,UDB001732,1.0,1.0,110.0
-SRR9211242,5013,F,ITS2,Russula pubescens,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,Russula_pubescens,species,0.7,0.7541,UDB011111,1.0,1.0,188.0
-SRR9211242,5091,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98592,0.98592,70.0
-SRR9211242,515,F,ITS2,Agaricomycetes sp,Fungi,Basidiomycota,Agaricomycetes,Agaricomycetes_ord_Incertae_sedis,Agaricomycetes_fam_Incertae_sedis,Agaricomycetes_gen_Incertae_sedis,Agaricomycetes_sp,species,0.701,0.7281,UDB06360299,0.9870099999999999,0.9870099999999999,76.0
-SRR9211242,518,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,5431,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98592,0.98592,70.0
-SRR9211242,5448,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98592,0.98592,70.0
-SRR9211242,6301,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.9718300000000001,0.9718300000000001,70.0
-SRR9211242,6456,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,6648,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,66.0
-SRR9211242,6729,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.9577500000000001,0.9577500000000001,70.0
-SRR9211242,7363,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,7872,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98592,0.98592,70.0
-SRR9211242,8112,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,KX664700,0.97619,0.97619,83.0
-SRR9211242,8682,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,8773,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,9022,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98592,0.98592,70.0
-SRR9211242,9313,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,9507,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,0.98592,0.98592,70.0
-SRR9211242,9609,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,9697,F,ITS2,Cenococcum sp,Fungi,Ascomycota,Dothideomycetes,Mytilinidales,Gloniaceae,Cenococcum,Cenococcum_sp,species,0.904,0.7378,UDB0728486,1.0,1.0,70.0
-SRR9211242,k141_7,F,ITS2,Russula pubescens,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,Russula_pubescens,species,0.7,0.7541,UDB011111,0.95785,0.95785,260.0
+SRR9211220,2813,F,ITS2,Tomentella,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Tomentella,unidentified,genus,0.965,0.4825,UDB06158654,1.0,1.0,104.0
+SRR9211220,4016,F,ITS2,Trechisporales,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB06379080,1.0,1.0,77.0
+SRR9211220,5634,F,ITS2,Trimmatostroma,Fungi,Ascomycota,Leotiomycetes,Helotiales,Mollisiaceae,Trimmatostroma,unidentified,genus,0.904,0.7238,UDB06652927,0.98095,0.98095,104.0
+SRR9211220,6519,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02970222,0.99083,0.99083,108.0
+SRR9211220,9210,F,ITS2,Brevicellicium,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,Hydnodontaceae,Brevicellicium,unidentified,genus,0.93,0.8494,UDB0593615,0.99048,0.99048,104.0
+SRR9211220,9343,F,ITS2,Entorrhiza,Fungi,Entorrhizomycota,Entorrhizomycetes,Entorrhizales,Entorrhizaceae,Entorrhiza,unidentified,genus,0.965,0.4825,UDB05339742,0.97368,0.97368,75.0
+SRR9211220,9472,F,ITS2,Brevicellicium,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,Hydnodontaceae,Brevicellicium,unidentified,genus,0.93,0.8494,UDB0593615,1.0,1.0,104.0
+SRR9211221,1774,F,ITS2,Filobasidium,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Filobasidiaceae,Filobasidium,unidentified,genus,0.965,0.4825,UDB02043870,1.0,1.0,82.0
+SRR9211222,10042,F,ITS2,Entoloma,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,unidentified,genus,0.934,0.7753,UDB008233,0.9411799999999999,0.9411799999999999,67.0
+SRR9211222,10185,F,ITS2,Cenococcum geophilum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,Cenococcum_geophilum,species,0.987,0.8262,MT908329,1.0,1.0,80.0
+SRR9211222,11032,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01661816,0.9868399999999999,0.9868399999999999,75.0
+SRR9211222,11414,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.987,0.8262,MW710047,0.9881,0.9881,83.0
+SRR9211222,11576,F,ITS2,Solicoccozyma,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,unidentified,genus,0.965,0.4825,JQ666599,0.97619,0.97619,81.0
+SRR9211222,12511,F,ITS2,Solicoccozyma,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,unidentified,genus,0.965,0.4825,GU998021,1.0,1.0,83.0
+SRR9211222,14341,F,ITS2,Entoloma,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,unidentified,genus,0.934,0.7753,UDB008233,0.9411799999999999,0.9411799999999999,67.0
+SRR9211222,14391,F,ITS2,Leotia,Fungi,Ascomycota,Leotiomycetes,Leotiales,Leotiaceae,Leotia,unidentified,genus,0.965,0.4825,UDB02809971,1.0,1.0,104.0
+SRR9211222,1659,F,ITS2,Piloderma,Fungi,Basidiomycota,Agaricomycetes,Atheliales,Atheliaceae,Piloderma,unidentified,genus,0.968,0.5995,KM576315,1.0,1.0,196.0
+SRR9211222,1839,F,ITS2,Russula risigallina,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,Russula_risigallina,species,0.987,0.8262,LC192788,0.99528,0.99528,211.0
+SRR9211222,1889,F,ITS2,Agaricales,Fungi,Basidiomycota,Agaricomycetes,Agaricales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB0503254,0.9468099999999999,0.9468099999999999,93.0
+SRR9211222,1950,F,ITS2,Entoloma,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,unidentified,genus,0.934,0.7753,UDB05332656,0.9538500000000001,0.9538500000000001,63.0
+SRR9211222,21,F,ITS2,Entoloma,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,unidentified,genus,0.934,0.7753,UDB008233,0.95588,0.95588,67.0
+SRR9211222,2150,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01661816,0.9764700000000001,0.9764700000000001,84.0
+SRR9211222,316,F,ITS2,Cenococcum geophilum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,Cenococcum_geophilum,species,0.987,0.8262,MT908329,1.0,1.0,84.0
+SRR9211222,3349,F,ITS2,Entoloma,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,unidentified,genus,0.934,0.7753,UDB008233,0.9411799999999999,0.9411799999999999,67.0
+SRR9211222,3787,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017834,0.9881,0.9881,83.0
+SRR9211222,4012,F,ITS2,Trechisporales,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB06389555,1.0,1.0,76.0
+SRR9211222,4055,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB03033784,1.0,1.0,108.0
+SRR9211222,4480,F,ITS2,Entoloma,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,unidentified,genus,0.934,0.7753,UDB008233,0.95455,0.95455,65.0
+SRR9211222,4712,F,ITS2,Entoloma,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,unidentified,genus,0.934,0.7753,UDB008233,0.95588,0.95588,67.0
+SRR9211222,473,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01661816,1.0,1.0,84.0
+SRR9211222,558,F,ITS2,Piloderma,Fungi,Basidiomycota,Agaricomycetes,Atheliales,Atheliaceae,Piloderma,unidentified,genus,0.968,0.5995,UDB0608273,1.0,1.0,195.0
+SRR9211222,6018,F,ITS2,Tomentella,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Tomentella,unidentified,genus,0.965,0.4825,UDB0339347,0.98095,0.98095,104.0
+SRR9211222,7820,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,UDB008233,0.92647,0.92647,67.0
+SRR9211222,8003,F,ITS2,Entoloma,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,unidentified,genus,0.934,0.7753,UDB008233,0.95588,0.95588,67.0
+SRR9211222,8310,F,ITS2,Entoloma,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,unidentified,genus,0.934,0.7753,UDB008233,0.9411799999999999,0.9411799999999999,67.0
+SRR9211222,8568,F,ITS2,Cenococcum geophilum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,Cenococcum_geophilum,species,0.987,0.8262,MT908329,0.98824,0.98824,84.0
+SRR9211222,9379,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.987,0.8262,MW710047,1.0,1.0,83.0
+SRR9211222,9463,F,ITS2,Piskurozymaceae,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,unidentified,unidentified,family,0.951,0.4585,MW710047,0.95238,0.95238,83.0
+SRR9211222,k141_13,F,ITS2,Entoloma,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,unidentified,genus,0.934,0.7753,UDB05332656,0.9538500000000001,0.9538500000000001,63.0
+SRR9211223,1008,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,OM951424,0.9245300000000001,0.9245300000000001,52.0
+SRR9211223,1013,F,ITS2,Solicoccozyma,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,unidentified,genus,0.965,0.4825,JQ666599,1.0,1.0,83.0
+SRR9211223,10165,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211223,10578,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211223,10607,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,80.0
+SRR9211223,11178,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.987,0.8262,MW710047,1.0,1.0,83.0
+SRR9211223,11261,F,ITS2,Laccaria,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Hydnangiaceae,Laccaria,unidentified,genus,0.965,0.4825,UDB02441650,1.0,1.0,83.0
+SRR9211223,1374,F,ITS2,Trechisporales,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB06367277,1.0,1.0,76.0
+SRR9211223,2010,F,ITS2,Pseudotomentella,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Pseudotomentella,unidentified,genus,0.965,0.4825,UDB05630376,1.0,1.0,191.0
+SRR9211223,2059,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211223,2104,F,ITS2,Trechisporales,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB06360342,1.0,1.0,81.0
+SRR9211223,2110,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB03045110,0.9905700000000001,0.9905700000000001,105.0
+SRR9211223,2196,F,ITS2,Pseudotomentella,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Pseudotomentella,unidentified,genus,0.965,0.4825,KP230483,1.0,1.0,164.0
+SRR9211223,220,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211223,2244,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,GU083025,1.0,1.0,105.0
+SRR9211223,2401,F,ITS2,Lachnum,Fungi,Ascomycota,Leotiomycetes,Helotiales,Lachnaceae,Lachnum,unidentified,genus,0.972,0.6606,UDB02456358,1.0,1.0,93.0
+SRR9211223,2594,F,ITS2,Luellia,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,Hydnodontaceae,Luellia,unidentified,genus,0.93,0.8494,UDB03141306,0.9870099999999999,0.9870099999999999,76.0
+SRR9211223,2885,F,ITS2,Trechisporales,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB06389555,1.0,1.0,76.0
+SRR9211223,6698,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02845180,0.99083,0.99083,108.0
+SRR9211223,7236,F,ITS2,Solicoccozyma,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,unidentified,genus,0.965,0.4825,JQ666599,1.0,1.0,83.0
+SRR9211223,8006,F,ITS2,Solicoccozyma,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,unidentified,genus,0.965,0.4825,GU998021,1.0,1.0,83.0
+SRR9211223,9438,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211223,9537,F,ITS2,Trechisporales,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB06362294,1.0,1.0,75.0
+SRR9211223,9898,F,ITS2,Cenococcum geophilum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,Cenococcum_geophilum,species,0.987,0.8262,MT908329,0.98824,0.98824,84.0
+SRR9211226,1655,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,KT160598,0.98387,0.98387,61.0
+SRR9211228,10193,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02615634,1.0,1.0,98.0
+SRR9211228,10579,F,ITS2,Cortinarius,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Cortinariaceae,Cortinarius,unidentified,genus,0.965,0.4825,UDB0797462,1.0,1.0,98.0
+SRR9211228,10946,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02557172,1.0,1.0,90.0
+SRR9211228,11032,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02615634,0.9899,0.9899,98.0
+SRR9211228,11038,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02615634,1.0,1.0,98.0
+SRR9211228,11193,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02575921,0.98913,0.98913,91.0
+SRR9211228,11595,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,FM200708,0.9661,0.9661,57.0
+SRR9211228,12245,F,ITS2,Russulaceae,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,unidentified,unidentified,family,0.933,0.7457,UDB02615634,0.95789,0.95789,94.0
+SRR9211228,13370,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02615634,0.9899,0.9899,98.0
+SRR9211228,1412,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,FM200708,0.9830500000000001,0.9830500000000001,57.0
+SRR9211228,14276,F,ITS2,Filobasidium,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Filobasidiaceae,Filobasidium,unidentified,genus,0.965,0.4825,UDB02043870,1.0,1.0,82.0
+SRR9211228,1692,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.987,0.8262,MW710047,1.0,1.0,83.0
+SRR9211228,17,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02615634,1.0,1.0,98.0
+SRR9211228,2032,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02612927,0.99438,0.99438,177.0
+SRR9211228,2423,F,ITS2,Hydnodontaceae,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,Hydnodontaceae,unidentified,unidentified,family,0.951,0.4585,UDB03485350,1.0,1.0,81.0
+SRR9211228,2644,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02612927,1.0,1.0,177.0
+SRR9211228,2727,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02612927,0.99438,0.99438,177.0
+SRR9211228,3298,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02615634,0.9899,0.9899,98.0
+SRR9211228,3317,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02615634,0.9899,0.9899,98.0
+SRR9211228,332,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02612927,1.0,1.0,177.0
+SRR9211228,4477,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02563989,0.99,0.99,98.0
+SRR9211228,4490,F,ITS2,Cortinarius,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Cortinariaceae,Cortinarius,unidentified,genus,0.965,0.4825,UDB0784491,1.0,1.0,87.0
+SRR9211228,4947,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02575921,1.0,1.0,91.0
+SRR9211228,5738,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02583204,1.0,1.0,85.0
+SRR9211228,6095,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02615634,1.0,1.0,98.0
+SRR9211228,6856,F,ITS2,Lophiotrema,Fungi,Ascomycota,Dothideomycetes,Pleosporales,Lophiotremataceae,Lophiotrema,unidentified,genus,0.965,0.4825,UDB0330316,0.9870099999999999,0.9870099999999999,76.0
+SRR9211228,7089,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02557172,1.0,1.0,90.0
+SRR9211228,7373,F,ITS2,Cladosporium,Fungi,Ascomycota,Dothideomycetes,Cladosporiales,Cladosporiaceae,Cladosporium,unidentified,genus,0.965,0.4825,UDB03115846,0.99048,0.99048,104.0
+SRR9211228,8061,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02575921,1.0,1.0,91.0
+SRR9211228,8065,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02615634,0.9899,0.9899,98.0
+SRR9211228,8219,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02557177,0.97674,0.97674,85.0
+SRR9211228,8855,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,FM200708,0.9830500000000001,0.9830500000000001,57.0
+SRR9211228,893,F,ITS2,Umbelopsis,Fungi,Mucoromycota,Umbelopsidomycetes,Umbelopsidales,Umbelopsidaceae,Umbelopsis,unidentified,genus,0.965,0.4825,UDB06968493,1.0,1.0,104.0
+SRR9211228,8935,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,FM200708,0.9661,0.9661,57.0
+SRR9211228,8946,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,FM200708,0.9830500000000001,0.9830500000000001,57.0
+SRR9211228,9903,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02615634,0.9899,0.9899,98.0
+SRR9211228,k109_2,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02615634,1.0,1.0,98.0
+SRR9211229,1177,F,ITS2,Taphrina,Fungi,Ascomycota,Taphrinomycetes,Taphrinales,Taphrinaceae,Taphrina,unidentified,genus,0.965,0.4825,OP959653,1.0,1.0,203.0
+SRR9211229,2077,F,ITS2,Filobasidium,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Filobasidiaceae,Filobasidium,unidentified,genus,0.965,0.4825,UDB02043870,0.98795,0.98795,82.0
+SRR9211229,2391,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,UDB0747379,1.0,1.0,79.0
+SRR9211229,971,F,ITS2,Taphrina,Fungi,Ascomycota,Taphrinomycetes,Taphrinales,Taphrinaceae,Taphrina,unidentified,genus,0.965,0.4825,MW771537,1.0,1.0,211.0
+SRR9211229,992,F,ITS2,Ceramothyrium,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Chaetothyriaceae,Ceramothyrium,unidentified,genus,0.964,0.6485,UDB0438091,0.98276,0.98276,115.0
+SRR9211230,10,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02615634,1.0,1.0,98.0
+SRR9211230,10543,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02615634,0.9899,0.9899,98.0
+SRR9211230,10564,F,ITS2,Cortinarius,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Cortinariaceae,Cortinarius,unidentified,genus,0.965,0.4825,UDB0784992,1.0,1.0,77.0
+SRR9211230,10565,F,ITS2,Cortinarius,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Cortinariaceae,Cortinarius,unidentified,genus,0.965,0.4825,UDB0797038,1.0,1.0,98.0
+SRR9211230,11005,F,ITS2,Cortinarius,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Cortinariaceae,Cortinarius,unidentified,genus,0.965,0.4825,UDB0784992,1.0,1.0,74.0
+SRR9211230,1352,F,ITS2,Hyaloscyphaceae,Fungi,Ascomycota,Leotiomycetes,Helotiales,Hyaloscyphaceae,unidentified,unidentified,family,0.951,0.4585,UDB0679206,1.0,1.0,104.0
+SRR9211230,1910,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02510002,1.0,1.0,177.0
+SRR9211230,1940,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211230,2205,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB03045110,1.0,1.0,105.0
+SRR9211230,2220,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB03045110,1.0,1.0,105.0
+SRR9211230,2284,F,ITS2,Saccharomycetales,Fungi,Ascomycota,Saccharomycetes,Saccharomycetales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB0155625,1.0,1.0,113.0
+SRR9211230,2385,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06088133,1.0,1.0,141.0
+SRR9211230,2421,F,ITS2,Hydnodontaceae,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,Hydnodontaceae,unidentified,unidentified,family,0.951,0.4585,UDB03485742,1.0,1.0,127.0
+SRR9211230,2562,F,ITS2,Entoloma,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,unidentified,genus,0.934,0.7753,UDB05329898,1.0,1.0,83.0
+SRR9211230,2565,F,ITS2,Ramicandelaberales,Fungi,Kickxellomycota,Ramicandelaberomycetes,Ramicandelaberales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB06293086,1.0,1.0,54.0
+SRR9211230,2667,F,ITS2,Entoloma,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,unidentified,genus,0.934,0.7753,UDB05329500,1.0,1.0,220.0
+SRR9211230,2908,F,ITS2,Trechisporales,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB06360342,1.0,1.0,81.0
+SRR9211230,302,F,ITS2,Solicoccozyma,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,unidentified,genus,0.965,0.4825,JQ666599,1.0,1.0,83.0
+SRR9211230,3294,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02557172,1.0,1.0,90.0
+SRR9211230,3734,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02615634,1.0,1.0,98.0
+SRR9211230,4011,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02615634,1.0,1.0,98.0
+SRR9211230,417,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02612927,1.0,1.0,177.0
+SRR9211230,435,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.987,0.8262,MW710047,1.0,1.0,83.0
+SRR9211230,4703,F,ITS2,Solicoccozyma,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,unidentified,genus,0.965,0.4825,JQ666599,1.0,1.0,83.0
+SRR9211230,4953,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02615634,0.9899,0.9899,98.0
+SRR9211230,5035,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02575921,1.0,1.0,89.0
+SRR9211230,5392,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02557202,1.0,1.0,91.0
+SRR9211230,6556,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02615634,1.0,1.0,98.0
+SRR9211230,6720,F,ITS2,Inocybe,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Inocybaceae,Inocybe,unidentified,genus,0.965,0.4825,UDB0766263,1.0,1.0,74.0
+SRR9211230,721,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02612927,1.0,1.0,177.0
+SRR9211230,7272,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,FM200708,0.96774,0.96774,60.0
+SRR9211230,7608,F,ITS2,Helotiales,Fungi,Ascomycota,Leotiomycetes,Helotiales,unidentified,unidentified,unidentified,order,0.929,0.5006,LC574723,0.9619,0.9619,104.0
+SRR9211230,8051,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02557205,0.99,0.99,98.0
+SRR9211230,9121,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02615634,1.0,1.0,98.0
+SRR9211230,937,F,ITS2,Epicoccum,Fungi,Ascomycota,Dothideomycetes,Pleosporales,Didymellaceae,Epicoccum,unidentified,genus,0.965,0.4825,UDB05359806,1.0,1.0,93.0
+SRR9211230,9773,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02615634,0.9899,0.9899,98.0
+SRR9211230,9802,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,KX441069,1.0,1.0,104.0
+SRR9211232,1099,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02615634,1.0,1.0,98.0
+SRR9211232,124,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01659805,1.0,1.0,81.0
+SRR9211232,13763,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,FM200708,0.96774,0.96774,60.0
+SRR9211232,14750,F,ITS2,Helotiales,Fungi,Ascomycota,Leotiomycetes,Helotiales,unidentified,unidentified,unidentified,order,0.929,0.5006,MH855510,0.98039,0.98039,50.0
+SRR9211232,15532,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01660176,0.9863,0.9863,72.0
+SRR9211232,16269,F,ITS2,Lophiotrema,Fungi,Ascomycota,Dothideomycetes,Pleosporales,Lophiotremataceae,Lophiotrema,unidentified,genus,0.965,0.4825,UDB0330316,1.0,1.0,76.0
+SRR9211232,17299,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,FM200708,0.96774,0.96774,60.0
+SRR9211232,176,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,FM200708,0.96774,0.96774,60.0
+SRR9211232,18276,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01659805,0.9756100000000001,0.9756100000000001,81.0
+SRR9211232,18339,F,ITS2,Umbelopsis,Fungi,Mucoromycota,Umbelopsidomycetes,Umbelopsidales,Umbelopsidaceae,Umbelopsis,unidentified,genus,0.965,0.4825,UDB06969144,1.0,1.0,103.0
+SRR9211232,18351,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01659805,0.9878,0.9878,81.0
+SRR9211232,2001,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02615634,0.9899,0.9899,97.0
+SRR9211232,3292,F,ITS2,Trechisporales,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB06360342,0.98734,0.98734,78.0
+SRR9211232,3713,F,ITS2,Clavulina,Fungi,Basidiomycota,Agaricomycetes,Cantharellales,Hydnaceae,Clavulina,unidentified,genus,0.946,0.5934,UDB03669556,0.97674,0.97674,85.0
+SRR9211232,3855,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211232,3996,F,ITS2,Trechisporales,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB06360342,0.9878,0.9878,81.0
+SRR9211232,4128,F,ITS2,Trechisporales,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB06360342,0.9878,0.9878,81.0
+SRR9211232,4144,F,ITS2,Piloderma,Fungi,Basidiomycota,Agaricomycetes,Atheliales,Atheliaceae,Piloderma,unidentified,genus,0.968,0.5995,UDB04594377,0.99485,0.99485,193.0
+SRR9211232,4156,F,ITS2,Piloderma,Fungi,Basidiomycota,Agaricomycetes,Atheliales,Atheliaceae,Piloderma,unidentified,genus,0.968,0.5995,UDB04594377,0.99485,0.99485,193.0
+SRR9211232,4222,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211232,4382,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01659805,1.0,1.0,81.0
+SRR9211232,4383,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01660176,1.0,1.0,75.0
+SRR9211232,4554,F,ITS2,Entoloma,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Entolomataceae,Entoloma,unidentified,genus,0.934,0.7753,UDB05329898,1.0,1.0,83.0
+SRR9211232,5339,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,UDB02557205,0.99,0.99,98.0
+SRR9211233,1224,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MW842791,1.0,1.0,101.0
+SRR9211233,21,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,1.0,1.0,50.0
+SRR9211233,2125,F,ITS2,Taphrina,Fungi,Ascomycota,Taphrinomycetes,Taphrinales,Taphrinaceae,Taphrina,unidentified,genus,0.965,0.4825,OP959653,1.0,1.0,203.0
+SRR9211233,2347,F,ITS2,Dothiora,Fungi,Ascomycota,Dothideomycetes,Dothideales,Dothideaceae,Dothiora,unidentified,genus,0.976,0.6693,UDB05275136,0.99029,0.99029,102.0
+SRR9211233,2633,F,ITS2,Itersonilia perplexans,Fungi,Basidiomycota,Tremellomycetes,Cystofilobasidiales,Mrakiaceae,Itersonilia,Itersonilia_perplexans,species,0.987,0.8262,KU563629,1.0,1.0,189.0
+SRR9211233,2635,F,ITS2,Itersonilia,Fungi,Basidiomycota,Tremellomycetes,Cystofilobasidiales,Mrakiaceae,Itersonilia,unidentified,genus,0.965,0.4825,UDB028033,1.0,1.0,210.0
+SRR9211233,2725,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MW842791,1.0,1.0,101.0
+SRR9211233,3356,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,1.0,1.0,50.0
+SRR9211233,3583,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,1.0,1.0,50.0
+SRR9211233,525,F,ITS2,Taphrina,Fungi,Ascomycota,Taphrinomycetes,Taphrinales,Taphrinaceae,Taphrina,unidentified,genus,0.965,0.4825,OP959653,1.0,1.0,203.0
+SRR9211233,6468,F,ITS2,Phaeosphaeriaceae,Fungi,Ascomycota,Dothideomycetes,Pleosporales,Phaeosphaeriaceae,unidentified,unidentified,family,0.983,0.4708,UDB04499269,1.0,1.0,111.0
+SRR9211233,6596,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,1.0,1.0,50.0
+SRR9211233,8330,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,0.98039,0.98039,50.0
+SRR9211233,8566,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,0.98039,0.98039,50.0
+SRR9211233,9476,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,0.98039,0.98039,50.0
+SRR9211233,97,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,0.98039,0.98039,50.0
+SRR9211233,k129_8,F,ITS2,Phaeosphaeriaceae,Fungi,Ascomycota,Dothideomycetes,Pleosporales,Phaeosphaeriaceae,unidentified,unidentified,family,0.983,0.4708,UDB04499269,1.0,1.0,111.0
+SRR9211234,1193,F,ITS2,Trechisporales,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB06367277,1.0,1.0,76.0
+SRR9211234,14309,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02970222,1.0,1.0,108.0
+SRR9211234,15168,F,ITS2,Trechisporales,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB06389555,1.0,1.0,76.0
+SRR9211234,15249,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02981367,1.0,1.0,98.0
+SRR9211234,15347,F,ITS2,Trechisporales,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB06389555,1.0,1.0,76.0
+SRR9211234,15786,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB03033784,0.99083,0.99083,108.0
+SRR9211234,16656,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB03033784,0.99083,0.99083,108.0
+SRR9211234,2045,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211234,2050,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211234,2180,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02964248,1.0,1.0,86.0
+SRR9211234,2203,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,GU083025,1.0,1.0,105.0
+SRR9211234,246,F,ITS2,Piloderma,Fungi,Basidiomycota,Agaricomycetes,Atheliales,Atheliaceae,Piloderma,unidentified,genus,0.968,0.5995,UDB04594377,1.0,1.0,193.0
+SRR9211234,2583,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,GU083025,1.0,1.0,105.0
+SRR9211234,2690,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,UDB0669546,0.48077,0.96154,25.0
+SRR9211234,2745,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02727821,0.97895,0.97895,94.0
+SRR9211234,2751,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211234,3549,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.987,0.8262,MW710047,1.0,1.0,83.0
+SRR9211234,430,F,ITS2,Trechisporales,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB06389555,1.0,1.0,76.0
+SRR9211234,4573,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB03033784,1.0,1.0,108.0
+SRR9211234,4997,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211234,941,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.987,0.8262,MW710047,1.0,1.0,83.0
+SRR9211235,1620,F,ITS2,Itersonilia,Fungi,Basidiomycota,Tremellomycetes,Cystofilobasidiales,Mrakiaceae,Itersonilia,unidentified,genus,0.965,0.4825,UDB028033,1.0,1.0,210.0
+SRR9211235,1668,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MW842791,0.9902,0.9902,101.0
+SRR9211235,1771,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MW842791,1.0,1.0,101.0
+SRR9211235,1793,F,ITS2,Phacidiaceae,Fungi,Ascomycota,Leotiomycetes,Phacidiales,Phacidiaceae,unidentified,unidentified,family,0.951,0.4585,DQ008235,1.0,1.0,59.0
+SRR9211235,2164,F,ITS2,Chaetothyriales,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,unidentified,unidentified,unidentified,order,0.906,0.7103,MF976563,1.0,1.0,52.0
+SRR9211235,3238,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,0.98039,0.98039,50.0
+SRR9211235,5114,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,1.0,1.0,50.0
+SRR9211235,5990,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,0.9607800000000001,0.9607800000000001,50.0
+SRR9211236,1166,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,0.98039,0.98039,50.0
+SRR9211236,1457,F,ITS2,Dothiora,Fungi,Ascomycota,Dothideomycetes,Dothideales,Dothideaceae,Dothiora,unidentified,genus,0.976,0.6693,UDB05275136,0.99029,0.99029,102.0
+SRR9211236,1490,F,ITS2,Itersonilia,Fungi,Basidiomycota,Tremellomycetes,Cystofilobasidiales,Mrakiaceae,Itersonilia,unidentified,genus,0.965,0.4825,UDB028033,1.0,1.0,210.0
+SRR9211236,1624,F,ITS2,Taphrina,Fungi,Ascomycota,Taphrinomycetes,Taphrinales,Taphrinaceae,Taphrina,unidentified,genus,0.965,0.4825,OP959653,0.9902,0.9902,203.0
+SRR9211236,1649,F,ITS2,Dothiora,Fungi,Ascomycota,Dothideomycetes,Dothideales,Dothideaceae,Dothiora,unidentified,genus,0.976,0.6693,UDB05275136,0.99029,0.99029,102.0
+SRR9211236,1698,F,ITS2,Dothidea,Fungi,Ascomycota,Dothideomycetes,Dothideales,Dothideaceae,Dothidea,unidentified,genus,0.976,0.6693,UDB05258816,0.98,0.98,99.0
+SRR9211236,18,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,0.98039,0.98039,50.0
+SRR9211236,1925,F,ITS2,Dothiora,Fungi,Ascomycota,Dothideomycetes,Dothideales,Dothideaceae,Dothiora,unidentified,genus,0.976,0.6693,UDB05275136,0.9805800000000001,0.9805800000000001,102.0
+SRR9211236,22,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,1.0,1.0,50.0
+SRR9211236,2318,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,1.0,1.0,50.0
+SRR9211236,2764,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,1.0,1.0,50.0
+SRR9211236,3873,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,1.0,1.0,50.0
+SRR9211236,3943,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,0.98039,0.98039,50.0
+SRR9211236,4053,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,1.0,1.0,50.0
+SRR9211236,5947,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,0.98039,0.98039,50.0
+SRR9211236,5991,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,0.9607800000000001,0.9607800000000001,50.0
+SRR9211236,6519,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,1.0,1.0,50.0
+SRR9211236,6565,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,0.98039,0.98039,50.0
+SRR9211236,7059,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,0.98039,0.98039,50.0
+SRR9211236,7097,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,1.0,1.0,50.0
+SRR9211236,733,F,ITS2,Taphrina,Fungi,Ascomycota,Taphrinomycetes,Taphrinales,Taphrinaceae,Taphrina,unidentified,genus,0.965,0.4825,UDB05410209,0.98592,0.98592,70.0
+SRR9211236,7334,F,ITS2,Herpotrichiellaceae,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,unidentified,unidentified,family,0.951,0.4585,UDB03389635,0.98039,0.98039,50.0
+SRR9211236,735,F,ITS2,Dothidea,Fungi,Ascomycota,Dothideomycetes,Dothideales,Dothideaceae,Dothidea,unidentified,genus,0.976,0.6693,UDB05258816,1.0,1.0,101.0
+SRR9211237,1027,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02970222,1.0,1.0,108.0
+SRR9211237,10980,F,ITS2,Trechisporales,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB06363034,1.0,1.0,75.0
+SRR9211237,114,F,ITS2,Cenococcum geophilum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,Cenococcum_geophilum,species,0.987,0.8262,MT908329,1.0,1.0,84.0
+SRR9211237,11696,F,ITS2,Leccinum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,unidentified,genus,0.965,0.4825,UDB02751680,0.98936,0.98936,93.0
+SRR9211237,12561,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.987,0.8262,MW710047,1.0,1.0,83.0
+SRR9211237,12847,F,ITS2,Leccinum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,unidentified,genus,0.965,0.4825,UDB02752903,1.0,1.0,93.0
+SRR9211237,130,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211237,13649,F,ITS2,Leccinum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,unidentified,genus,0.965,0.4825,UDB02752903,0.98936,0.98936,93.0
+SRR9211237,147,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.987,0.8262,MW710047,1.0,1.0,83.0
+SRR9211237,151,F,ITS2,Leccinum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,unidentified,genus,0.965,0.4825,UDB02752903,1.0,1.0,93.0
+SRR9211237,16113,F,ITS2,Lactarius ciliatus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_ciliatus,species,0.988,0.8353,MH984935,0.98958,0.98958,95.0
+SRR9211237,16223,F,ITS2,Cenococcum geophilum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,Cenococcum_geophilum,species,0.987,0.8262,MT908329,1.0,1.0,84.0
+SRR9211237,17595,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211237,17969,F,ITS2,Leccinum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,unidentified,genus,0.965,0.4825,UDB02752903,1.0,1.0,93.0
+SRR9211237,1799,F,ITS2,Leccinum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,unidentified,genus,0.965,0.4825,UDB02751680,0.98936,0.98936,93.0
+SRR9211237,251,F,ITS2,Cenococcum geophilum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,Cenococcum_geophilum,species,0.987,0.8262,MT908329,0.98824,0.98824,84.0
+SRR9211237,2744,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,GU083025,1.0,1.0,105.0
+SRR9211237,296,F,ITS2,Lactarius ciliatus,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,Lactarius_ciliatus,species,0.988,0.8353,MH984935,1.0,1.0,95.0
+SRR9211237,3112,F,ITS2,Mucor,Fungi,Mucoromycota,Mucoromycetes,Mucorales,Mucoraceae,Mucor,unidentified,genus,0.965,0.4825,UDB04963116,1.0,1.0,74.0
+SRR9211237,3153,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01661816,1.0,1.0,84.0
+SRR9211237,3172,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01661816,1.0,1.0,84.0
+SRR9211237,3186,F,ITS2,Trechisporales,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB06360342,1.0,1.0,81.0
+SRR9211237,3350,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01661816,1.0,1.0,84.0
+SRR9211237,3472,F,ITS2,Leccinum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,unidentified,genus,0.965,0.4825,UDB02752906,0.99419,0.99419,171.0
+SRR9211237,3556,F,ITS2,Lactarius,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Lactarius,unidentified,genus,0.961,0.6043,LC175105,1.0,1.0,143.0
+SRR9211237,3582,F,ITS2,Leccinum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,unidentified,genus,0.965,0.4825,UDB02752906,1.0,1.0,171.0
+SRR9211237,3601,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01661816,1.0,1.0,84.0
+SRR9211237,3907,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01661816,1.0,1.0,84.0
+SRR9211237,3926,F,ITS2,Leccinum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,unidentified,genus,0.965,0.4825,UDB02752903,0.98936,0.98936,93.0
+SRR9211237,4182,F,ITS2,Leccinum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,unidentified,genus,0.965,0.4825,UDB02752903,0.9888899999999999,0.9888899999999999,89.0
+SRR9211237,4993,F,ITS2,Cenococcum geophilum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,Cenococcum_geophilum,species,0.987,0.8262,MT908329,1.0,1.0,84.0
+SRR9211237,5016,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02970222,0.98165,0.98165,108.0
+SRR9211237,5382,F,ITS2,Helotiaceae,Fungi,Ascomycota,Leotiomycetes,Helotiales,Helotiaceae,unidentified,unidentified,family,0.951,0.4585,UDB0392037,0.97059,0.97059,101.0
+SRR9211237,591,F,ITS2,Solicoccozyma,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,unidentified,genus,0.965,0.4825,GU998021,1.0,1.0,83.0
+SRR9211237,593,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB03054410,1.0,1.0,105.0
+SRR9211237,5953,F,ITS2,Cenococcum geophilum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,Cenococcum_geophilum,species,0.987,0.8262,MT908329,0.98824,0.98824,84.0
+SRR9211237,6041,F,ITS2,Penicillium,Fungi,Ascomycota,Eurotiomycetes,Eurotiales,Aspergillaceae,Penicillium,unidentified,genus,0.986,0.6035,UDB0763415,1.0,1.0,77.0
+SRR9211237,6406,F,ITS2,Leccinum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,unidentified,genus,0.965,0.4825,UDB02751680,0.98936,0.98936,93.0
+SRR9211237,6417,F,ITS2,Leccinum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,unidentified,genus,0.965,0.4825,UDB02751680,0.98936,0.98936,93.0
+SRR9211237,699,F,ITS2,Helotiaceae,Fungi,Ascomycota,Leotiomycetes,Helotiales,Helotiaceae,unidentified,unidentified,family,0.951,0.4585,UDB0392037,0.98039,0.98039,101.0
+SRR9211237,7292,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01666809,0.98734,0.98734,78.0
+SRR9211237,7547,F,ITS2,Solicoccozyma,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,unidentified,genus,0.965,0.4825,GU998021,1.0,1.0,83.0
+SRR9211237,8455,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017834,0.9881,0.9881,83.0
+SRR9211237,8716,F,ITS2,Trechisporales,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB06363034,1.0,1.0,75.0
+SRR9211237,9304,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.97619,0.97619,83.0
+SRR9211238,1032,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06113633,1.0,1.0,82.0
+SRR9211238,11062,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06268770,1.0,1.0,89.0
+SRR9211238,11093,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06268771,1.0,1.0,91.0
+SRR9211238,11165,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06268770,0.9888899999999999,0.9888899999999999,89.0
+SRR9211238,11229,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06268770,1.0,1.0,89.0
+SRR9211238,11350,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06268771,0.98913,0.98913,91.0
+SRR9211238,11452,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06268770,0.9888899999999999,0.9888899999999999,89.0
+SRR9211238,11853,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06268770,0.9888899999999999,0.9888899999999999,89.0
+SRR9211238,11894,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB05638844,0.98901,0.98901,89.0
+SRR9211238,1205,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.987,0.8262,MW710047,1.0,1.0,83.0
+SRR9211238,12393,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06270255,1.0,1.0,65.0
+SRR9211238,12663,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06255522,0.9875,0.9875,79.0
+SRR9211238,1273,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06268770,1.0,1.0,89.0
+SRR9211238,12845,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06268770,0.9888899999999999,0.9888899999999999,89.0
+SRR9211238,12854,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB05995336,1.0,1.0,69.0
+SRR9211238,13256,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06268770,0.9888899999999999,0.9888899999999999,89.0
+SRR9211238,13278,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06113633,1.0,1.0,82.0
+SRR9211238,21,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06268771,1.0,1.0,91.0
+SRR9211238,2196,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,UDB02159801,0.4216682,0.91667,23.0
+SRR9211238,2210,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06216536,1.0,1.0,166.0
+SRR9211238,2237,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06268771,1.0,1.0,91.0
+SRR9211238,23,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06268770,1.0,1.0,89.0
+SRR9211238,2357,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB03045110,1.0,1.0,105.0
+SRR9211238,2417,F,ITS2,Hyaloscypha,Fungi,Ascomycota,Leotiomycetes,Helotiales,Hyaloscyphaceae,Hyaloscypha,unidentified,genus,0.984,0.6093,UDB03471829,1.0,1.0,94.0
+SRR9211238,2534,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02727821,1.0,1.0,105.0
+SRR9211238,2826,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,0.9905700000000001,0.9905700000000001,105.0
+SRR9211238,2946,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06216536,1.0,1.0,168.0
+SRR9211238,3990,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06268770,1.0,1.0,89.0
+SRR9211238,4517,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB03032074,1.0,1.0,105.0
+SRR9211238,4662,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB03032074,0.9905700000000001,0.9905700000000001,105.0
+SRR9211238,4856,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06268771,0.98913,0.98913,91.0
+SRR9211238,6319,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.987,0.8262,MW710047,0.9881,0.9881,83.0
+SRR9211238,6512,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06268771,0.98571,0.98571,69.0
+SRR9211238,6534,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB05638789,1.0,1.0,84.0
+SRR9211238,7172,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06268771,1.0,1.0,90.0
+SRR9211238,7765,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB05845327,0.9870099999999999,0.9870099999999999,76.0
+SRR9211238,7822,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06255522,1.0,1.0,84.0
+SRR9211238,7834,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06268770,1.0,1.0,86.0
+SRR9211238,8103,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB05973020,0.98571,0.98571,68.0
+SRR9211238,8382,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06268771,0.9782599999999999,0.9782599999999999,91.0
+SRR9211238,8613,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06268771,1.0,1.0,91.0
+SRR9211238,9333,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06270255,1.0,1.0,67.0
+SRR9211238,963,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB05638844,1.0,1.0,79.0
+SRR9211238,9639,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06268771,1.0,1.0,91.0
+SRR9211238,k129_1,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06268633,1.0,1.0,121.0
+SRR9211239,1359,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,GU083025,0.9905700000000001,0.9905700000000001,105.0
+SRR9211239,18,F,ITS2,Cenococcum geophilum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,Cenococcum_geophilum,species,0.987,0.8262,MT908329,1.0,1.0,84.0
+SRR9211239,2432,F,ITS2,Cenococcum geophilum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,Cenococcum_geophilum,species,0.987,0.8262,MT908329,0.98824,0.98824,84.0
+SRR9211239,3248,F,ITS2,Cenococcum geophilum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,Cenococcum_geophilum,species,0.987,0.8262,MT908329,0.98824,0.98824,84.0
+SRR9211239,3543,F,ITS2,Cenococcum geophilum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,Cenococcum_geophilum,species,0.987,0.8262,MT908329,0.98824,0.98824,84.0
+SRR9211239,3986,F,ITS2,Cenococcum geophilum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,Cenococcum_geophilum,species,0.987,0.8262,MT908329,1.0,1.0,84.0
+SRR9211239,4299,F,ITS2,Cenococcum geophilum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,Cenococcum_geophilum,species,0.987,0.8262,MT908329,0.98824,0.98824,84.0
+SRR9211239,4499,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01666809,1.0,1.0,77.0
+SRR9211239,5172,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,MT908329,0.9764700000000001,0.9764700000000001,84.0
+SRR9211239,6656,F,ITS2,Cenococcum geophilum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,Cenococcum_geophilum,species,0.987,0.8262,MT908329,1.0,1.0,84.0
+SRR9211239,8370,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211241,11317,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,MW282546,1.0,1.0,83.0
+SRR9211241,12999,F,ITS2,Solicoccozyma,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,unidentified,genus,0.965,0.4825,JQ666599,1.0,1.0,83.0
+SRR9211241,15437,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MT528069,1.0,1.0,108.0
+SRR9211241,16050,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211241,163,F,ITS2,Leccinum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,unidentified,genus,0.965,0.4825,UDB02751680,1.0,1.0,93.0
+SRR9211241,170,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211241,17158,F,ITS2,Leccinum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,unidentified,genus,0.965,0.4825,UDB02751680,1.0,1.0,93.0
+SRR9211241,17418,F,ITS2,Sordariales,Fungi,Ascomycota,Sordariomycetes,Sordariales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB0471865,0.96226,0.96226,104.0
+SRR9211241,18440,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB03054410,0.9905700000000001,0.9905700000000001,105.0
+SRR9211241,195,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211241,20659,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02970222,0.99083,0.99083,108.0
+SRR9211241,2102,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,0.9905700000000001,0.9905700000000001,105.0
+SRR9211241,21162,F,ITS2,Leccinum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,unidentified,genus,0.965,0.4825,UDB02751680,1.0,1.0,93.0
+SRR9211241,2245,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB03054410,1.0,1.0,105.0
+SRR9211241,2751,F,ITS2,Umbelopsis,Fungi,Mucoromycota,Umbelopsidomycetes,Umbelopsidales,Umbelopsidaceae,Umbelopsis,unidentified,genus,0.965,0.4825,UDB06968493,1.0,1.0,104.0
+SRR9211241,3547,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,MW282546,1.0,1.0,83.0
+SRR9211241,3667,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MT528069,1.0,1.0,108.0
+SRR9211241,3938,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211241,3940,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,0.9905700000000001,0.9905700000000001,105.0
+SRR9211241,3990,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211241,411,F,ITS2,Leccinum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,unidentified,genus,0.965,0.4825,UDB02752903,1.0,1.0,93.0
+SRR9211241,4219,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,102.0
+SRR9211241,4388,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02739596,0.9886400000000001,0.9886400000000001,87.0
+SRR9211241,4416,F,ITS2,Leccinum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,unidentified,genus,0.965,0.4825,UDB02752906,1.0,1.0,171.0
+SRR9211241,4432,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211241,4605,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211241,4701,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211241,4757,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211241,4758,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211241,4789,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211241,4869,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,101.0
+SRR9211241,4943,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211241,4994,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211241,5068,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211241,521,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211241,5253,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211241,5288,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,101.0
+SRR9211241,5289,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,0.9902,0.9902,101.0
+SRR9211241,5350,F,ITS2,Trechisporales,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB06360342,0.9871800000000001,0.9871800000000001,77.0
+SRR9211241,5414,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB03052489,1.0,1.0,87.0
+SRR9211241,5504,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB0180957,1.0,1.0,218.0
+SRR9211241,5535,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211241,6789,F,ITS2,Leccinum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,unidentified,genus,0.965,0.4825,UDB02751680,1.0,1.0,93.0
+SRR9211241,6807,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02970222,0.99083,0.99083,108.0
+SRR9211241,6919,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MT528069,0.9541299999999999,0.9541299999999999,108.0
+SRR9211241,7327,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB03027275,0.97248,0.97248,108.0
+SRR9211241,868,F,ITS2,Solicoccozyma terricola,Fungi,Basidiomycota,Tremellomycetes,Filobasidiales,Piskurozymaceae,Solicoccozyma,Solicoccozyma_terricola,species,0.987,0.8262,MW710047,1.0,1.0,83.0
+SRR9211241,9754,F,ITS2,Leccinum,Fungi,Basidiomycota,Agaricomycetes,Boletales,Boletaceae,Leccinum,unidentified,genus,0.965,0.4825,UDB02752903,0.98936,0.98936,93.0
+SRR9211241,k141_24,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211242,10103,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.95238,0.95238,83.0
+SRR9211242,10410,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,LC623512,0.9764700000000001,0.9764700000000001,83.0
+SRR9211242,10560,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,10705,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,11687,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01652243,0.9764700000000001,0.9764700000000001,83.0
+SRR9211242,12317,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.9881,0.9881,83.0
+SRR9211242,12909,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.9878,0.9878,81.0
+SRR9211242,13062,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.9881,0.9881,83.0
+SRR9211242,13186,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,AY969675,0.9881,0.9881,83.0
+SRR9211242,13220,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,13434,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,13522,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,13652,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02970222,0.98165,0.98165,108.0
+SRR9211242,13822,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01667395,1.0,1.0,83.0
+SRR9211242,13989,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.97619,0.97619,83.0
+SRR9211242,14026,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.9881,0.9881,83.0
+SRR9211242,1431,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.9881,0.9881,83.0
+SRR9211242,14458,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.9881,0.9881,83.0
+SRR9211242,15262,F,ITS2,Gloniaceae,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,unidentified,unidentified,family,0.951,0.4585,UDB01667395,0.96,0.96,74.0
+SRR9211242,15466,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,16265,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,16408,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,16450,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,81.0
+SRR9211242,16595,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.9881,0.9881,83.0
+SRR9211242,1668,F,ITS2,Teratosphaeria,Fungi,Ascomycota,Dothideomycetes,Mycosphaerellales,Teratosphaeriaceae,Teratosphaeria,unidentified,genus,0.971,0.5813,UDB05436772,1.0,1.0,137.0
+SRR9211242,16685,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.97619,0.97619,83.0
+SRR9211242,16693,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01665480,1.0,1.0,77.0
+SRR9211242,16753,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB0534246,0.9881,0.9881,83.0
+SRR9211242,16895,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01660380,1.0,1.0,73.0
+SRR9211242,17059,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.9881,0.9881,83.0
+SRR9211242,17251,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01665480,0.9740300000000001,0.9740300000000001,76.0
+SRR9211242,17447,F,ITS2,Russula,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,unidentified,genus,0.961,0.6043,UDB06181677,1.0,1.0,102.0
+SRR9211242,1753,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,1774,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,18012,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,18222,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,MG761286,1.0,1.0,82.0
+SRR9211242,18564,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,18901,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,18976,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,19012,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.9881,0.9881,83.0
+SRR9211242,19476,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.9881,0.9881,83.0
+SRR9211242,19723,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01657548,1.0,1.0,83.0
+SRR9211242,19724,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01657548,0.9881,0.9881,83.0
+SRR9211242,19752,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01657548,0.9881,0.9881,83.0
+SRR9211242,20224,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.9881,0.9881,83.0
+SRR9211242,20473,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01667395,1.0,1.0,83.0
+SRR9211242,20542,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,20653,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB0620565,1.0,1.0,80.0
+SRR9211242,20989,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,21297,F,ITS2,Gloniaceae,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,unidentified,unidentified,family,0.951,0.4585,UDB01667395,0.9638599999999999,0.9638599999999999,82.0
+SRR9211242,21481,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01663766,0.9764700000000001,0.9764700000000001,83.0
+SRR9211242,21570,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,21913,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,27,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,2741,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,2972,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01650143,1.0,1.0,83.0
+SRR9211242,2994,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,2996,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,MW282642,1.0,1.0,84.0
+SRR9211242,3109,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.9881,0.9881,83.0
+SRR9211242,3396,F,ITS2,Chytridiales,Fungi,Chytridiomycota,Chytridiomycetes,Chytridiales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB02249129,0.93269,0.93269,102.0
+SRR9211242,3572,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01659480,0.9881,0.9881,83.0
+SRR9211242,3960,F,ITS2,Cladophialophora,Fungi,Ascomycota,Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Cladophialophora,unidentified,genus,0.948,0.5135,UDB02968330,1.0,1.0,105.0
+SRR9211242,4047,F,ITS2,Tomentella,Fungi,Basidiomycota,Agaricomycetes,Thelephorales,Thelephoraceae,Tomentella,unidentified,genus,0.965,0.4825,UDB06275834,1.0,1.0,76.0
+SRR9211242,4173,F,ITS2,Cenococcum geophilum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,Cenococcum_geophilum,species,0.987,0.8262,OQ418576,0.9881,0.9881,83.0
+SRR9211242,4300,F,ITS2,Helotiales,Fungi,Ascomycota,Leotiomycetes,Helotiales,unidentified,unidentified,unidentified,order,0.929,0.5006,KF428229,1.0,1.0,93.0
+SRR9211242,4356,F,ITS2,Piloderma,Fungi,Basidiomycota,Agaricomycetes,Atheliales,Atheliaceae,Piloderma,unidentified,genus,0.968,0.5995,UDB04636983,1.0,1.0,110.0
+SRR9211242,4779,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,GU083025,1.0,1.0,105.0
+SRR9211242,4884,F,ITS2,Trechisporales,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB06384961,1.0,1.0,74.0
+SRR9211242,4974,F,ITS2,Piloderma,Fungi,Basidiomycota,Agaricomycetes,Atheliales,Atheliaceae,Piloderma,unidentified,genus,0.968,0.5995,UDB04602316,1.0,1.0,110.0
+SRR9211242,5013,F,ITS2,Russula pubescens,Fungi,Basidiomycota,Agaricomycetes,Russulales,Russulaceae,Russula,Russula_pubescens,species,0.987,0.8262,UDB011111,1.0,1.0,188.0
+SRR9211242,5091,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.9881,0.9881,83.0
+SRR9211242,515,F,ITS2,Trechisporales,Fungi,Basidiomycota,Agaricomycetes,Trechisporales,unidentified,unidentified,unidentified,order,0.929,0.5006,UDB06362005,1.0,1.0,76.0
+SRR9211242,518,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.9881,0.9881,83.0
+SRR9211242,5431,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01667395,0.9881,0.9881,83.0
+SRR9211242,5448,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.9881,0.9881,83.0
+SRR9211242,6301,F,ITS2,Gloniaceae,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,unidentified,unidentified,family,0.951,0.4585,UDB01655078,0.9647100000000001,0.9647100000000001,83.0
+SRR9211242,6456,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,6648,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.97619,0.97619,83.0
+SRR9211242,6729,F,ITS2,Gloniaceae,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,unidentified,unidentified,family,0.951,0.4585,UDB01665480,0.96429,0.96429,83.0
+SRR9211242,7363,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,7872,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.97619,0.97619,83.0
+SRR9211242,8112,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01667395,0.9881,0.9881,83.0
+SRR9211242,8682,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.9881,0.9881,83.0
+SRR9211242,8773,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,MG761286,1.0,1.0,82.0
+SRR9211242,9022,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.9881,0.9881,83.0
+SRR9211242,9313,F,ITS2,Cenococcum,Fungi,Ascomycota,Dothideomycetes,Gloniales,Gloniaceae,Cenococcum,unidentified,genus,0.965,0.4825,UDB01667915,1.0,1.0,78.0
+SRR9211242,9507,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,0.9881,0.9881,83.0
+SRR9211242,9609,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,9697,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MZ017551,1.0,1.0,83.0
+SRR9211242,k141_7,F,ITS2,,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,unidentified,,N/A,N/A,MT278596,0.9605899999999999,0.9605899999999999,202.0

@@ -30,6 +30,7 @@ NOTE: Swapping the command 'conda' with 'mamba' (or vice versa) may be helpful i
 # 	https://snakemake.readthedocs.io/en/stable/getting_started/installation.html
 # using these commands (if 'mamba' doesn't work, try using 'conda')
 mamba activate base
+#Note: The first time activating mamba, you may need to call it from the condabin directory. (e.g., <PATH>/miniforge3/condabin/mamba activate).
 mamba create -c conda-forge -c bioconda -n snakemake snakemake
 
 ##########

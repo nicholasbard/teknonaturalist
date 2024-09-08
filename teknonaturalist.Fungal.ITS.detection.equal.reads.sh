@@ -1,5 +1,5 @@
 # ~ teknonaturalist Fungi detection pipeline. To be used as a bash shell script equivalent for Snakemake. 
-# ~ This pipeline is to be used for paired end fastq.gz files with UNEQUAL read counts with 2 fastq files (SRR##_1.fastq.gz and SRR##_2.fastq.gz)
+# ~ This pipeline is to be used for paired end fastq.gz files with UNEQUAL read counts with 2 fastq files (SRR##_1.fastq and SRR##_2.fastq)
 # ~ Paired end reads, GBS and WGS Illumina reads
 # Nick Bard 2023
 
@@ -40,7 +40,7 @@ exec > ./logfile.txt
 # First, create and navigate to working directory, i.e., $PATH/teknonaturalist
 
 # Remove adapters, trim/truncate reads with quality under 2 (default) and with Ns at 5' and 3'. Collapse PE reads with overlap set to 15. Default standard Illumina, Phred 33.
-AdapterRemoval --file1 data/orig.fastqs/${SRRnumber}_1.fastq.gz --file2 data/orig.fastqs/${SRRnumber}_2.fastq.gz --threads ${thr} --collapse-conservatively --trimns --trimqualities --minalignmentlength 15 --basename data/trimmed1/Adap.rem.${SRRnumber} --adapter1 ${adapter1} --adapter2 ${adapter2}
+AdapterRemoval --file1 data/orig.fastqs/${SRRnumber}_1.fastq --file2 data/orig.fastqs/${SRRnumber}_2.fastq --threads ${thr} --collapse-conservatively --trimns --trimqualities --minalignmentlength 15 --basename data/trimmed1/Adap.rem.${SRRnumber} --adapter1 ${adapter1} --adapter2 ${adapter2}
 
 # For all output files, filter reads with >2% error rate.
 vsearch --fastx_filter data/trimmed1/Adap.rem.${SRRnumber}.pair1.truncated -fastq_maxee_rate 0.02 -fastqout data/trimmed2/q.Adap.rem.${SRRnumber}.pair1.truncated

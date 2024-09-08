@@ -1,24 +1,30 @@
 # This script may be run once classification has been run on pooled samples for each taxon. 
-# The code uses example data from Betula dataset (Betula ermanii, B. nana, B. pendula, B. platyphylla) to locate ITS1/ITS2 sequences with support at class taxonomic rank by 5.8S, or any additional classified ITS1 or ITS2 sequences.
+# The code uses example data from Betula dataset (Betula ermanii, B. nana, B. pendula, B. platyphylla, S. doronicum, P. virgatum, B. alternifolia) to locate ITS1/ITS2 sequences with support at class taxonomic rank by 5.8S, or any additional classified ITS1 or ITS2 sequences.
 # ITS2 sequences are prioritized, with ITS1 sequences secondarily considered.
 
 library(dplyr)
 library(stringr)
 
-#Set workding directory, read in data, and set host names. The files are located in Betula.classified.data/B.<focal.species>
-# setwd("~/Desktop/2022.3.manus/teknonaturalist/Manu.submission.mostrecent.jan2024/")
-erm.s58<-read.csv("Betula.classified.data/B.ermanii/ermanii.5_8S.labeled.csv")
-erm.ITS2<-read.csv("Betula.classified.data/B.ermanii/ermanii.ITS2.labeled.csv")
-erm.ITS1<-read.csv("Betula.classified.data/B.ermanii/ermanii.ITS1.labeled.csv")
-nana.s58<-read.csv("Betula.classified.data/B.nana/nana.5_8S.labeled.csv")
-nana.ITS2<-read.csv("Betula.classified.data/B.nana/nana.ITS2.labeled.csv")
-nana.ITS1<-read.csv("Betula.classified.data/B.nana/nana.ITS1.labeled.csv")
-pen.s58<-read.csv("Betula.classified.data/B.pendula/pendula.5_8S.labeled.csv")
-pen.ITS2<-read.csv("Betula.classified.data/B.pendula/pendula.ITS2.labeled.csv")
-pen.ITS1<-read.csv("Betula.classified.data/B.pendula/pendula.ITS1.labeled.csv")
-plat.s58<-read.csv("Betula.classified.data/B.platyphylla/platyphylla.5_8S.labeled.csv")
-plat.ITS2<-read.csv("Betula.classified.data/B.platyphylla/platyphylla.ITS2.labeled.csv")
-plat.ITS1<-read.csv("Betula.classified.data/B.platyphylla/platyphylla.ITS1.labeled.csv")
+#Set working directory, read in data, and set host names. 
+setwd("~/Desktop/Manus.2024.2025/pipeline.revisions/new.pipeline.results.2024.july")
+erm.s58<-read.csv("ermanii.5_8S.labeled.csv")
+erm.ITS2<-read.csv("ermanii.ITS2.labeled.csv")
+erm.ITS1<-read.csv("ermanii.ITS1.labeled.csv")
+nana.s58<-read.csv("nana.5_8S.labeled.csv")
+nana.ITS2<-read.csv("nana.ITS2.labeled.csv")
+nana.ITS1<-read.csv("nana.ITS1.labeled.csv")
+pen.s58<-read.csv("pendula.5_8S.labeled.csv")
+pen.ITS2<-read.csv("pendula.ITS2.labeled.csv")
+pen.ITS1<-read.csv("pendula.ITS1.labeled.csv")
+plat.s58<-read.csv("platyphylla.5_8S.labeled.csv")
+plat.ITS2<-read.csv("platyphylla.ITS2.labeled.csv")
+plat.ITS1<-read.csv("platyphylla.ITS1.labeled.csv")
+virg.s58<-read.csv("virgatum.5_8S.labeled.csv")
+virg.ITS2<-read.csv("virgatum.ITS2.labeled.csv")
+virg.ITS1<-read.csv("virgatum.ITS1.labeled.csv")
+altern.s58<-read.csv("alternifolia.5_8S.labeled.csv")
+altern.ITS2<-read.csv("alternifolia.ITS2.labeled.csv")
+altern.ITS1<-read.csv("alternifolia.ITS1.labeled.csv")
 erm.ITS2$Host<-"B.ermanii"
 erm.ITS1$Host<-"B.ermanii"
 erm.s58$Host<-"B.ermanii"
@@ -31,11 +37,17 @@ pen.s58$Host<-"B.pendula"
 plat.ITS2$Host<-"B.platyphylla"
 plat.ITS1$Host<-"B.platyphylla"
 plat.s58$Host<-"B.platyphylla"
+virg.ITS2$Host<-"P.virgatum"
+virg.ITS1$Host<-"P.virgatum"
+virg.s58$Host<-"P.virgatum"
+altern.ITS2$Host<-"Bud.alternifolia"
+altern.ITS1$Host<-"Bud.alternifolia"
+altern.s58$Host<-"Bud.alternifolia"
 
 # Create 5.8S (s58), ITS2, and ITS1 dataframes.
-s58<-rbind(erm.s58, nana.s58, pen.s58, plat.s58)
-ITS2<-rbind(erm.ITS2, nana.ITS2, pen.ITS2, plat.ITS2)
-ITS1<-rbind(erm.ITS1, nana.ITS1, pen.ITS1, plat.ITS1)
+s58<-rbind(erm.s58, nana.s58, pen.s58, plat.s58, virg.s58, altern.s58)
+ITS2<-rbind(erm.ITS2, nana.ITS2, pen.ITS2, plat.ITS2, virg.ITS2, altern.ITS2)
+ITS1<-rbind(erm.ITS1, nana.ITS1, pen.ITS1, plat.ITS1, virg.ITS1, altern.ITS1)
 
 # Combine SRA and read ID in new variable "IDread"
 s58$IDread<-paste(s58$ID, s58$read, sep=".")
@@ -105,6 +117,5 @@ filt.ITS<-ITS %>%
   arrange(confidence, .by_group = TRUE) %>%
   distinct(IDread, .keep_all = TRUE)
 
-# Save as Filt.ITS.Betula.csv
-write.csv(filt.ITS, "Filt.ITS.Betula.csv")
-
+# Save 
+write.csv(filt.ITS, "Filt.ITS.all.csv")

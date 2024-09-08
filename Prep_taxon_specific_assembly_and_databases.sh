@@ -61,7 +61,7 @@ focalnodot="<enter full species name of focal species here, separated by space, 
 
 ## Important! Ensure the current directory is teknonaturalist/
 
-grep "${genus}" database/PLANiTS/ITS_taxonomy | awk -F ' ' '{print $1}' > ${genus}.ITS
+grep "${genus}" database/PLANiTS/ITS_taxonomy | awk -F ' ' '{print $1}' > database/PLANiTS/${genus}.ITS
 seqtk subseq database/PLANiTS/ITS.fasta database/PLANiTS/${genus}.ITS > database/PLANiTS/${genus}.ITS.fasta
 grep "${genus}" database/PLANiTS/ITS1_taxonomy | awk -F ' ' '{print $1}' > database/PLANiTS/${genus}.ITS1
 seqtk subseq database/PLANiTS/ITS1.fasta database/PLANiTS/${genus}.ITS1 > database/PLANiTS/${genus}.ITS1.fasta
@@ -80,7 +80,7 @@ makeblastdb -in database/PLANiTS/${genus}.fasta -dbtype nucl
 # Get genbank fasta data for focal species:
 
 # With command line:
-esearch -db nuccore -query "${focalnodot}"[Organism] OR ${focalnodot}[All Fields] AND "${focalnodot}"[porgn] AND ddbj_embl_genbank[filter] AND is_nuccore[filter] | efetch -format fasta > database/genbank/${focal}.Genbank.nucl.fasta
+esearch -db nuccore -query '"${focalnodot}"[Organism] OR ${focalnodot}[All Fields] AND "${focalnodot}"[porgn] AND ddbj_embl_genbank[filter] AND is_nuccore[filter]' | efetch -format fasta > database/genbank/${focal}.Genbank.nucl.fasta
 
 # or ON WEBSITE: 
 # Search species at Genbank page, download all Genbank "nucleotide" entries on NCBI website, retitle as ${focal}.Genbank.nucl.fasta

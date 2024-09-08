@@ -1,71 +1,52 @@
 # ~ DNAbarcoder database preparation example. See https://github.com/vuthuyduong/dnabarcoder
-# This provides the commands used to provide the databases used in the teknonaturalist example paper on Betula.
+# This provides the commands used to provide the databases used in the teknonaturalist example paper on Betula, Panicum, and Buddleja, which are available at https://osf.io/38uk2/
 
-##### Build ITS1, ITS2, and 5.8S databases from UNITE fungal ITS databases (Abarenkov et al. 2023) for fungal classification with DNAbarcoder (Vu et al. 2022).
-##### Prepared databases are also available at OSF as ITS.refs.tar.gz (at https://osf.io/j57fs/). These may be extracted using extract_ITS.refs_database_for_dnabarcoder.py 
+##### Build ITS1, ITS2, and 5.8S databases from UNITE fungal ITS databases (Abarenkov et al. 2023) for fungal classification with DNAbarcoder (Vu et al. 2022). The original UNITE+INSD 2024 Fungal ITS, ITS1, and ITS2 Reference Sequence and classifications  files are available at https://zenodo.org/records/13336328 
+##### Prepared databases are also available at OSF as ITS.refs.tar.gz (at https://osf.io/38uk2/). These may be extracted using extract_ITS.refs_database_for_dnabarcoder.py 
 ##### Note: For more help with DNAbarcoder, see https://github.com/vuthuyduong/dnabarcoder. For more on UNITE fungal database, see https://unite.ut.ee.
 
 ##### DNAbarcoder must be installed into teknonaturalist/directory (as teknonaturalist/dnabarcoder/) prior to building databases required for fungal classification using DNAbarcoder. 
 # Installation using github: 
 git clone https://github.com/vuthuyduong/dnabarcoder.git
 
-# If not downloaded, download the UNITE db fasta file. ON UNITE WEBSITE: get sh_general_release_dynamic_s_29.11.2022.fasta (Paper version: https://doi.plutof.ut.ee/doi/10.15156/BIO/2483912 OR different version: https://unite.ut.ee/repository.php)
-# Newer, or different versions also available via UNITE.
-
 # Verify DNAbarcoder program (including dnabarcoder/dnabarcoder.py) is downloaded into teknonaturalist directory as a subdirectory (e.g., teknonaturalist/dnabarcoder/)
 
-# OPTION 1: At this point, the user may use the provided ITS.ref databases (ITS.refs.tar.gz) and extract them using extract_ITS.refs_database_for_dnabarcoder.py. 
+#~#~#~#~# OPTION 1: At this point, the user may use the provided ITS.ref databases (ITS.refs.dnabarcoder.tar.gz) and extract them using extract_ITS.refs_database_for_dnabarcoder.py. 
 ## Now DNAbarcoder is ready to run.
+
 #### The databases were created using the code below
-# OPTION 2: Alternatively, the code below may be edited according to the instructions provided by DNAbarcoder manual. 
 
-# Navigate to 'teknonaturalist/dnabarcoder' directory (it should have 'dnabarcoder.py' in it). If dnabarcoder directory is not in teknonaturalist directory, move it there.
-cd <PATH>/teknonaturalist/dnabarcoder
-cd ITS.refs
-# Move fungal ITS fasta files (e.g., from UNITE db) "sh_general_release_dynamic_s_<DD.MM.YYYY>.fasta" into teknonaturalist/dnabarcoder (e.g., mv <PATH>/sh_general_release_dynamic_s_29.11.2022.fasta ).
+#~#~#~#~# OPTION 2: Alternatively, the code below may be edited according to the instructions provided by DNAbarcoder manual.
 
-# Run ITSx on UNITE data to divide the ITS region into ITS1, ITS2, and 5.8S files. Note that ITSx (Bengtsson-Palme et al., 2013) may be run in an activated teknonaturalist Snakemake environment.
-ITSx -i sh_general_release_dynamic_s_29.11.2022.fasta --cpu <# of cpus, e.g., 24> --multi_thread <# of threads, e.g., 24>
+Navigate to 'teknonaturalist' directory (it should have 'dnabarcoder/dnabarcoder.py' in it). If dnabarcoder directory is not in teknonaturalist directory, move it there.
+# Download unite2024ITS.fasta, unite2024ITS.classification, unite2024ITS1.fasta, unite2024ITS1.classification, unite2024ITS2.fasta, and unite2024ITS2.classification files (or similar alternatives). These files are available at https://zenodo.org/records/13336328
+# Move these files to directory (I use dnabarcoder/ITS.refs/unite2024/)
 
-# Format outputs of pooled individual ITSx outputs
-sed 's/[^|]*|/>/' ITSx_out.ITS1.fasta | sed 's/|.*k__/ k__/' | sed 's/|.*//' > ITS1.ref
-sed 's/[^|]*|/>/' ITSx_out.ITS2.fasta | sed 's/|.*k__/ k__/' | sed 's/|.*//' > ITS2.ref
-sed 's/[^|]*|/>/' ITSx_out.5_8S.fasta | sed 's/|.*k__/ k__/' | sed 's/|.*//' > 5.8S.ref
-
-# There may be fungi detected that generate errors for irregular characters. Remove accents for genus, then species.
-sed 's/Epichloë/Epichloe/' ITS2.ref | sed 's/Epichloë/Epichloe/' | sed 's/simoënsis/simoensis/' | sed 's/szatalaënsis/szatalaensis/' | sed 's/borgsjoeënse/borgsjoeense/' | sed 's/hippophaëicola/hippophaeicola/' | sed 's/hippophaëicola/hippophaeicola/' | sed 's/buchloëana/buchloeana/' | sed 's/grosmorneënsis/grosmorneensis/' | sed 's/samoënsis/samoensis/' > ITS2.f.ref
-sed 's/Epichloë/Epichloe/' ITS1.ref | sed 's/Epichloë/Epichloe/' | sed 's/simoënsis/simoensis/' | sed 's/szatalaënsis/szatalaensis/' | sed 's/borgsjoeënse/borgsjoeense/' | sed 's/hippophaëicola/hippophaeicola/' | sed 's/hippophaëicola/hippophaeicola/' | sed 's/buchloëana/buchloeana/' | sed 's/grosmorneënsis/grosmorneensis/' | sed 's/samoënsis/samoensis/' > ITS1.f.ref
-sed 's/Epichloë/Epichloe/' 5.8S.ref | sed 's/Epichloë/Epichloe/' | sed 's/simoënsis/simoensis/' | sed 's/szatalaënsis/szatalaensis/' | sed 's/borgsjoeënse/borgsjoeense/' | sed 's/hippophaëicola/hippophaeicola/' | sed 's/hippophaëicola/hippophaeicola/' | sed 's/buchloëana/buchloeana/' | sed 's/grosmorneënsis/grosmorneensis/' | sed 's/samoënsis/samoensis/' > 5.8S.f.ref
-
-#Run DNAbarcoder prediction script at the species. Note that parameters may be changed as needed, following Vu et al (2022).
-# This will take a long while. The steps below follow split the predict operation into 2 parts. However, both steps may be combined for with previous step by including 'genus,family,order' in the 'rank' fields and skipping the "merge" step.
-### e.g., python3.9 ../dnabarcoder.py predict -i ITS2.f.ref -st 0.7 -et 1 -s 0.001 -higherrank genus,family,order,class -ml 50 -prefix ITS2.my.db -rank species,genus,family,order -removecomplexes yes -o ITS2
-
-mkdir ITS2
-mkdir ITS1
-# DNAbarcoder predict for species rank
-python3.9 ../dnabarcoder.py predict -i ITS2.f.ref -st 0.7 -et 1 -s 0.001 -higherrank genus,family,order,class -ml 50 -prefix ITS2.my.db -rank species -removecomplexes yes -o ITS2
-python3.9 ../dnabarcoder.py predict -i ITS1.f.ref -st 0.7 -et 1 -s 0.001 -higherrank genus,family,order,class -ml 50 -prefix ITS1.my.db -rank species -removecomplexes yes -o ITS1
-# DNAbarcoder predict for genera, family, and order ranks
-python3.9 ../dnabarcoder.py predict -i ITS2.f.ref -st 0.7 -et 1 -s 0.001 -higherrank family,order,class -ml 50 -prefix ITS2.my.db.gen.fam.ord -rank genus,family,order -o ITS2
-python3.9 ../dnabarcoder.py predict -i ITS1.f.ref -st 0.7 -et 1 -s 0.001 -higherrank family,order,class -ml 50 -prefix ITS1.my.db.gen.fam.ord -rank genus,family,order -o ITS1
+#the fasta files include many unclassified ITS sequences. These can be used, but will likely not classify many sequences. We use the aidscript provided by dnabarcoder to keep unique ITS1/ITS2 sequences, and only ones that were classified to phylum.mv 
+python3.9 dnabarcoder/aidscripts/selectsequences.py -i dnabarcoder/ITS.refs/unite2024/unite2024ITS1.fasta -c dnabarcoder/ITS.refs/unite2024/unite2024ITS1.classification -unique yes -rank phylum -o dnabarcoder/ITS.refs/unite2024/unite2024ITS1.unique.phylum.fasta
+python3.9 dnabarcoder/aidscripts/selectsequences.py -i dnabarcoder/ITS.refs/unite2024/unite2024ITS2.fasta -c dnabarcoder/ITS.refs/unite2024/unite2024ITS2.classification -unique yes -rank phylum -o dnabarcoder/ITS.refs/unite2024/unite2024ITS2.unique.phylum.fasta
 
 
-# Merge predictions made at species and higher levels (if run at two separate steps) into one file.
-cd ITS2
-python3.9 ../../dnabarcoder.py merge -i ITS2.my.db.cutoffs.json,ITS2.my.db.gen.fam.ord.cutoffs.json -o ITS2.mergedcutoffs.json
-cd ../ITS1
-python3.9 ../../dnabarcoder.py merge -i ITS1.my.db.cutoffs.json,ITS1.my.db.gen.fam.ord.cutoffs.json -o ITS1.mergedcutoffs.json
+
+##Prepare 5.8S file (shortcut version) - otherwise use directions provided on DNAbarcoder (i.e., ITSx on UNITE ITS data with --save_all tag on).
+# select only sequences occurring in ITS2 
+#navigate to dnabarcoder directory
+cd ./dnabarcoder/
+grep ">" ITS.refs/unite2024/unite2024ITS2.fasta | sed 's/>//g' > ITS.refs/unite2024/readlist.58
+seqtk subseq ITS.refs/unite2024/unite2024ITS.fasta ITS.refs/unite2024/readlist.58 > ITS.refs/unite2024/edit.unite2024ITS.fasta
+
+#run ITSx to get the 5.8S region
+ITSx -i ITS.refs/unite2024/edit.unite2024ITS.fasta --cpu 24 --multi_thread 24 -t "f" --save_regions 5.8S
+
+#only use unique entries at phylum classification
+sed 's/|[^)]*)//g' ITS.refs/unite2024/ITSx_out.5_8S.fasta > ITS.refs/unite2024/f.ITSx_out.5_8s.fasta
+#select only unique sequences occurring in ITS2
+python3.9 aidscripts/selectsequences.py -i ITS.refs/unite2024/f.ITSx_out.5_8s.fasta -c ITS.refs/unite2024/unite2024ITS2.classification -unique yes -rank class -o ITS.refs/unite2024/5_8s.unique.class.fasta
+cd ITS.refs/unite2024/
+python3.9 ../../dnabarcoder.py predict -i 5_8s.unique.class.fasta -c 5_8s.unique.class.classification -st 0.7 -et 1 -s 0.001 -rank class -higherrank phylum -prefix unite20245_8s -ml 50
+python3.9 ../../dnabarcoder.py predict -i 5_8s.unique.class.fasta -c 5_8s.unique.class.classification -st 0.7 -et 1 -s 0.001 -rank class -prefix unite20245_8s -ml 50
+python3.9 ../../dnabarcoder.py best -i 5_8S.unique.cutoffs.json -c 5_8s.unique.class.classification -mincutoff 0.71
 
 
-## Compute best cutoffs for each file.
-cd ../ITS2
-python3.9 ../../dnabarcoder.py best -i ITS2.mergedcutoffs.json -f ../ITS2.f.ref -o . -p best.ITS2.merge
-cd ../ITS1
-python3.9 ../../dnabarcoder.py best -i ITS1.mergedcutoffs.json -f ../ITS1.f.ref -o . -p best.ITS1.merge
 
-# Repeat predict/best steps for 5.8S, if you are using 5.8s. Here, we only apply 5.8s to the taxonomic class level, but this can be modified.
-mkdir ../5.8S
-cd ../5.8S
-python3.9 ../dnabarcoder.py predict -i 5.8S.f.ref -st 0.7 -et 1 -s 0.001 -higherrank phylum -ml 50 -prefix 5.8S.my.db -rank class -o 5.8S
-python3.9 ../dnabarcoder.py best -i 5.8S/5.8S.my.db.cutoffs.json -f 5.8S.f.ref -o 5.8S -p best.5.8S.23.5.11
+

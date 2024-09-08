@@ -27,8 +27,8 @@ rule all:
 ##### Remove adapters, trim/truncate reads with quality under 2 (default) and with Ns at 5' and 3'. Collapse PE reads with overlap set to 15. Default standard Illumina, Phred 33.
 rule adapterremoval_pe:
     input:
-        sample1="data/orig.fastqs/{srr}_1.fastq.gz",
-        sample2="data/orig.fastqs/{srr}_2.fastq.gz"
+        sample1="data/orig.fastqs/{srr}_1.fastq",
+        sample2="data/orig.fastqs/{srr}_2.fastq"
     params:
         prefix="data/trimmed1/{srr}",
         thread=THREADS,

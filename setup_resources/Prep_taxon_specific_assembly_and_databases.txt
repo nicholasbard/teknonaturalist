@@ -80,7 +80,7 @@ makeblastdb -in database/PLANiTS/${genus}.fasta -dbtype nucl
 # Get genbank fasta data for focal species:
 
 # With command line:
-esearch -db nuccore -query "${focalnodot}"[Organism] OR ${focalnodot}[All Fields] AND "${focalnodot}"[porgn] AND ddbj_embl_genbank[filter] AND is_nuccore[filter] | efetch -format fasta > database/genbank/${focal}.Genbank.nucl.fasta
+esearch -db nuccore -query '"${focalnodot}"[Organism] OR ${focalnodot}[All Fields] AND "${focalnodot}"[porgn] AND ddbj_embl_genbank[filter] AND is_nuccore[filter]' | efetch -format fasta > database/genbank/${focal}.Genbank.nucl.fasta
 
 # or ON WEBSITE: 
 # Search species at Genbank page, download all Genbank "nucleotide" entries on NCBI website, retitle as ${focal}.Genbank.nucl.fasta
