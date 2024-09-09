@@ -105,6 +105,12 @@ We also provide bash scripts to run the pipeline. Note that no __teknonnaturalis
 See __[teknonaturalist Fungal ITS Detection Equal Reads](/teknonaturalist.Fungal.ITS.detection.equal.reads.sh)__ and __[teknonaturalist Fungal ITS Detection Unequal Reads](/teknonaturalist.Fungal.ITS.detection.unequal.reads.sh)__ <br>
 The teknonaturalist execution bash script [non-Snakemake] script for PE fastq.gz files with equal read count sand unequal read counts, respectively.
 
+NOTE: If using mamba/conda with a task manager on a cluster, cache files during computational tasks may need to be diverted to a directory with file-writing permissions. 
+Before running the pipeline:
+mamba deactivate
+export XDG_CACHE_HOME=/<your directory> 
+Then activate mamba/conda environment before submitting the batch.
+
 Executing DNAbarcoder: fungal taxonomic classification
 ============================================================
 

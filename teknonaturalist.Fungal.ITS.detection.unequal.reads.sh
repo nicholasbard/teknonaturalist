@@ -66,7 +66,8 @@ rm data/trimmed3/poly.filt* data/trimmed2/q.Adap.rem.* data/trimmed1/Adap.rem*
 #Convert to fasta. Rename so there aren't duplicate read names.
 seqtk seq -a data/QC/${SRRnumber}.QC.fastq > data/QC/${SRRnumber}.QC.fasta
 
-# Remove duplicate contigs.
+# Remove duplicate contigs. 
+# NOTE: In some cases, large QC.fasta files may overwhelm memory during vsearch step, causing pipeline to fail. In such cases, the QC files may be split for this step and CQC.fasta files may be recombined immediately thereafter.
 vsearch --derep_fulllength data/QC/${SRRnumber}.QC.fasta --output data/CQC/${SRRnumber}.CQC.fasta
 
 # UNIvec file filtration step.
