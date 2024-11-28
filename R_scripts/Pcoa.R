@@ -50,6 +50,8 @@ df_freq.t <- dcast(df_freq, df_freq[,1] ~ df_freq[,2])
 rownames(df_freq.t)<-df_freq.t[,1]
 df_freq.t<-df_freq.t[,-1]
 
+#remove hosts with only one fungal taxon
+df_freq.t <- df_freq.t[rowSums(df_freq.t) > 1, ]
 #calculate dissimilarity
 dissim.bray <- vegdist(df_freq.t, method = "bray", binary=TRUE) 
 
@@ -70,7 +72,7 @@ spna[grep("SRR9211", rownames(pcoa.bray$points))]<-"B. ermanii"
 
 #make spider hulls for plot
 points(dft.pl, "sites",col="blue", bg="blue", cex=0.8)
-ordispider(dft.pl,groups=spna, col=c("red","purple","green","pink","orange"), spiders = "centroid", label=F)
+ordispider(dft.pl,groups=spna, col=c("red","purple","green","pink","orange"), spiders = "centroid", label=FALSE)
 
 
 #save this, then save legend separately
