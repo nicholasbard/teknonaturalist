@@ -17,10 +17,6 @@ RUN mamba install --yes --name base -c bioconda -c conda-forge \
 
 RUN mamba clean --all --yes
 
-# Install git.
-RUN mamba install git
-
-
 ### 
 # Automatic setup of test databases and assembly from teknonaturalist OSF repository: https://osf.io/8g6we/
 ###
