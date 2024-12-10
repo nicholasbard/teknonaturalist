@@ -22,6 +22,14 @@ Overview of the process
 To run __teknonaturalist__, open the setup and execution files, edit the header lines as needed, and save and run the scripts. Files contain annotations with important information to guide the user. We suggest that line-by-line command running of shell script and txt files may be useful, particularly for new users and for troubleshooting. <br>
 <br>
 
+Quick setup: Docker
+============================================================
+We provide a quick setup option using Docker (https://www.docker.com). 
+Instructions for Docker Engine installation: https://docs.docker.com
+Instructions for Docker Desktop installation: https://www.docker.com/products/docker-desktop/
+
+
+
 Setup: Installation of Snakemake and teknonaturalist (must be run once before initial use)
 ============================================================
 
