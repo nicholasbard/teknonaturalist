@@ -1,6 +1,6 @@
 teknonaturalist: A Snakemake pipeline for assessing fungal diversity from plant genome bycatch
 ============================================================
-![teknonaturalist](/setup_resources/teknonaturalist.png)	 
+![teknonaturalist](/images/teknonaturalist.png)	 
 <br>
 Description
 ====
@@ -33,20 +33,15 @@ The __teknonaturalist__ pipeline requires paired end fastq files to run.
 
 ### Quick fastq retrieval:
 <br>
-Paired-end fastq files may be retrieved using [SRA Tools](https://github.com/ncbi/sra-tools)
-
+Paired-end fastq files may be retrieved using [SRA Tools](https://github.com/ncbi/sra-tools)<br>
 Navigate to teknonaturalist directory
-
 ```
 cd $PATH/teknonaturalist
 ```
-
 Obtain SRA files from NCBI SRA.
-
 ```
 prefetch SRR<###>.sra
 ```
-
 Create fastq files from NCBI SRA. Note that $PATH to local SRA file repository may be different among users.
 ```
 fasterq-dump --split-files $PATH/SRR<###>.sra -O .
@@ -63,13 +58,10 @@ We provide a quick setup option using __Docker__.<br>
 ## Run demo with test data (_Betula ermanii_ )
 ### 1. Build Docker image
 Navigate to teknonaturalist/Docker directory
-
 ```
 cd $PATH/teknonaturalist/Docker
 ```
-
 Build Docker image. 
-
 ```
 docker build -t teknonaturalist .
 ```
@@ -102,7 +94,7 @@ snakemake --cores 1 --snakefile SnakefileDep data/final/F.c.e.reads.SRRdemo.fast
 
 ```
 
-###### Option 2: Download databases every time.
+##### Option 2: Download databases every time.
 ```
 # Note: The volume name may be customized by modifying code to <custom>:/app.
 docker run -v teknonaturalist:/app -it teknonaturalist
