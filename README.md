@@ -25,8 +25,9 @@ To run __teknonaturalist__, open the setup and execution files, edit the header 
 Dependencies:
 ============================================================
 __sra-tools__
-Github: https://github.com/ncbi/sra-tools <br>
-Conda: https://anaconda.org/bioconda/sra-tools <br>
+[SRA Tools Github](https://github.com/ncbi/sra-tools) <br>
+OR
+[SRA Tools Conda](https://anaconda.org/bioconda/sra-tools) <br>
 
 (Recommended) __Docker__ <br>
 Instructions for __Docker Engine__ installation: https://docs.docker.com <br>
@@ -38,9 +39,9 @@ Required input files:
 The __teknonaturalist__ pipeline requires paired end fastq files to run.
 <br>
 
-# Quick fastq retrieval:
+### Quick fastq retrieval:
 <br>
-See also __[Fastq.gz file prep](/setup_resources/Fastq.file.prep.txt)__ 
+Paired-end fastq files may be retrieved using [SRA Tools](https://github.com/ncbi/sra-tools)
 
 ```
 # Navigate to teknonaturalist directory
@@ -62,8 +63,8 @@ Quick setup: Docker
 ============================================================
 We provide a quick setup option using __Docker__.<br> 
 
-# Run demo with test data (_ _Betula ermanii_ _)
-
+### Run demo with test data (_ _Betula ermanii_ _)
+#### 1. Build Docker image
 ```
 # Navigate to teknonaturalist/Docker directory
 cd $PATH/teknonaturalist/Docker
@@ -72,14 +73,36 @@ docker build -t teknonaturalist .
 ```
 The image can now be run and tested on demo data provided. 
 
-# Option 1: Recommended. 
+#### 2. Run test Docker image
+
+###### Option 1: Recommended - Bind Mount to save volume locally.
 Use 'bind mount' to save the basic __teknonaturalist__ and [DNAbarcoder](https://github.com/vuthuyduong/dnabarcoder) setup, including databases and assembly. This will save databases locally in persistent volume ('teknonaturalist') that will not be removed if the Docker container is deleted. <br>
 Basically, this means that database files will not need to be re-downloaded if a new Docker image is built, ad are saved as tar.gz files.
 ```
-# Note: The volume name may be customized by replacing the last word.
+# Note: The volume name may be customized by modifying code to <custom>:/app.
+docker run -v teknonaturalist:/app -it teknonaturalist
+
+# Unpack database and assembly files using python scripts
+python ./extract_teknonaturalist_databases.py
+python ./extract_ITS.refs_database_for_dnabarcoder.py
+
+# Remove clutter
+cleanup rm *.tar.gz
+
+# Test teknonaturalist with fake data.
+snakemake --cores 1 --snakefile SnakefileDep data/final/F.c.e.reads.SRRdemo.fasta
+
+#Test DNAbarcoder with fake data
+
+```
+
+###### Option 2: Download databases every time.
+```
+# Note: The volume name may be customized by modifying code to <custom>:/app.
 docker run -v teknonaturalist:/app -it teknonaturalist
 ```
 
+#### 3. Customize
 
 
 
