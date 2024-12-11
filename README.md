@@ -174,6 +174,7 @@ ncbi-genome-download -s genbank --genera "<CONGENER_NO_DOT>" plant -o assembly/<
 
 For the following lines, the name of the assembly directory will be assigned to the "ac" variable (e.g., ac = "GCA_000327005.1"), and the assembly is unzipped. The full name of the ac variable may be used instead for the lines below. 
 ```
+#Note: this will pick the first one. You can replace ${ac} with the genome name if you prefer. 
 ac=$(ls assembly/<CONGENER_WITH_DOT>.assembly/genbank/plant | head -1)
 gunzip assembly/<CONGENER_WITH_DOT>.assembly/genbank/plant/${ac}/*.gz
 ```
