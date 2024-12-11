@@ -123,22 +123,60 @@ python ./extract_ITS.refs_database_for_dnabarcoder.py
 rm *.tar.gz
 ```
 # Ib. Alternative - Basic setup without Docker <br>
-## Follow instructions to [set up teknonaturalist using Snakemake](/setup_resources/teknonaturalist_setup.txt) or via [manual package installation packages with mamba/conda](package_install_for_bash_script.txt)
-### Download databases to run teknonaturalist
-RUN osf -p j57fs clone .
-### Download sample species (Betula nana) assembly to run teknonaturalist with sample file
+## Follow instructions to [set up teknonaturalist using Snakemake](/setup_resources/teknonaturalist_setup.txt) or via [manual package installation packages with mamba/conda](package_install_for_bash_script.txt) <br>
+
+#### Download basic databases. <br>
+You will customize these later for your host plant species. 
+
+```
+# Download databases to run teknonaturalist
+osf -p j57fs clone .
+
+# Download sample species (Betula nana) assembly to run teknonaturalist with sample file
 osf -p vnh3b clone .
-### Download premade ITS and 5.8S sequences for use with DNAbarcoder; move all to correct location.
+
+# Download premade ITS and 5.8S sequences for use with DNAbarcoder; move all to correct location.
 osf -p 38uk2 clone .
 mv osfstorage/* .
 rm -r osfstorage
+```
 
-#### You can also pick up here without using Docker.
-This image shows the basic directory structure in order to run teknonaturalist for fungal detection. Note that teknonaturalist/dnabarcoder must be present for fungal classification. <br>
-![Snakemake directory structure](/setup_resources/snakemake_directory_structure.png)<br>
+#### Create necessary directories
+```
+# Make all directories.
+mkdir data
+mkdir data/orig.fastqs
+mkdir data/finalcombined
+mkdir assembly
+mkdir assembly/Betula.nana.assembly
+mkdir database
+mkdir database/univec
+mkdir database/uchime_datasets
+mkdir database/genbank
+mkdir database/fungi
+mkdir database/PLANiTS
+```
+
+#### Setup DNAbarcoder
+```
+git clone https://github.com/vuthuyduong/dnabarcoder.git
+mkdir dnabarcoder/ITS.refs
+```
+
+#### Unpack database and assembly files using python scripts and remove clutter. <br>
+This will produce the necessary file structure to run teknonaturalist.
+```
+python ./extract_teknonaturalist_databases.py
+python ./extract_ITS.refs_database_for_dnabarcoder.py
+rm *.tar.gz
+```
 
 # II. Setting up pipeline database and assembly for your host species <br>
-We will continue to work on the container you created. If you exited the container, you may restart and reconnect:
+At this point your directory structure should look like this. However, you will need to customize it for your host plant species. <br>
+![Snakemake directory structure](/setup_resources/snakemake_directory_structure.png)<br>
+
+### For Docker:
+We will continue to work on the Docker container you created. If you exited the container, you may restart and reconnect:
   <br>
 If resuming from outside container:
 ```
@@ -148,6 +186,7 @@ docker ps -a
 docker start <docker_container_identifier>
 docker attach <docker_container_identifier>
 ```
+### You can also pick up here without using Docker.
 
 ### a. PLANiTS dataset for the host genus.
 Replace <GENUS> with name of host genus.<br>
