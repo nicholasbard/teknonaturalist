@@ -4,7 +4,7 @@ FROM condaforge/miniforge3
 ENV MAMBA_ROOT_PREFIX=/home/mamba
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /teknonaturalist
 
 # Copy files from this directory into image
 COPY . .
