@@ -56,11 +56,29 @@ fasterq-dump --split-files $PATH/SRR<###>.sra -O .
 
 fasterq-dump --split-3 $PATH/SRR<###>.sra -O .
 ```
-See also __[Fastq.gz file prep](/0_File_Setup/Fastq.file.prep.txt)__
+See also __[Fastq file prep](/0_File_Setup/Fastq.file.prep.txt)__
 
 Quick setup: Docker
 ============================================================
-We provide a quick setup option using __Docker__ (https://www.docker.com).<br> 
+We provide a quick setup option using __Docker__.<br> 
+
+# Run demo with test data (_ _Betula ermanii_ _)
+
+```
+# Navigate to teknonaturalist/Docker directory
+cd $PATH/teknonaturalist/Docker
+# Build Docker image. 
+docker build -t teknonaturalist .
+```
+The image can now be run and tested on demo data provided. 
+
+# Option 1: Recommended. 
+Use 'bind mount' to save the basic __teknonaturalist__ and [DNAbarcoder](https://github.com/vuthuyduong/dnabarcoder) setup, including databases and assembly. This will save databases locally in persistent volume ('teknonaturalist') that will not be removed if the Docker container is deleted. <br>
+Basically, this means that database files will not need to be re-downloaded if a new Docker image is built, ad are saved as tar.gz files.
+```
+# Note: The volume name may be customized by replacing the last word.
+docker run -v teknonaturalist:/app -it teknonaturalist
+```
 
 
 
