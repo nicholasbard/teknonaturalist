@@ -14,9 +14,9 @@ Remain in teknonaturalist/ directory to run these commands.
 ### General code for classifying fungi with DNAbarcoder , available at https://github.com/vuthuyduong/dnabarcoder.
 
 ## HEADER LINES INSTRUCTIONS
-#### Replace all ${text} in code, as follows.
-#### Replace ${SRR} with common prefix for accession number, (e.g., SRR92).
-#### Replace ${SAMPLE} with specific epithet (2nd word) of plant species name (e.g., ermanii).
+Replace all ${text} in code, as follows.<br>
+Replace ${SRR} with common prefix for accession number, (e.g., SRR92).<br>
+Replace ${SAMPLE} with specific epithet (2nd word) of plant species name (e.g., ermanii).<br>
 
 # CODE:
 Combine all individual samples in a dataset and reformat so readable by DNAbarcoder.
