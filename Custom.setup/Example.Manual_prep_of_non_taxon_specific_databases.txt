@@ -1,4 +1,7 @@
-## ~ Preparation of 'UniVec', 'UCHIME', and 'Fungi' databases (the "non-taxon-specific" databases) for the teknonaturalist fungi detection pipeline:
+## ~ Preparation of 'UniVec', 'UCHIME', and 'Fungi' databases (the "non-taxon-specific" databases) for the teknonaturalist fungi detection pipeline ##
+
+#~#~#~#~# NOTE: For quick setup of databases to run, follow instructions provided on the README.md and teknonaturalist.setup.txt files.
+#~#~#~#~# The following code may be edited as needed to build custom databases different from those provided via teknonaturalist setup.
 
 ## This file provides commands for manual database preparation, as an alternative to extracting the 'UniVec', 'UCHIME', and 'Fungi' databases, 
 ## that were used in the Betula study (i.e., using extract_teknonaturalist_databases.py or otherwise extracting the tar.gz files provided at https://osf.io/8g6we/). 
