@@ -24,3 +24,6 @@ dependencies:
   - itsx =1.1.3
   - ncbi-genome-download =0.3.3
   - ncbi-datasets-cli
+  - osfclient
+  - git
+  - biopython
