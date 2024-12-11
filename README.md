@@ -22,16 +22,34 @@ Overview of the process
 To run __teknonaturalist__, open the setup and execution files, edit the header lines as needed, and save and run the scripts. Files contain annotations with important information to guide the user. We suggest that line-by-line command running of shell script and txt files may be useful, particularly for new users and for troubleshooting. <br>
 <br>
 
+Dependencies:
+============================================================
+__sra-tools__
+Github: https://github.com/ncbi/sra-tools <br>
+Conda: https://anaconda.org/bioconda/sra-tools <br>
+
+(Recommended) __Docker__ <br>
+Instructions for __Docker Engine__ installation: https://docs.docker.com <br>
+Instructions for __Docker Desktop__ installation: https://www.docker.com/products/docker-desktop/ <br>
+_ _We provide a Dockerfile that sets up and activates the teknonaturalist Snakemake environment_ _ <br>
+
 Required input files:
 ============================================================
 The __teknonaturalist__ pipeline requires paired end fastq files to run.
+
+```
+cd $PATH/teknonaturalist
+prefetch SRR<###>.sra
+fasterq-dump --split-files $PATH/SRR<###>.sra -O .
+#OR
+fasterq-dump --split-3 $PATH/SRR<###>.sra -O .
+```
 
 
 Quick setup: Docker
 ============================================================
 We provide a quick setup option using __Docker__ (https://www.docker.com).<br> 
-Instructions for __Docker Engine__ installation: https://docs.docker.com<br>
-Instructions for __Docker Desktop__ installation: https://www.docker.com/products/docker-desktop/<br>
+
 
 
 
