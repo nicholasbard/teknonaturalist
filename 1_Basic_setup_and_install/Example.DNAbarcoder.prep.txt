@@ -1,0 +1,42 @@
+# ~ DNAbarcoder database preparation example. See https://github.com/vuthuyduong/dnabarcoder
+
+#~# NOTE: Quick DNAbarcoder installation (with prepared databases) are available in README.md and teknonaturalist_setup.txt #~#
+
+# This provides the commands used to provide the databases used in the teknonaturalist example paper on Betula, Panicum, and Buddleja, which are available at https://osf.io/38uk2/
+# The databases were created using the code below to build ITS1, ITS2, and 5.8S databases from UNITE fungal ITS databases (Abarenkov et al. 2023) for fungal classification with 
+# DNAbarcoder (Vu et al. 2022). The original UNITE+INSD 2024 Fungal ITS, ITS1, and ITS2 Reference Sequence and classification files are available at https://zenodo.org/records/13336328 
+
+# To build newer/customized databases, the code below may be edited according to the instructions provided by DNAbarcoder manual.
+
+######################
+#### Instructions ####
+######################
+
+# Navigate to 'teknonaturalist' directory (it should have 'dnabarcoder/dnabarcoder.py' in it). If dnabarcoder directory is not in teknonaturalist directory, move it there.
+# Download unite2024ITS.fasta, unite2024ITS.classification, unite2024ITS1.fasta, unite2024ITS1.classification, unite2024ITS2.fasta, and unite2024ITS2.classification files 
+# (or similar alternatives). These files are available at https://zenodo.org/records/13336328
+# Move these files to directory (I use dnabarcoder/ITS.refs/unite2024/)
+
+# the fasta files include many unclassified ITS sequences. These can be used, but will likely not classify many sequences. We use the aidscript provided by dnabarcoder to keep unique ITS1/ITS2 sequences, and only ones that were classified to phylum.mv 
+python3.12 dnabarcoder/aidscripts/selectsequences.py -i dnabarcoder/ITS.refs/unite2024/unite2024ITS1.fasta -c dnabarcoder/ITS.refs/unite2024/unite2024ITS1.classification -unique yes -rank phylum -o dnabarcoder/ITS.refs/unite2024/unite2024ITS1.unique.phylum.fasta
+python3.12 dnabarcoder/aidscripts/selectsequences.py -i dnabarcoder/ITS.refs/unite2024/unite2024ITS2.fasta -c dnabarcoder/ITS.refs/unite2024/unite2024ITS2.classification -unique yes -rank phylum -o dnabarcoder/ITS.refs/unite2024/unite2024ITS2.unique.phylum.fasta
+
+## Prepare 5.8S file (shortcut version) - otherwise use directions provided on DNAbarcoder (i.e., ITSx on UNITE ITS data with --save_all tag on).
+# select only sequences occurring in ITS2 
+#navigate to dnabarcoder directory
+cd ./dnabarcoder/
+grep ">" ITS.refs/unite2024/unite2024ITS2.fasta | sed 's/>//g' > ITS.refs/unite2024/readlist.58
+seqtk subseq ITS.refs/unite2024/unite2024ITS.fasta ITS.refs/unite2024/readlist.58 > ITS.refs/unite2024/edit.unite2024ITS.fasta
+
+# run ITSx to get the 5.8S region
+ITSx -i ITS.refs/unite2024/edit.unite2024ITS.fasta --cpu 24 --multi_thread 24 -t "f" --save_regions 5.8S
+
+# only use unique entries at phylum classification
+sed 's/|[^)]*)//g' ITS.refs/unite2024/ITSx_out.5_8S.fasta > ITS.refs/unite2024/f.ITSx_out.5_8s.fasta
+#select only unique sequences occurring in ITS2
+python3.12 aidscripts/selectsequences.py -i ITS.refs/unite2024/f.ITSx_out.5_8s.fasta -c ITS.refs/unite2024/unite2024ITS2.classification -unique yes -rank class -o ITS.refs/unite2024/5_8s.unique.class.fasta
+cd ITS.refs/unite2024/
+python3.12 ../../dnabarcoder.py predict -i 5_8s.unique.class.fasta -c 5_8s.unique.class.classification -st 0.7 -et 1 -s 0.001 -rank class -higherrank phylum -prefix unite20245_8s -ml 50
+python3.12 ../../dnabarcoder.py predict -i 5_8s.unique.class.fasta -c 5_8s.unique.class.classification -st 0.7 -et 1 -s 0.001 -rank class -prefix unite20245_8s -ml 50
+python3.12 ../../dnabarcoder.py best -i 5_8S.unique.cutoffs.json -c 5_8s.unique.class.classification -mincutoff 0.71
+
