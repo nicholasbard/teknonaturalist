@@ -123,10 +123,13 @@ python ./extract_ITS.refs_database_for_dnabarcoder.py
 rm *.tar.gz
 ```
 ### You may also follow instructions to setup the teknonaturalist Snakemake environment or install packages with mamba/conda
+This image shows the basic directory structure in order to run teknonaturalist for fungal detection. Note that teknonaturalist/dnabarcoder must be present for fungal classification. <br>
+![Snakemake directory structure](/setup_resources/snakemake_directory_structure.png)<br>
 
-# II. Customizing for your host species. NOTE TO SELF: ADD in links and instructions to remove betula and extra files <br>
+# II. Setting up pipeline database and assembly for your host species <br>
 We will continue to work on the container you created. If you exited the container, you may restart and reconnect:
-### You can also pick up here without using Docker, after following instructions to setup the teknonaturalist Snakemake environment LINNNKKKK or install packages with mamba/conda LINNNKKKK
+#### You can also pick up here without using Docker, after following instructions to [setup the teknonaturalist Snakemake environment](/setup_resources/teknonaturalist_setup.txt) or [install packages with mamba/conda](package_install_for_bash_script.txt) <br>
+#### More details in [Running_teknonaturalist_with_Snakemake_Overview.txt](/setup_resources/Running_teknonaturalist_with_Snakemake_Overview.txt) <br>
 If resuming from outside container:
 ```
 # Determine container ID from all containers 
@@ -136,9 +139,7 @@ docker start <docker_container_identifier>
 docker attach <docker_container_identifier>
 ```
 
-### 1. Set up database and assembly for a new host species.
-
-#### a. PLANiTS dataset for the host genus.
+### a. PLANiTS dataset for the host genus.
 Replace <GENUS> with name of host genus.<br>
 ```
 grep "<GENUS>" database/PLANiTS/ITS_taxonomy | awk -F ' ' '{print $1}' > database/PLANiTS/<GENUS>.ITS
@@ -154,7 +155,7 @@ Make genus specific ITS database.<br>
 makeblastdb -in database/PLANiTS/<GENUS>.fasta -dbtype nucl
 ```
 
-#### b. Get Genbank fasta data for focal species.
+### b. Get Genbank fasta data for focal species.
 Replace <FOCAL_NO_DOT> with FULL species name, e.g. Delphinium menziesii
 Replace <FOCAL_WITH_DOT> with FULL species name, separated by . , e.g., Delphinium.menziesii
 ```
@@ -165,7 +166,7 @@ Make Blast database for your targe host plant species.
 makeblastdb -in database/genbank/<FOCAL_WITH_DOT>.Genbank.nucl.fasta -dbtype nucl
 ```
 
-#### c. Get reference assembly (fasta) of focal species or closely related congener (or closest relative with available assembly!) and index.
+### c. Get reference assembly (fasta) of focal species or closely related congener (or closest relative with available assembly!) and index.
 Note: The fasta file may also be downloaded from NCBI manually if ncbi-genome-download fails.<br><br>
 Replace <CONGENER_NO_DOT> with FULL species name, e.g. Adonis annua <br>
 Replace <CONGENER_WITH_DOT> with FULL species name, separated by . , e.g., Adonis.annua <br>
@@ -184,8 +185,8 @@ Index reference assembly with bwa.
 ```
 bwa index -p assembly/<CONGENER_WITH_DOT>.assembly/<CONGENER_WITH_DOT>.bwa.index <CONGENER_WITH_DOT>.assembly/genbank/plant/${ac}/*.fna
 ```
-
-### 2. Import your files into the container. <br>
+# III. Running the pipeline <br>
+## 2. Import your files into the container. <br>
 If you haven't yet, exit container.
 ```
 exit
@@ -250,8 +251,7 @@ A python script to extract all databases and assemblies provided at https://osf.
 __[Extract ITS.refs Database for DNAbarcoder](extract_ITS.refs_database_for_dnabarcoder.py)__ <br>
 A python script to extract ITS reference database for DNAbarcoder (available at https://osf.io/8g6we/)<br><br>
 
-This image shows the basic directory structure in order to run teknonaturalist for fungal detection. Note that teknonaturalist/dnabarcoder must be present for fungal classification. <br>
-![Snakemake directory structure](/setup_resources/snakemake_directory_structure.png)<br>
+
 
 Executing teknonaturalist: Preparing for fungal ITS detection
 ============================================================
