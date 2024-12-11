@@ -1,9 +1,16 @@
-## ~ Preparation of congener assembly and the PLANiTS and genbank databases (the "taxon-specific" databases) for the teknonaturalist fungi detection pipeline:
-## This file provides a bash script to prepare databases and an assembly specific to the focal plant taxon of the study. 
-## Fill out the variable editing section below to run all at once.
-## This script should be run in the teknonaturalist/ directory.
+## ~ Preparation of congener assembly and the PLANiTS and genbank databases (the "taxon-specific" databases) for the teknonaturalist fungi detection pipeline
 
-### FIRST-TIME USERS:
+## This file may be run as a bash script to prepare databases and an assembly specific to the focal plant taxon of the study by modifying the 'Variables' section below. 
+## It is intended to run in the teknonaturalist/ directory.
+
+##################
+## Dependencies ##
+##################
+# seqtk, bwa, and ncbi-genome-download. Available if teknonaturalist environment is activated, or may be manually downloaded if necessary.
+
+#########################
+### FIRST-TIME USERS: ###
+#########################
 ### It is advised to go through these steps line by line the first time, rather than as a full bash script.
 ## To do this, simply run through the script, line-by-line, and replace ${text} with (e.g. ${congnodot}) with the variable of interest (e.g., Betula nana).
 ## Examples of these for the Betula genus and species assessed in the example paper are provided as tar.gz files provided at https://osf.io/8g6we/ and can be extracted using 'extract_teknonaturalist_databases.py'. 
@@ -19,22 +26,11 @@
 #!/bin/bash
 #Use bash shell.
 
-#~#~#~#~# Setup of assembly and databases requires installation of seqtk, bwa, and ncbi-genome-downloads programs #~#~#~#~#
-
-## Option 1 (recommended): Activate 'teknonaturalist' to use tools for database and assembly creation:
-# conda activate teknonaturalist
-#OR
-# mamba activate teknonaturalist
-
-## Option 2: Install programs outside of 'teknonaturalist' environment (i.e., do not activate for installation). See: https://github.com/lh3/seqtk
-
-## Conda/Mamba installation (conda may be replaced with mamba for the next 3 lines):
-# conda install -c bioconda seqtk
-# conda install -c bioconda bwa
-# conda install -c bioconda ncbi-genome-download
-
-######### USER Variable editing section (Contents inside "" must be replaced.):
-#~#~#~#~# All steps must be completed prior to applying pipeline to each new plant species, or you may use pre-made assembly directories and unzip (for Betula nana and Betula pendula).  #~#~#~#~#
+##############################################
+####### Variables (to be edited) ########
+##############################################
+# ~#~#~#~# All steps must be completed prior to applying pipeline to each new plant species, or you may use pre-made assembly directories and unzip (for Betula nana and Betula pendula).(Contents inside "" must be replaced.):
+#  #~#~#~#~#
 
 ### Replace <text> below. e.g., genus="Betula" .
 
