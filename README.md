@@ -36,12 +36,24 @@ _ _We provide a Dockerfile that sets up and activates the teknonaturalist Snakem
 Required input files:
 ============================================================
 The __teknonaturalist__ pipeline requires paired end fastq files to run.
+<br>
+
+# Quick fastq retrieval. 
+<br>
+Also see __[Fastq.gz file prep](/setup_resources/Fastq.file.prep.txt)__ <br>
 
 ```
+# Navigate to teknonaturalist directory
 cd $PATH/teknonaturalist
+
+# Obtain SRA files from NCBI SRA.
 prefetch SRR<###>.sra
+
+# Create fastq files from NCBI SRA. Note that $PATH to local SRA file repository may be different among users.
 fasterq-dump --split-files $PATH/SRR<###>.sra -O .
-#OR
+
+# OR, for files with different read counts
+
 fasterq-dump --split-3 $PATH/SRR<###>.sra -O .
 ```
 
