@@ -22,5 +22,8 @@ conda install -c bioconda fastx_toolkit
 conda install -c bioconda megahit
 conda install -c bioconda itsx
 conda install conda-forge::ncbi-datasets-cli
+conda install -c conda-forge git
+conda install -c conda-forge biopython
+conda install -c bioconda blast 
 
 # Download and install R: https://cloud.r-project.org
