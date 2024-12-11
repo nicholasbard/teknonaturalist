@@ -1,4 +1,5 @@
-##### Dependencies for manual package installation, if not using Snakemake "teknonaturalist" environment activation for package installation.
+##### Dependencies for manual package installation ####
+# NOT RECOMMENDED, as we recommend using Dockerfile and/or Snakemake "teknonaturalist" environment activation for package installation.
 
 # We recommend a package manager be used here for most bioinformatics packages. We provide instructions for Conda or Mamba installations.
 # These should install and load all dependencies. Additional work may be required if dependencies must be changed. 
