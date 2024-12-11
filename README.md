@@ -122,10 +122,11 @@ python ./extract_teknonaturalist_databases.py
 python ./extract_ITS.refs_database_for_dnabarcoder.py
 rm *.tar.gz
 ```
+### You may also follow instructions to setup the teknonaturalist Snakemake environment or install packages with mamba/conda
 
-# II. Customizing for your host species. <br>
-We will build on the container you created. If you exited the container, you may restart and reconnect:
-
+# II. Customizing for your host species. NOTE TO SELF: ADD in links and instructions to remove betula and extra files <br>
+We will continue to work on the container you created. If you exited the container, you may restart and reconnect:
+### You can also pick up here without using Docker, after following instructions to setup the teknonaturalist Snakemake environment LINNNKKKK or install packages with mamba/conda LINNNKKKK
 If resuming from outside container:
 ```
 # Determine container ID from all containers 
