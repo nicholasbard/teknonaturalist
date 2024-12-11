@@ -38,9 +38,9 @@ Required input files:
 The __teknonaturalist__ pipeline requires paired end fastq files to run.
 <br>
 
-# Quick fastq retrieval. 
+# Quick fastq retrieval:
 <br>
-Also see __[Fastq.gz file prep](/setup_resources/Fastq.file.prep.txt)__ <br>
+See also __[Fastq.gz file prep](/setup_resources/Fastq.file.prep.txt)__ 
 
 ```
 # Navigate to teknonaturalist directory
@@ -56,7 +56,7 @@ fasterq-dump --split-files $PATH/SRR<###>.sra -O .
 
 fasterq-dump --split-3 $PATH/SRR<###>.sra -O .
 ```
-
+See also __[Fastq.gz file prep](/0_File_Setup/Fastq.file.prep.txt)__
 
 Quick setup: Docker
 ============================================================
