@@ -35,27 +35,32 @@ The __teknonaturalist__ pipeline requires paired end fastq files to run.
 <br>
 Paired-end fastq files may be retrieved using [SRA Tools](https://github.com/ncbi/sra-tools)<br>
 Navigate to teknonaturalist directory
+
 ```
 cd $PATH/teknonaturalist
 ```
+
 Obtain SRA files from NCBI SRA.
+
 ```
 prefetch SRR<###>.sra
 ```
+
 Create fastq files from NCBI SRA. Note that $PATH to local SRA file repository may be different among users.
+
 ```
 fasterq-dump --split-files $PATH/SRR<###>.sra -O .
 # OR, for files with different read counts
 fasterq-dump --split-3 $PATH/SRR<###>.sra -O .
 ```
 
-See also __[Fastq file prep](/0_File_Setup/Fastq.file.prep.txt)__
+See also [Fastq file prep](/0_File_Setup/Fastq.file.prep.txt)
 
-Quick setup: Docker
+I. Quick basic setup and test: Docker
 ============================================================
 We provide a quick setup option using __Docker__.<br> 
 
-## Run demo with test data (_Betula ermanii_ )
+## Run demo with test data (_Betula ermanii_)
 ### 1. Build Docker image
 Navigate to teknonaturalist/Docker directory
 ```
@@ -75,6 +80,11 @@ Basically, this means that database files will not need to be re-downloaded if a
 # Note: The volume name may be customized by modifying code to <custom>:/app.
 docker run -v teknonaturalist:/app -it teknonaturalist
 ```
+#### Option 2: Will not save databases (takes a few minutes for every build).
+```
+# Note: The volume name may be customized by modifying code to <custom>:/app.
+docker run -v -it teknonaturalist
+```
 
 Unpack database and assembly files using python scripts and remove clutter.
 ```
@@ -84,23 +94,123 @@ rm *.tar.gz
 ```
 
 Test teknonaturalist (fungal identification) with fake data.
-```
-snakemake --cores 1 --snakefile SnakefileDep data/final/F.c.e.reads.SRRdemo.fasta
-```
-
-#Test DNAbarcoder (fungal classification) with fake data.
 
 ```
-
+snakemake --cores 1 --snakefile demoSnakefile data/final/F.c.e.reads.SRRdemo.fasta
 ```
 
-##### Option 2: Download databases every time.
+Test DNAbarcoder (fungal classification) with fake data.
+
 ```
-# Note: The volume name may be customized by modifying code to <custom>:/app.
-docker run -v teknonaturalist:/app -it teknonaturalist
+python3.12 dnabarcoder/dnabarcoder.py search -i data/final/F.c.reads.SRRdemo.fasta -r dnabarcoder/ITS.refs/unite2024/unite2024ITS1.unique.phylum.fasta -ml 50 -p ../data/finalcombined/SRRdemo
+python3.12 dnabarcoder/dnabarcoder.py classify -i data/finalcombined/SRRdemo.unite2024ITS1.unique.phylum_BLAST.bestmatch -c dnabarcoder/ITS.refs/unite2024/unite2024ITS1.unique.phylum.classification -cutoffs dnabarcoder/ITS.refs/unite2024/unite2024ITS1.unique.cutoffs.best.json -p ../data/finalcombined/SRRdemo.ITS1
 ```
 
-#### 3. Customize
+Check that it completed:
+
+```
+head data/finalcombined/SRRdemo.ITS.classified
+```
+If that all looks good, proceed to customizing.
+
+#### Alternatively, you may use the directory setup during testing, but operate locally and outside of a container (will require setup of all packages).
+```
+mkdir $PATH/<projectname>
+docker build -o $PATH/projectname .
+cd $PATH/projectname/teknonaturalist
+python ./extract_teknonaturalist_databases.py
+python ./extract_ITS.refs_database_for_dnabarcoder.py
+rm *.tar.gz
+```
+
+# II. Customizing for your host species. <br>
+We will build on the container you created. If you exited the container, you may restart and reconnect:
+
+If resuming from outside container:
+```
+# Determine container ID from all containers 
+docker ps -a
+# Restart and reattach to container.
+docker start <docker_container_identifier>
+docker attach <docker_container_identifier>
+```
+
+### 1. Set up database and assembly for a new host species.
+
+#### a. PLANiTS dataset for the host genus.
+Replace <GENUS> with name of host genus.<br>
+```
+grep "<GENUS>" database/PLANiTS/ITS_taxonomy | awk -F ' ' '{print $1}' > database/PLANiTS/<GENUS>.ITS
+seqtk subseq database/PLANiTS/ITS.fasta database/PLANiTS/<GENUS>.ITS > database/PLANiTS/<GENUS>.ITS.fasta
+grep "<GENUS>" database/PLANiTS/ITS1_taxonomy | awk -F ' ' '{print $1}' > database/PLANiTS/<GENUS>.ITS1
+seqtk subseq database/PLANiTS/ITS1.fasta database/PLANiTS/<GENUS>.ITS1 > database/PLANiTS/<GENUS>.ITS1.fasta
+grep "<GENUS>" database/PLANiTS/ITS2_taxonomy | awk -F ' ' '{print $1}' > database/PLANiTS/<GENUS>.ITS2
+seqtk subseq database/PLANiTS/ITS2.fasta database/PLANiTS/<GENUS>.ITS2 > database/PLANiTS/<GENUS>.ITS2.fasta
+cat database/PLANiTS/<GENUS>.ITS.fasta database/PLANiTS<GENUS>.ITS1.fasta database/PLANiTS/<GENUS>.ITS2.fasta > database/PLANiTS/<GENUS>.fasta
+```
+Make genus specific ITS database.<br>
+```
+makeblastdb -in database/PLANiTS/<GENUS>.fasta -dbtype nucl
+```
+
+#### b. Get Genbank fasta data for focal species.
+Replace <FOCAL_NO_DOT> with FULL species name, e.g. Delphinium menziesii
+Replace <FOCAL_WITH_DOT> with FULL species name, separated by . , e.g., Delphinium.menziesii
+```
+esearch -db nuccore -query '"<FOCAL_NO_DOT>"[Organism] OR $<FOCAL_NO_DOT>[All Fields] AND "<FOCAL_NO_DOT>"[porgn] AND ddbj_embl_genbank[filter] AND is_nuccore[filter]' | efetch -format fasta > database/genbank/<FOCAL_WITH_DOT>.Genbank.nucl.fasta
+```
+Make Blast database for your targe host plant species.
+```
+makeblastdb -in database/genbank/<FOCAL_WITH_DOT>.Genbank.nucl.fasta -dbtype nucl
+```
+
+#### c. Get reference assembly (fasta) of focal species or closely related congener (or closest relative with available assembly!) and index.
+Note: The fasta file may also be downloaded from NCBI manually if ncbi-genome-download fails.<br><br>
+Replace <CONGENER_NO_DOT> with FULL species name, e.g. Adonis annua <br>
+Replace <CONGENER_WITH_DOT> with FULL species name, separated by . , e.g., Adonis.annua <br>
+```
+ncbi-genome-download -s genbank --genera "<CONGENER_NO_DOT>" plant -o assembly/<CONGENER_WITH_DOT>.assembly -F fasta
+```
+
+For the following lines, the name of the assembly directory will be assigned to the "ac" variable (e.g., ac = "GCA_000327005.1"), and the assembly is unzipped. The full name of the ac variable may be used instead for the lines below. 
+```
+ac=$(ls assembly/<CONGENER_WITH_DOT>.assembly/genbank/plant | head -1)
+gunzip assembly/<CONGENER_WITH_DOT>.assembly/genbank/plant/${ac}/*.gz
+```
+
+Index reference assembly with bwa.
+```
+bwa index -p assembly/<CONGENER_WITH_DOT>.assembly/<CONGENER_WITH_DOT>.bwa.index <CONGENER_WITH_DOT>.assembly/genbank/plant/${ac}/*.fna
+```
+
+### 2. Import your files into the container. <br>
+If you haven't yet, exit container.
+```
+exit
+```
+
+Determine container ID by listing recently run containers<br>
+```
+docker ps -l
+# all containers:
+docker ps -a
+```
+Import fastqs to main directory in container. Note: container IDs are a series of random numbers and letters.
+```
+docker cp $PATH/<SRRnumber>*.fastq <docker_container_identifier>:/teknonaturalist
+```
+Now restart container and re-attach to it.
+```
+docker start <docker_container_identifier>
+docker attach <docker_container_identifier>
+```
+
+
+
+ 
+
+
+
 
 
 To run __teknonaturalist__, open the setup and execution files, edit the header lines as needed, and save and run the scripts. Files contain annotations with important information to guide the user. We suggest that line-by-line command running of shell script and txt files may be useful, particularly for new users and for troubleshooting. <br>
