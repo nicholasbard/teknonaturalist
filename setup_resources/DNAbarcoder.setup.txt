@@ -23,8 +23,8 @@ Navigate to 'teknonaturalist' directory (it should have 'dnabarcoder/dnabarcoder
 # Move these files to directory (I use dnabarcoder/ITS.refs/unite2024/)
 
 #the fasta files include many unclassified ITS sequences. These can be used, but will likely not classify many sequences. We use the aidscript provided by dnabarcoder to keep unique ITS1/ITS2 sequences, and only ones that were classified to phylum.mv 
-python3.9 dnabarcoder/aidscripts/selectsequences.py -i dnabarcoder/ITS.refs/unite2024/unite2024ITS1.fasta -c dnabarcoder/ITS.refs/unite2024/unite2024ITS1.classification -unique yes -rank phylum -o dnabarcoder/ITS.refs/unite2024/unite2024ITS1.unique.phylum.fasta
-python3.9 dnabarcoder/aidscripts/selectsequences.py -i dnabarcoder/ITS.refs/unite2024/unite2024ITS2.fasta -c dnabarcoder/ITS.refs/unite2024/unite2024ITS2.classification -unique yes -rank phylum -o dnabarcoder/ITS.refs/unite2024/unite2024ITS2.unique.phylum.fasta
+python3.12 dnabarcoder/aidscripts/selectsequences.py -i dnabarcoder/ITS.refs/unite2024/unite2024ITS1.fasta -c dnabarcoder/ITS.refs/unite2024/unite2024ITS1.classification -unique yes -rank phylum -o dnabarcoder/ITS.refs/unite2024/unite2024ITS1.unique.phylum.fasta
+python3.12 dnabarcoder/aidscripts/selectsequences.py -i dnabarcoder/ITS.refs/unite2024/unite2024ITS2.fasta -c dnabarcoder/ITS.refs/unite2024/unite2024ITS2.classification -unique yes -rank phylum -o dnabarcoder/ITS.refs/unite2024/unite2024ITS2.unique.phylum.fasta
 
 
 
@@ -41,11 +41,11 @@ ITSx -i ITS.refs/unite2024/edit.unite2024ITS.fasta --cpu 24 --multi_thread 24 -t
 #only use unique entries at phylum classification
 sed 's/|[^)]*)//g' ITS.refs/unite2024/ITSx_out.5_8S.fasta > ITS.refs/unite2024/f.ITSx_out.5_8s.fasta
 #select only unique sequences occurring in ITS2
-python3.9 aidscripts/selectsequences.py -i ITS.refs/unite2024/f.ITSx_out.5_8s.fasta -c ITS.refs/unite2024/unite2024ITS2.classification -unique yes -rank class -o ITS.refs/unite2024/5_8s.unique.class.fasta
+python3.12 aidscripts/selectsequences.py -i ITS.refs/unite2024/f.ITSx_out.5_8s.fasta -c ITS.refs/unite2024/unite2024ITS2.classification -unique yes -rank class -o ITS.refs/unite2024/5_8s.unique.class.fasta
 cd ITS.refs/unite2024/
-python3.9 ../../dnabarcoder.py predict -i 5_8s.unique.class.fasta -c 5_8s.unique.class.classification -st 0.7 -et 1 -s 0.001 -rank class -higherrank phylum -prefix unite20245_8s -ml 50
-python3.9 ../../dnabarcoder.py predict -i 5_8s.unique.class.fasta -c 5_8s.unique.class.classification -st 0.7 -et 1 -s 0.001 -rank class -prefix unite20245_8s -ml 50
-python3.9 ../../dnabarcoder.py best -i 5_8S.unique.cutoffs.json -c 5_8s.unique.class.classification -mincutoff 0.71
+python3.12 ../../dnabarcoder.py predict -i 5_8s.unique.class.fasta -c 5_8s.unique.class.classification -st 0.7 -et 1 -s 0.001 -rank class -higherrank phylum -prefix unite20245_8s -ml 50
+python3.12 ../../dnabarcoder.py predict -i 5_8s.unique.class.fasta -c 5_8s.unique.class.classification -st 0.7 -et 1 -s 0.001 -rank class -prefix unite20245_8s -ml 50
+python3.12 ../../dnabarcoder.py best -i 5_8S.unique.cutoffs.json -c 5_8s.unique.class.classification -mincutoff 0.71
 
 
 
