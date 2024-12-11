@@ -1,9 +1,9 @@
 teknonaturalist: A Snakemake pipeline for assessing fungal diversity from plant genome bycatch
 ============================================================
-Description
-====
 ![teknonaturalist](/setup_resources/teknonaturalist.png)	 
 <br>
+Description
+====
 __teknonaturalist__ is a pipeline for detection of fungal ITS sequences in non-targeted short-read raw plant genome sequence files (PE reads only). 
 __teknonaturalist__ is intended for use with [Snakemake](https://snakemake.readthedocs.io/en/stable/) (Mölder et al., 2021). We provide a [Dockerfile](https://docs.docker.com) for setup. bash scripts are also provided for command line execution. <br><br>The program is suitable for Linux and Unix (Mac) machines equipped with Python. Here, we provide an overview of the steps and resources for setup and execution of __teknonaturalist__ for fungal ITS detection and tools to integrate detections with [DNAbarcoder](https://github.com/vuthuyduong/dnabarcoder) (Vu et al., 2022) for fungal taxonomic classification. <br><br>Additional resources include [example R scripts](https://github.com/nicholasbard/tekno-manuscript-analysis) for identifying classified genome sequences. <br><br>
 [Data from the Betula example study](http://osf.io/8g6we/), in addition to the [databases and assembly files used](http://osf.io/8g6we/) are also available.<br> 
@@ -16,7 +16,7 @@ teknonaturalist: A Snakemake pipeline for assessing fungal diversity from plant 
 Copyright (C) 2023 Nicholas Bard et al.<br>
 Contact: Nicholas Bard, nicholas.bard[at]botany[dot]ubc[dot]ca<br>
 Programmer: Nicholas Bard<br>
-Use of teknonaturalist requires proper citation and usage of all databases used.
+Use of all databases used teknonaturalist requires proper citation according to their respective licensing (see References).
 <br>
 
 Dependencies:
@@ -27,8 +27,7 @@ __Docker__ (Recommended) <br>
 [Docker Engine](https://docs.docker.com) or [Docker Desktop](https://www.docker.com/products/docker-desktop/) will work. <br> <br>
 _We provide a Dockerfile that sets up and activates the teknonaturalist Snakemake environment_ <br>
 
-Required input files:
-============================================================
+## Required input files:
 The __teknonaturalist__ pipeline requires paired end fastq files to run.
 <br>
 
@@ -37,19 +36,24 @@ The __teknonaturalist__ pipeline requires paired end fastq files to run.
 Paired-end fastq files may be retrieved using [SRA Tools](https://github.com/ncbi/sra-tools)
 
 Navigate to teknonaturalist directory
+
 ```
 cd $PATH/teknonaturalist
 ```
-Obtain SRA files from NCBI SRA.
-```prefetch SRR<###>.sra
-```
-Create fastq files from NCBI SRA. Note that $PATH to local SRA file repository may be different among users.
 
+Obtain SRA files from NCBI SRA.
+
+```
+prefetch SRR<###>.sra
+```
+
+Create fastq files from NCBI SRA. Note that $PATH to local SRA file repository may be different among users.
 ```
 fasterq-dump --split-files $PATH/SRR<###>.sra -O .
 # OR, for files with different read counts
 fasterq-dump --split-3 $PATH/SRR<###>.sra -O .
 ```
+
 See also __[Fastq file prep](/0_File_Setup/Fastq.file.prep.txt)__
 
 Quick setup: Docker
@@ -59,10 +63,13 @@ We provide a quick setup option using __Docker__.<br>
 ## Run demo with test data (_Betula ermanii_ )
 ### 1. Build Docker image
 Navigate to teknonaturalist/Docker directory
+
 ```
 cd $PATH/teknonaturalist/Docker
 ```
+
 Build Docker image. 
+
 ```
 docker build -t teknonaturalist .
 ```
