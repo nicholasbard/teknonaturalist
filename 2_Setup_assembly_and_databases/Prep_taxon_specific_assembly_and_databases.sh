@@ -42,20 +42,25 @@ focalnodot="<enter full species name of focal species here, separated by space, 
 
 
 ##########~~~~~~~~ I. Setup directions, to be used for all focal species with the same genus ~~~~~~~#########
+
+##### Important! Ensure the current directory is teknonaturalist/
+## The following command will ensure that this can be run from the 2_Setup_assembly_and_databases directory. Comment out if necessary.
+mv ../
+
 #~~~~~~~~ Build PLANits databases for the genus, index, and prepare reference files ~~~~~~~#
 
 #### Get genus-specific data PLANiTS
 
 #  For initial setup (make directory teknonaturalist/database/PLANiTS if needed):
 
-# This nformation is available at https://github.com/apallavicini with: 
+# This information is available at https://github.com/apallavicini with: 
 # git clone https://github.com/apallavicini/PLANiTS.git
 # Unzip.
 # unzip teknonaturalist/database/PLANiTS/PLANiTS_<DD-MM-YYYY>.zip
 
-# Subset database to only ITS regions. Note: do not edit {print $1} terms.
 
-## Important! Ensure the current directory is teknonaturalist/
+
+# Subset database to only ITS regions. Note: do not edit {print $1} terms.
 
 grep "${genus}" database/PLANiTS/ITS_taxonomy | awk -F ' ' '{print $1}' > database/PLANiTS/${genus}.ITS
 seqtk subseq database/PLANiTS/ITS.fasta database/PLANiTS/${genus}.ITS > database/PLANiTS/${genus}.ITS.fasta
