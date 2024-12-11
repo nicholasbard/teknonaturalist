@@ -1,0 +1,18 @@
+#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~
+## Troubleshooting for Mac ARM users (newer Macs) (try this first):
+# Due to Python/Conda Forge issues with Mac osx-arm64, osx-64 environments can be created 
+
+CONDA_SUBDIR=osx-64 mamba env create --name teknonaturalist --file environment.yaml
+# then:
+mamba activate teknonaturalist
+#or try
+conda activate teknonaturalist
+
+# If these troubleshooting tips do not work, go back to the earlier Mac troubleshooting tips in "Snakemake installation", and reference Conda/Mamba/Snakemake resources.
+
+## Mamba/conda or Snakemake installation on Mac ARM may require the shell name to be set to 'zsh' (instead of 'bash')
+eval "$(/Users/<username>/miniforge3/bin/conda shell.<YOUR SHELL, I.E., zsh> hook)"
+## Mac users may also try editing ~/.zshrc to include information for mambaforge (in ~/.bash_profile).
+## If this does not work and you are having trouble with conda activation, the following may be run to force activate Conda.
+source $PATH_TO_MINIFORGE3/miniforge3/bin/activate 
+conda activate base
