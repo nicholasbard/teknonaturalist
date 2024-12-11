@@ -7,6 +7,7 @@
 
 ##### DNAbarcoder must be installed into teknonaturalist/directory (as teknonaturalist/dnabarcoder/) prior to building databases required for fungal classification using DNAbarcoder. 
 # Installation using github: 
+cd $PATH/teknonaturalist
 git clone https://github.com/vuthuyduong/dnabarcoder.git
 
 # Verify DNAbarcoder program (including dnabarcoder/dnabarcoder.py) is downloaded into teknonaturalist directory as a subdirectory (e.g., teknonaturalist/dnabarcoder/)
