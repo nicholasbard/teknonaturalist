@@ -122,14 +122,24 @@ python ./extract_teknonaturalist_databases.py
 python ./extract_ITS.refs_database_for_dnabarcoder.py
 rm *.tar.gz
 ```
-### You may also follow instructions to setup the teknonaturalist Snakemake environment or install packages with mamba/conda
+# Ib. Alternative - Basic setup without Docker <br>
+## Follow instructions to [set up teknonaturalist using Snakemake](/setup_resources/teknonaturalist_setup.txt) or via [manual package installation packages with mamba/conda](package_install_for_bash_script.txt)
+### Download databases to run teknonaturalist
+RUN osf -p j57fs clone .
+### Download sample species (Betula nana) assembly to run teknonaturalist with sample file
+osf -p vnh3b clone .
+### Download premade ITS and 5.8S sequences for use with DNAbarcoder; move all to correct location.
+osf -p 38uk2 clone .
+mv osfstorage/* .
+rm -r osfstorage
+
+#### You can also pick up here without using Docker.
 This image shows the basic directory structure in order to run teknonaturalist for fungal detection. Note that teknonaturalist/dnabarcoder must be present for fungal classification. <br>
 ![Snakemake directory structure](/setup_resources/snakemake_directory_structure.png)<br>
 
 # II. Setting up pipeline database and assembly for your host species <br>
 We will continue to work on the container you created. If you exited the container, you may restart and reconnect:
-#### You can also pick up here without using Docker, after following instructions to [setup the teknonaturalist Snakemake environment](/setup_resources/teknonaturalist_setup.txt) or [install packages with mamba/conda](package_install_for_bash_script.txt) <br>
-#### More details in [Running_teknonaturalist_with_Snakemake_Overview.txt](/setup_resources/Running_teknonaturalist_with_Snakemake_Overview.txt) <br>
+  <br>
 If resuming from outside container:
 ```
 # Determine container ID from all containers 
@@ -186,34 +196,23 @@ Index reference assembly with bwa.
 bwa index -p assembly/<CONGENER_WITH_DOT>.assembly/<CONGENER_WITH_DOT>.bwa.index <CONGENER_WITH_DOT>.assembly/genbank/plant/${ac}/*.fna
 ```
 # III. Running the pipeline <br>
-## 2. Import your files into the container. <br>
+### If using Docker, import your files into the container. <br>
 If you haven't yet, exit container.
+Determine container ID by listing recently run containers 
 ```
 exit
-```
-
-Determine container ID by listing recently run containers<br>
-```
 docker ps -l
 # all containers:
 docker ps -a
 ```
-Import fastqs to main directory in container. Note: container IDs are a series of random numbers and letters.
-```
-docker cp $PATH/<SRRnumber>*.fastq <docker_container_identifier>:/teknonaturalist
-```
+Now, import fastqs to main directory in container. Note: container IDs are a series of random numbers and letters.
 Now restart container and re-attach to it.
 ```
+docker cp $PATH/<SRRnumber>*.fastq <docker_container_identifier>:/teknonaturalist
 docker start <docker_container_identifier>
 docker attach <docker_container_identifier>
 ```
-
-
-
- 
-
-
-
+### If not using Docker, move your files into the container. 
 
 
 To run __teknonaturalist__, open the setup and execution files, edit the header lines as needed, and save and run the scripts. Files contain annotations with important information to guide the user. We suggest that line-by-line command running of shell script and txt files may be useful, particularly for new users and for troubleshooting. <br>
