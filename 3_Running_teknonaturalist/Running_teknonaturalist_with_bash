@@ -1,0 +1,8 @@
+# Running teknonaturalist with bash instructions.
+
+# 1. Make sure you have completed 0_File_setup, 1_Basic_setup_and_install, 2_Setup_assembly_and_databases
+# 2. Check if fasterq-dump produced equal or unequal paired-end fastq files (see 0_File_setup)
+# 3. Edit the appropriate bash script with your variables
+#### Equal reads: teknonaturalist.Fungal.ITS.detection.equal.reads.sh 
+#### Unequal reads: teknonaturalist.Fungal.ITS.detection.unequal.reads.sh
+# 4. Run corresponding bash script from teknonaturalist directory
