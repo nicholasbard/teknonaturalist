@@ -1,9 +1,9 @@
-## Step-by-step code for classifying fungi with DNAbarcoder (Vu et al 2022).
+# Step-by-step code for classifying fungi with DNAbarcoder (Vu et al 2022).
 ### Nick Bard 2023
 
 #### Alternatively, manually edit Fungal.ITS.classifier.sh and run as a bash script
 
-### This must be run in the teknonaturalist directory, which can be set as $PATH or navigated to if $PATH variable not set:
+## This must be run in the teknonaturalist directory, which can be set as $PATH or navigated to if $PATH variable not set:
 ```
 cd $PATH/teknonaturalist
 ```
@@ -11,15 +11,15 @@ cd $PATH/teknonaturalist
 Make sure that dnabarcoder directory with prepared database is in teknonaturalist/ (teknonaturalist/dnabarcoder/)
 Remain in teknonaturalist/ directory to run these commands.
 
-### General code for classifying fungi with DNAbarcoder , available at https://github.com/vuthuyduong/dnabarcoder.
+## General code for classifying fungi with DNAbarcoder , available at https://github.com/vuthuyduong/dnabarcoder.
 
 ## HEADER LINES INSTRUCTIONS
 ### Replace all ${text} in code, as follows.
 ### Replace ${SRR} with common prefix for accession number, (e.g., SRR92).
 ### Replace ${SAMPLE} with specific epithet (2nd word) of plant species name (e.g., ermanii).
 
-## CODE:
-### Combine all individual samples in a dataset and reformat so readable by DNAbarcoder.
+# CODE:
+## Combine all individual samples in a dataset and reformat so readable by DNAbarcoder.
 ```
 grep "" data/final/${SRR}*.ITSx.ITS1.full_and_partial.fasta | awk 'NR % 2 == 0 {sub(/.*:/, "", $0)} 1' | sed "s/.*\(${SRR}\)/>\1/" | sed 's/\..*>/,/' > data/finalcombined/${SAMPLE}.ITS1.full.partial.all
 grep "" data/final/${SRR}*.ITSx.ITS2.full_and_partial.fasta | awk 'NR % 2 == 0 {sub(/.*:/, "", $0)} 1' | sed "s/.*\(${SRR}\)/>\1/" | sed 's/\..*>/,/' > data/finalcombined/${SAMPLE}.ITS2.full.partial.all
