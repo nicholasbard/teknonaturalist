@@ -9,7 +9,7 @@ ruleorder: cat_unequal > cat_equal
 ############################
 
 #Note, for all: keep the [],'', and "". remove <>.
-ADAP_OUTPUTS = [".pair1.truncated",".pair2.truncated",".collapsed",".collapsed.truncated", ".singleton.truncated", "sb.truncated"]
+ADAP_OUTPUTS = [".pair1.truncated",".pair2.truncated",".collapsed",".collapsed.truncated", ".singleton.truncated", ".sb.truncated"]
 SRRS = ["<ENTER SRR NUMBER(s) HERE>"]
 CONGS = 'assembly/<ENTER CONSPECIFIC OR CONGENER FOR ASSEMBLY HERE, E.G., Betula.nana>.assembly/<ENTER CONSPECIFIC OR CONGENER AGAIN HERE>.bwa.index'
 FOCALS = 'database/genbank/<ENTER FOCAL SPECIES HERE, E.G., Betula.ermanii>.Genbank.nucl.fasta'
