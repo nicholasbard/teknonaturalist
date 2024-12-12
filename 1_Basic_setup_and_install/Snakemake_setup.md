@@ -6,14 +6,14 @@ Please refer to their respective help pages if more extensive setup or troublesh
 [Mamba](https://mamba.readthedocs.io/en/latest/index.html) <br>
 [Snakemake](https://snakemake.readthedocs.io/en/stable/)<br>
 
-Some troubleshooting for newer Mac users (ARM) provided in Trobleshooting_mamba_conda_MACS.txt <br>
+NOTE: Mac devices equipped with ARM may require additional steps/troubleshooting, which we include [here](/Custom.setup/Troubleshooting_mamba_conda_MACS.txt) <br> 
 
 ## Snakemake installation and setup instructions 
 teknonaturalist may be run using provided Snakemake and bash scripts. The program requires several programs that can be installed <br>
 __A.__ using Mamba (from mini forge) and Snakemake (recommended) <br>
 __B.__ using Conda/Mamba and Snakemake (not recommended) <br>
-__C.__ manually (may be used if Snakemake malfunctions) <br>
-NOTE: Mac devices equipped with ARM may require additional steps, which we include below. <br>
+__C.__ manually (may be used if Snakemake malfunctions) <br><br>
+
 NOTE: Swapping the command 'conda' with 'mamba' (or vice versa) may be helpful in some cases. Ideally 'mamba' can be used for everything. <br>
 
 ### Option 1. Docker - see README.md. 
