@@ -5,7 +5,7 @@ teknonaturalist: A Snakemake pipeline for assessing fungal diversity from plant 
 Description
 ====
 __teknonaturalist__ is a pipeline for detection of fungal ITS sequences in non-targeted short-read raw plant genome sequence files (PE reads only). 
-__teknonaturalist__ is intended for use with [Snakemake](https://snakemake.readthedocs.io/en/stable/) (Mölder et al., 2021). We provide a [Dockerfile](https://docs.docker.com) for setup. bash scripts are also provided for command line execution. <br><br>The program is suitable for Linux and Unix (Mac) machines equipped with Python. Here, we provide an overview of the steps and resources for setup and execution of __teknonaturalist__ for fungal ITS detection and tools to integrate detections with [DNAbarcoder](https://github.com/vuthuyduong/dnabarcoder) (Vu et al., 2022) for fungal taxonomic classification. <br><br>Additional resources include [example R scripts](https://github.com/nicholasbard/tekno-manuscript-analysis) for identifying classified genome sequences. <br><br>
+__teknonaturalist__ is intended for use with [Snakemake](https://snakemake.readthedocs.io/en/stable/) (Mölder et al., 2021). We provide a [Dockerfile](/Docker/Dockerfile) (https://docs.docker.com) for setup. bash scripts are also provided for command line execution. <br><br>The program is suitable for Linux and Unix (Mac) machines equipped with Python. Here, we provide an overview of the steps and resources for setup and execution of __teknonaturalist__ for fungal ITS detection and tools to integrate detections with [DNAbarcoder](https://github.com/vuthuyduong/dnabarcoder) (Vu et al., 2022) for fungal taxonomic classification. <br><br> Additional resources include [example R scripts](https://github.com/nicholasbard/tekno-manuscript-analysis) for identifying classified genome sequences. <br><br>
 [Data from the Betula example study](http://osf.io/8g6we/), in addition to the [databases and assembly files used](http://osf.io/8g6we/) are also available.<br> 
 
 Source code available at:<br>
@@ -31,9 +31,9 @@ _We provide a Dockerfile that sets up and activates the teknonaturalist Snakemak
 The __teknonaturalist__ pipeline requires paired end fastq files to run.
 <br>
 
-### Quick fastq retrieval:
-<br>
-Paired-end fastq files may be retrieved using [SRA Tools](https://github.com/ncbi/sra-tools)<br>
+### Quick fastq retrieval: <br>
+See also [Fastq.file.prep.txt](/0_Fastq_file_Setup/Fastq.file.prep.txt) <br>
+Paired-end fastq files may be retrieved using [SRA Tools](https://github.com/ncbi/sra-tools)<br><br>
 Navigate to teknonaturalist directory
 
 ```
@@ -41,24 +41,20 @@ cd $PATH/teknonaturalist
 ```
 
 Obtain SRA files from NCBI SRA.
-
 ```
 prefetch SRR<###>.sra
 ```
 
 Create fastq files from NCBI SRA. Note that $PATH to local SRA file repository may be different among users.
-
 ```
 fasterq-dump --split-files $PATH/SRR<###>.sra -O .
 # OR, for files with different read counts
 fasterq-dump --split-3 $PATH/SRR<###>.sra -O .
 ```
 
-See also [Fastq file prep](/0_File_Setup/Fastq.file.prep.txt)
-
-I. Quick basic setup and test: Docker
+Ia. Quick basic setup and test: Docker
 ============================================================
-We provide a quick setup option using __Docker__.<br> 
+We provide a quick setup option using [Docker](/Docker) <br> 
 
 ## Run demo with test data (_Betula ermanii_)
 ### 1. Build Docker image
@@ -75,7 +71,7 @@ The image can now be run and tested on demo data provided.
 ### 2. Run test Docker image
 #### Option 1: Recommended - Bind Mount to save volume locally.
 Use 'bind mount' to save the basic __teknonaturalist__ and [DNAbarcoder](https://github.com/vuthuyduong/dnabarcoder) setup, including databases and assembly. This will save databases locally in persistent volume ('teknonaturalist') that will not be removed if the Docker container is deleted. <br>
-Basically, this means that database files will not need to be re-downloaded if a new Docker image is built, ad are saved as tar.gz files. <br>
+Basically, this means that database files will not need to be re-downloaded if a new Docker image is built, and are saved as tar.gz files. <br>
 ```
 # Note: The volume name may be customized by modifying code to <custom>:/app.
 docker run -v teknonaturalist:/app -it teknonaturalist
@@ -94,23 +90,21 @@ rm *.tar.gz
 ```
 
 Test teknonaturalist (fungal identification) with fake data.
-
 ```
 snakemake --cores 1 --snakefile demoSnakefile data/final/F.c.e.reads.SRRdemo.fasta
 ```
 
 Test DNAbarcoder (fungal classification) with fake data.
-
 ```
 python3.12 dnabarcoder/dnabarcoder.py search -i data/final/F.c.reads.SRRdemo.fasta -r dnabarcoder/ITS.refs/unite2024/unite2024ITS1.unique.phylum.fasta -ml 50 -p ../data/finalcombined/SRRdemo
 python3.12 dnabarcoder/dnabarcoder.py classify -i data/finalcombined/SRRdemo.unite2024ITS1.unique.phylum_BLAST.bestmatch -c dnabarcoder/ITS.refs/unite2024/unite2024ITS1.unique.phylum.classification -cutoffs dnabarcoder/ITS.refs/unite2024/unite2024ITS1.unique.cutoffs.best.json -p ../data/finalcombined/SRRdemo.ITS1
 ```
 
 Check that it completed:
-
 ```
 head data/finalcombined/SRRdemo.ITS.classified
 ```
+
 If that all looks good, proceed to customizing.
 
 #### Alternatively, you may use the directory setup during testing, but operate locally and outside of a container (will require setup of all packages).
@@ -122,8 +116,11 @@ python ./extract_teknonaturalist_databases.py
 python ./extract_ITS.refs_database_for_dnabarcoder.py
 rm *.tar.gz
 ```
+
 # Ib. Alternative - Basic setup without Docker <br>
-## Follow instructions to [set up teknonaturalist using Snakemake](/setup_resources/teknonaturalist_setup.txt) or via [manual package installation packages with mamba/conda](package_install_for_bash_script.txt) <br>
+### 1a. [Set up Snakemake](/1_Basic_setup_and_install/Snakemake_setup.md) OR
+### 1b. [Manual package install with mamba/conda](/1_Basic_setup_and_install/MANUAL_package_install_for_bash_script.txt)
+### 2. [Set up teknonaturalist using Snakemake](/1_Basic_setup_and_install/teknonaturalist_setup.md)  <br>
 
 #### Download basic databases. <br>
 You will customize these later for your host plant species. 
@@ -186,7 +183,9 @@ docker ps -a
 docker start <docker_container_identifier>
 docker attach <docker_container_identifier>
 ```
-### You can also pick up here without using Docker.
+### You can also pick up here without using Docker. <br> <br>
+
+#### The following code may be alternatively edited into [Prep_taxon_specific_assembly_and_databases.sh](/2_Setup_assembly_and_databases/Prep_taxon_specific_assembly_and_databases.sh) and run as a bash script.
 
 ### a. PLANiTS dataset for the host genus.
 Replace <GENUS> with name of host genus.<br>
@@ -234,28 +233,55 @@ Index reference assembly with bwa.
 ```
 bwa index -p assembly/<CONGENER_WITH_DOT>.assembly/<CONGENER_WITH_DOT>.bwa.index <CONGENER_WITH_DOT>.assembly/genbank/plant/${ac}/*.fna
 ```
-# III. Running the pipeline <br>
+# IIIa. Running the pipeline with Snakemake <br>
+
+#### 
 ### If using Docker, import your files into the container. <br>
-If you haven't yet, exit container.
-Determine container ID by listing recently run containers 
+
+If you haven't yet, exit container and determine container ID by listing recently run containers. <br>
+Note: container IDs are a series of random numbers and letters. 
 ```
 exit
 docker ps -l
 # all containers:
 docker ps -a
 ```
-Now, import fastqs to main directory in container. Note: container IDs are a series of random numbers and letters.
-Now restart container and re-attach to it.
+Now, import fastqs to main directory in container. Restart container and re-attach to it.
 ```
-docker cp $PATH/<SRRnumber>*.fastq <docker_container_identifier>:/teknonaturalist
+docker cp $PATH/<SRRnumber>*.fastq <docker_container_identifier>:/teknonaturalist/data/orig.fastqs
 docker start <docker_container_identifier>
 docker attach <docker_container_identifier>
 ```
-### If not using Docker, move your files into the container. 
 
+### If not using Docker:
+Ensure [Snakefile](/Snakefile) (or equivalent) and [environment.yaml](/environment.yaml) are in teknonaturalist directory.<br>
+Make sure fastq files are in teknonaturalist/data/orig.fastqs directory
+```
+mv <PATH>/<to>/*.fastq $PATH/teknonaturalist/data/orig.fastqs
+```
 
-To run __teknonaturalist__, open the setup and execution files, edit the header lines as needed, and save and run the scripts. Files contain annotations with important information to guide the user. We suggest that line-by-line command running of shell script and txt files may be useful, particularly for new users and for troubleshooting. <br>
-<br>
+Check files/directories have been set up by running [check_before_running_teknonaturalist.py](/check_before_running_teknonaturalist.py) <br>
+```
+python3.12 check_before_running_teknonaturalist.py
+```
+
+### To run teknonaturalist with Snakemake, edit the 'Customizable Section' in [Snakefile](/Snakefile) with a text editing tool and save files.
+Files contain annotations with important information to guide the user. <br>
+At minimum, text within <> must be edited (with the <> deleted as well). <br>
+Note: Multiple SRR files may be added in, separated by ",".
+
+# IIIb. Running the pipeline with bash <br>
+Also see [Running_teknonaturalist_with_bash_.txt](/3_Running_teknonaturalist/Running_teknonaturalist_with_bash.txt)
+
+Make sure fastq files are in teknonaturalist/data/orig.fastqs directory
+```
+mv <PATH>/<to>/*.fastq $PATH/teknonaturalist/data/orig.fastqs
+```
+
+Check files/directories have been set up by running [check_before_running_teknonaturalist.py](/check_before_running_teknonaturalist.py)
+```
+python3.12 check_before_running_teknonaturalist.py
+```
 
 
 Setup: Installation of Snakemake and teknonaturalist (must be run once before initial use)
