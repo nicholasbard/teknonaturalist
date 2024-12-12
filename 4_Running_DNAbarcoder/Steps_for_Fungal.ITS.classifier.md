@@ -1,7 +1,7 @@
-# Step-by-step code for classifying fungi with [DNAbarcoder](https://github.com/vuthuyduong/dnabarcoder) (Vu et al 2022). <br>
+# Steps for classifying fungi with [DNAbarcoder](https://github.com/vuthuyduong/dnabarcoder) (Vu et al 2022). <br>
 Nick Bard 2023
 
-#### Alternatively, manually edit Fungal.ITS.classifier.sh and run as a bash script
+### Alternatively, manually edit [Fungal.ITS.classifier.sh](/Fungal.ITS.classifier.sh) and run as a bash script
 
 This must be run in the teknonaturalist directory, which can be set as $PATH or navigated to if $PATH variable not set:
 ```
