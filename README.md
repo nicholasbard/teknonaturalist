@@ -76,6 +76,7 @@ Basically, this means that database files will not need to be re-downloaded if a
 # Note: The volume name may be customized by modifying code to <custom>:/app.
 docker run -v teknonaturalist:/app -it teknonaturalist
 ```
+
 #### Option 2: Will not save databases (takes a few minutes for every build).
 ```
 # Note: The volume name may be customized by modifying code to <custom>:/app.
@@ -283,6 +284,31 @@ Check files/directories have been set up by running [check_before_running_teknon
 python3.12 check_before_running_teknonaturalist.py
 ```
 
+Edit the appropriate bash script with your variables in "customizable variables" section <br>
+_Equal reads:_ [teknonaturalist.Fungal.ITS.detection.equal.reads.sh](/teknonaturalist.Fungal.ITS.detection.equal.reads.sh) <br>
+_Unequal reads:_ [teknonaturalist.Fungal.ITS.detection.unequal.reads.sh](/teknonaturalist.Fungal.ITS.detection.unequal.reads.sh) <br><br>
+
+Finally, run the appropriate bash script for fungal detection.<br><br>
+
+# IV. Fungal classification using DNAbarcoder
+Once one or more specimens have been run, they can be grouped and classified with [DNAbarcoder](/https://github.com/vuthuyduong/dnabarcoder) using custom fungal ITS databases. <br> 
+Alternatively, the [Fungal.ITS.classifier.sh](/Fungal.ITS.classifier.sh) file may be edited with a script editor and run directly in the Docker container or mamba/conda environment.<br><br>
+
+For details on fungal ITS database construction, or to make modified databases, see [DNAbarcoder.prep.txt](/Custom.setup). 
+<br><br>
+Final note: We recommend that scientific discretion be used for fungal classifications made. Low confidence observations may be informative in certain contexts, though we advise that these be treated cautiously. You may consider imposing a confidence threshold (e.g., >0.70), and even secondary classification techniques (e.g., BLAST) may be conducted and used for comparison.
+### That's it!
+<br><br>
+# A recap for experienced, repeat users:
+__1.__ Paired end fastq files must be used - [Fastq.file.prep.txt](\0_Fastq_file_setup/Fastq.file.prep.txt)<br><br>
+__2.__ Only the assembly and taxon-specific databases must be changed if you apply teknonaturalist to another host plant, assuming you keep the basic database setup intact. - 2_Setup_assembly_and_databases/Prep_taxon_specific_assembly_and_databases.sh <br>
+NOTE: The taxon-specific assemblies and databases, including the Betula examples, may be removed by the user to save space as long as directory structure is left intact.<br><br>
+__3.__ Fungal detection may be run on input files (teknonaturalist/data/orig.fastqs/*.fastq) by editing Snakefiles and running Snakemake [Snakefile](/Snakefile) - or editing shell script files and running bash - [teknonaturalist.Fungal.ITS.detection.unequal.reads.sh](/teknonaturalist.Fungal.ITS.detection.unequal.reads.sh) OR [teknonaturalist.Fungal.ITS.detection.equal.reads.sh](/teknonaturalist.Fungal.ITS.detection.equal.reads.sh)
+__4.__Fungal classification may be run on multiple files using the code in DNAbarcoder by editing the shell script file and running bash  
+__5.__
+__6.__
+
+
 Setup: Installation of Snakemake and teknonaturalist (must be run once before initial use)
 ============================================================
 
@@ -320,6 +346,7 @@ Executing teknonaturalist: Preparing for fungal ITS detection
 ============================================================
 
 Almost ready! Before running __teknonaturalist__ with Snakemake, make sure that the __teknonaturalist__ environment is activated:<br><br>
+
 mamba activate teknonaturalist 
 <br><br>OR<br><br>
 conda activate teknonaturalist
