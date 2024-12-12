@@ -5,7 +5,7 @@ ruleorder: cutadapt_unequal > cutadapt_equal
 ruleorder: cat_unequal > cat_equal
 
 # Note, for all: keep the [],'', and "". remove <>.
-ADAP_OUTPUTS = [".pair1.truncated",".pair2.truncated",".collapsed",".collapsed.truncated", ".singleton.truncated", "sb.truncated"]
+ADAP_OUTPUTS = [".pair1.truncated",".pair2.truncated",".collapsed",".collapsed.truncated", ".singleton.truncated", ".sb.truncated"]
 SRRS = ["SRRdemo"]
 CONGS = 'assembly/Betula.nana.assembly/Betula.nana.bwa.index'
 FOCALS = 'database/genbank/Betula.ermanii.Genbank.nucl.fasta'
