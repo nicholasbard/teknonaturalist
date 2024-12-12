@@ -54,16 +54,6 @@ snakemake -np --cores {CORE NUMBER} --snakefile {Snakefile name} {Output file}
 
 #### Example commands For teknonaturalist (easiest way) <br>
 
-(using equal PE read fastq files)
-```
-snakemake --cores {CORE NUMBER} --snakefile Snakefile data/final/{SRRnumber}.ITSx
-```
-
-(using unequal PE read fastq files)
-```
-snakemake --cores {CORE NUMBER} --snakefile Snakefile data/final/{SRRnumber}.ITSx
-```
-
 EXAMPLE: (single fastq files)
 ```
 snakemake --cores 4 --snakefile Snakefile data/final/ERR2026266.ITSx
