@@ -66,7 +66,7 @@ EXAMPLE: (single fastq files)
 ```
 snakemake --cores 4 --snakefile Snakefile data/final/ERR2026266.ITSx
 ```
-# EXAMPLE: (multiple fastq files)
+EXAMPLE: (multiple fastq files)
 ```
 snakemake --cores 20 --snakefile Snakefile data/final/{ERR2026264,ERR2026266}.ITSx
 ```
