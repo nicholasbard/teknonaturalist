@@ -6,7 +6,15 @@ Please refer to their respective help pages if more extensive setup or troublesh
 [Mamba](https://mamba.readthedocs.io/en/latest/index.html) <br>
 [Snakemake](https://snakemake.readthedocs.io/en/stable/)<br>
 
-NOTE: Mac devices equipped with ARM may require additional steps/troubleshooting, which we include [here](/Custom.setup/Troubleshooting_mamba_conda_MACS.txt) <br> 
+NOTE 1: Mac devices equipped with ARM may require additional steps/troubleshooting, which we include [here](/Custom.setup/Troubleshooting_mamba_conda_MACS.txt) <br><br>
+NOTE 2: If using mamba/conda with a task manager on a cluster, cache files during computational tasks may need to be diverted to a directory with file-writing permissions. 
+Before running the pipeline:
+```
+mamba deactivate
+export XDG_CACHE_HOME=/<your directory>
+```
+
+Then activate mamba/conda environment before submitting the batch.
 
 ## Snakemake installation and setup instructions 
 teknonaturalist may be run using provided Snakemake and bash scripts. The program requires several programs that can be installed <br><br>
