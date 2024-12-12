@@ -183,8 +183,8 @@ docker ps -a
 docker start <docker_container_identifier>
 docker attach <docker_container_identifier>
 ```
-### You can also pick up here without using Docker. <br> <br>
-
+### Everybody: <br> <br>
+## Building databases for your host plant taxon of interest.<br>
 #### The following code may be alternatively edited into [Prep_taxon_specific_assembly_and_databases.sh](/2_Setup_assembly_and_databases/Prep_taxon_specific_assembly_and_databases.sh) and run as a bash script.
 
 ### a. PLANiTS dataset for the host genus.
