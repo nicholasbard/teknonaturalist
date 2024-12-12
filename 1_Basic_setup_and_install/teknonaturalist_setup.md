@@ -108,7 +108,8 @@ rm *.tar.gz
 
 ### Next steps: <br>
 Before teknonaturalist may be run, the assembly and database files need to be installed in the teknonaturalist/ directory. <br>
-Please see the Prep_taxon_specific_assembly_and_databases.sh and Manual_prep_of_non_taxon_specific_databases.txt files for more.
+Please see the [Prep_taxon_specific_assembly_and_databases.sh](/2_Setup_assembly_and_databases/Prep_taxon_specific_assembly_and_databases.sh) or [README](/README.md) for next steps. <br><br>
+Advanced: Details for basic database setup may be found in [Manual_prep_of_non_taxon_specific_databases.txt](/Custom.setup/Manual_prep_of_non_taxon_specific_databases.txt)
 
 
 
