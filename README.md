@@ -334,8 +334,6 @@ __[environment.yaml](/environment.yaml)__ <br>
 This file is required for setting up the teknonaturalist environment along with required programs used. It does not need to be run, simply present in the teknonaturalist/ directory during environment activation. <br><br>
 __[MANUAL_package_install_for_bash_script.txt](/1_Basic_setup_and_install/MANUAL_package_install_for_bash_script.txt)__ 
 <br> This file provides an alternative method for setting up the packages need to run teknonaturalist.<br><br>
-__[DNAbarcoder Setup](/setup_resources/DNAbarcoder.setup.txt)__ <br>
-This provides instructions for setting up DNAbarcoder for fungal classification. DNAbarcoder must be installed in the __teknonaturalist__ directory (teknonaturalist/dnabarcoder/) prior to using classification scripts.<br><br>
 __[Extract ITS.refs Database for DNAbarcoder](extract_ITS.refs_database_for_dnabarcoder.py)__ <br>
 A python script to extract ITS reference database for DNAbarcoder (available at https://osf.io/8g6we/)<br><br>
 
@@ -366,7 +364,8 @@ A file to pool sequences from different outputs and classify fungal taxa in a da
 ### Advanced: Database modification
 __[Manual Prep of non-Taxon Specific Databases](/Custom.setup/Manual_prep_of_non_taxon_specific_databases.txt)__ <br>
 This file explains how the databases were built. The file may be modified to create customized databases different from those provided at https://osf.io/8g6we/ <br><br>
-
+__[DNAbarcoder Setup](/setup_resources/DNAbarcoder.setup.txt)__ <br>
+This file explains how fungal ITS databases for fungal classification with DNAbarcoder were built. The file may be modified to create customized databases. DNAbarcoder must be installed in the __teknonaturalist__ directory (teknonaturalist/dnabarcoder/) prior to using classification scripts.<br><br>
 
 Additional information not in repository
 ============================================================
