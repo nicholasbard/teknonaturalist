@@ -24,7 +24,7 @@ Dependencies:
 __sra-tools__ available at [SRA Tools Github](https://github.com/ncbi/sra-tools) OR [SRA Tools Conda](https://anaconda.org/bioconda/sra-tools) <br>
 
 __Docker__ (Recommended) <br>
-[Docker Engine](https://docs.docker.com) or [Docker Desktop](https://www.docker.com/products/docker-desktop/) will work. <br> <br>
+[Docker Engine](https://docs.docker.com) or [Docker Desktop](https://www.docker.com/products/docker-desktop/) will work. <br>
 _We provide a Dockerfile that sets up and activates the teknonaturalist Snakemake environment_ <br>
 
 ## Required input files:
@@ -118,11 +118,12 @@ rm *.tar.gz
 ```
 
 # Ib. Alternative - Basic setup without Docker <br>
-### 1a. [Set up Snakemake](/1_Basic_setup_and_install/Snakemake_setup.md) OR
-### 1b. [Manual package install with mamba/conda](/1_Basic_setup_and_install/MANUAL_package_install_for_bash_script.txt)
-### 2. [Set up teknonaturalist using Snakemake](/1_Basic_setup_and_install/teknonaturalist_setup.md)  <br>
+### Complete these steps: 
+#### 1a. [Set up Snakemake](/1_Basic_setup_and_install/Snakemake_setup.md) OR
+#### 1b. [Manual package install with mamba/conda](/1_Basic_setup_and_install/MANUAL_package_install_for_bash_script.txt)
+#### 2. [Set up teknonaturalist using Snakemake](/1_Basic_setup_and_install/teknonaturalist_setup.md)  <br>
 
-#### Download basic databases. <br>
+#### Nest, download basic databases. <br>
 You will customize these later for your host plant species. 
 
 ```
