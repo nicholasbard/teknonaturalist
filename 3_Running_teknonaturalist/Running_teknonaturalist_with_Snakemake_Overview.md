@@ -28,8 +28,9 @@ conda activate teknonaturalist
 mamba activate teknonaturalist
 ```
 
-4. Ensure that the 1. environment.yaml , 2. Snakefile file (can be re-titled) 3. 'data' directory are in the working directory and 4. teknonaturalist/database and teknonaturalist/assembly directories are setup correctly (see README.md). Perform quick check:
+4. Ensure that the 1. environment.yaml , 2. Snakefile file (can be re-titled) 3. 'data' directory are in the working directory and 4. teknonaturalist/database and teknonaturalist/assembly directories are setup correctly (see README.md).<br>
 
+Perform quick check
 ```
 python3.12 check_before_running_teknonaturalist.py
 ```
