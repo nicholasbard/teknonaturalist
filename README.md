@@ -357,7 +357,7 @@ These files  may be edited to execute the fungal ITS detection process using bas
 
 
 ### Executing DNAbarcoder: fungal taxonomic classification
-__[Fungal ITS Classifier bash Script](/Fungal.ITS.classifier.sh)__ and __[Steps_for_Fungal ITS Classifier.md](/4_Running_DNAbarcoder/Steps_for_Fungal ITS Classifier.md)__ <br>
+__[Fungal ITS Classifier bash Script](/Fungal.ITS.classifier.sh)__ and __[Steps_for_Fungal ITS Classifier.md](/4_Running_DNAbarcoder/Steps_for_Fungal_ITS_Classifier.md)__ <br>
 A file to pool sequences from different outputs and classify fungal taxa in a dataset of plant genomes after the fungal ITS detection process.<br><br>
 
 ### Advanced: Database modification
