@@ -29,7 +29,7 @@ cd teknonaturalist/database
 
 # Get UCHIME database for chimeras
 ## Download from https://unite.ut.ee/repository.php
-## In the paper we used UCHIME reference dataset 7.2: https://unite.ut.ee/sh_files/uchime_reference_dataset_28.06.2017.zip
+## In the paper we used UCHIME reference dataset 7.2: https://unite.ut.ee/sh_files/uchime_reference_dataset_28.06.2017.zip (Abarenkov et al, 2017).
 ## Unzip/extract if necessary
 ## create teknonaturalist/database/uchime_datasets directory
 mkdir uchime_datasets
@@ -42,7 +42,7 @@ kraken2-build --download-library fungi --db fungi --use-ftp
 kraken2-build --download-taxonomy --db fungi --use-ftp
 
 # ON UNITE WEBSITE: manually download sh_general_release_dynamic<***DD.MM.YYYY>.fasta (Betula example paper uses sh_general_release_dynamic_s_29.11.2022.fasta, includes global and 3% distance singletons)
-## Paper version is General FASTA release (Fungi) 9.0 2022-10-16, which can be downloaded at : https://doi.plutof.ut.ee/doi/10.15156/BIO/2483912 
+## Paper version is General FASTA release (Fungi) 9.0 2022-10-16, which can be downloaded at : https://doi.plutof.ut.ee/doi/10.15156/BIO/2483912 (Abarenkov et al., 2022) (License: https://creativecommons.org/licenses/by-sa/4.0/)
 ## OR different version may be found at: https://unite.ut.ee/repository.php 
 
 # Add UNITE TO KRAKEN Fungi db (rename fasta file if needed)
