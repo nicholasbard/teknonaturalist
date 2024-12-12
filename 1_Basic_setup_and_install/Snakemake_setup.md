@@ -6,7 +6,7 @@ Please refer to their respective help pages if more extensive setup or troublesh
 [Mamba](https://mamba.readthedocs.io/en/latest/index.html) <br>
 [Snakemake](https://snakemake.readthedocs.io/en/stable/)<br>
 
-NOTE 1: Mac devices equipped with ARM may require additional steps/troubleshooting, which we include [here](/Custom.setup/Troubleshooting_mamba_conda_MACS.txt) <br><br>
+NOTE 1: Mac devices equipped with ARM may require additional steps/troubleshooting, a few potential steps are included [here](/Custom.setup/Troubleshooting_mamba_conda_MACS.txt) <br><br>
 NOTE 2: If using mamba/conda with a task manager on a cluster, cache files during computational tasks may need to be diverted to a directory with file-writing permissions. 
 Before running the pipeline:
 ```
