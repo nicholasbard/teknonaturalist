@@ -1,5 +1,4 @@
-# A quick guide to fungal detection with teknonaturalist for Snakemake - Overview
-Also See: https://snakemake.readthedocs.io/en/stable/
+# A quick guide to fungal detection with teknonaturalist for Snakemake
 
 ### This is a brief overview of the steps to run Snakemake for the teknonaturalist pipeline, once setup has been completed. 
 #### Note that all Snakemake setup, teknonaturalist environment creation, and database and assembly setup must be complete, and requisite files must be in the working directory. (see README and setup_resources)
