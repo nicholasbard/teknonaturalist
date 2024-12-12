@@ -5,4 +5,6 @@
 # 3. Edit the appropriate bash script with your variables
 #### Equal reads: teknonaturalist.Fungal.ITS.detection.equal.reads.sh 
 #### Unequal reads: teknonaturalist.Fungal.ITS.detection.unequal.reads.sh
-# 4. Run corresponding bash script from teknonaturalist directory
+# 4. Move fastq files to teknonaturalist/data/orig.fastqs if necessary.
+mv <PATH>/<to>/*.fastq $PATH/teknonaturalist/data/orig.fastqs
+# 5. Run corresponding bash script from teknonaturalist directory
