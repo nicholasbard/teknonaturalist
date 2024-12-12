@@ -81,7 +81,7 @@ python ./extract_ITS.refs_database_for_dnabarcoder.py
 rm *.tar.gz
 ```
 
-## Alternative - tekonaturalist setup without Snakemake (Not recommended)
+# Alternative - tekonaturalist setup without Snakemake (Not recommended)
 
 ## Manual installation (may be used if Snakemake malfunctions) <br>
 1. Create the following directories should be created for intermediate files.
@@ -103,7 +103,7 @@ mkdir data/nonchimera
 mkdir data/meta
 ```
 
-2. Install all programs using the instructions provided in MANUAL_package_install_for_bash_script.txt. <br>
+2. Install all programs using the instructions provided in [MANUAL_package_install_for_bash_script.txt](/1_Basic_setup_and_install/MANUAL_package_install_for_bash_script.txt). <br>
 It is necessary that the directory setup stays the same (see snakemake_directory_structure.png) <br><br>
 
 ### Next steps: <br>
