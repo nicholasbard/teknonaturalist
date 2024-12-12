@@ -16,13 +16,14 @@ __C.__ manually (may be used if Snakemake malfunctions) <br>
 NOTE: Mac devices equipped with ARM may require additional steps, which we include below. <br>
 NOTE: Swapping the command 'conda' with 'mamba' (or vice versa) may be helpful in some cases. Ideally 'mamba' can be used for everything. <br>
 
-### Option 1. Docker - see README.md. This will cover Snakemake installation and teknonaturalist environment creation and activation.<br><br>
+### Option 1. Docker - see README.md. 
+#### This will cover Snakemake installation and teknonaturalist environment creation and activation.<br><br>
 	
 ### Option 2. Snakemake installation via Mamba installation
 #### A. Install Mamba using Miniforge, as noted here: 
  	https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html
 Miniforge is available here:
-	https://github.com/conda-forge/miniforge
+	https://github.com/conda-forge/miniforge <br>
 
 #### B. Install Snakemake, as noted here:
  	https://snakemake.readthedocs.io/en/stable/getting_started/installation.html
