@@ -12,7 +12,7 @@ Shutting down, this might take some time.
 Exiting because a job execution failed. Look above for error message
 ```
 
-### Snakemake must be installed, the teknonaturalist environment must be created, and the databases prior to running Snakemake. Directions and resources are provided in the README.file and setup_resources directory.  
+### Snakemake must be installed, the teknonaturalist environment must be created, and the databases prior to running Snakemake. Directions and resources are provided in [README.md](/README.md) and setup_resources directory.  
 Once all setup is complete...
 
 1. Before running Snakemake, extract PE reads into teknonaturalist/data/orig.fastqs. Make sure they are gzipped (fastq.gz extension). A guide is provided in the Fastq.file.prep.txt file
@@ -22,7 +22,7 @@ Once all setup is complete...
 cd $PATH/teknonaturalist
 ```
 
-3. Activate conda or mamba environment (see teknonaturalist_Basic_Setup.txt and README for instructions on Conda/Mamba environments and Snakemake):
+3. If necessary, activate conda or mamba environment. This should not be necessary if using Docker container.
 ```
 conda activate teknonaturalist
 #or
