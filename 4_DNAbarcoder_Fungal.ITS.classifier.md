@@ -51,4 +51,4 @@ sed 's/\t/,/;s/\t//;s/\t/,/;s/\t/,/;s/\t/,/;s/\t/,/;s/\t/,/;s/\t/,/;s/\t/,/;s/\t
 sed -i '1s/^/ID,read,dir,region,taxon,kingdom,phylum,class,order,family,genus,species,rank,cut-off,confidence,referenceID,blast.score,blast.sim,blast.coverage\n/' data/finalcombined/${SAMPLE}.5_8S.labeled.csv
 ```
 
-### We recommend scientific discretion be applied for fungal classifications made. Low confidence observations may be informative in certain contexts, though we advise these to be treated cautiously. Secondary classification techniques (e.g., BLAST) may be conducted and compared.
+### We recommend that scientific discretion be used for fungal classifications made. Low confidence observations may be informative in certain contexts, though we advise that these be treated cautiously. Secondary classification techniques (e.g., BLAST) may be conducted and used for comparison.
