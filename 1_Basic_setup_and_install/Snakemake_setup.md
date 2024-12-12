@@ -9,7 +9,7 @@ Please refer to their respective help pages if more extensive setup or troublesh
 NOTE: Mac devices equipped with ARM may require additional steps/troubleshooting, which we include [here](/Custom.setup/Troubleshooting_mamba_conda_MACS.txt) <br> 
 
 ## Snakemake installation and setup instructions 
-teknonaturalist may be run using provided Snakemake and bash scripts. The program requires several programs that can be installed <br>
+teknonaturalist may be run using provided Snakemake and bash scripts. The program requires several programs that can be installed <br><br>
 __A.__ using Mamba (from mini forge) and Snakemake (recommended) <br>
 __B.__ using Conda/Mamba and Snakemake (not recommended) <br>
 __C.__ manually (may be used if Snakemake malfunctions) <br><br>
