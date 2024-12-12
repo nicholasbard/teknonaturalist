@@ -1,7 +1,7 @@
 # A quick guide to fungal detection with teknonaturalist for Snakemake
 
 ### This is a brief overview of the steps to run Snakemake for the teknonaturalist pipeline, once setup has been completed. 
-#### Note that all Snakemake setup, teknonaturalist environment creation, and database and assembly setup must be complete, and requisite files must be in the working directory. (see README and setup_resources)
+#### Note that all Snakemake setup, teknonaturalist environment creation, and database and assembly setup must be complete, and requisite files must be in the working directory. See [README.md](/README.md) <br>
 
 Also note that Snakemake is likely to trigger an alarm for ITSx upon completion. This error message may be ignored. It will read like this: <br>
 ```
@@ -11,11 +11,10 @@ data/final/ERR2026254.ITSx
 Shutting down, this might take some time.
 Exiting because a job execution failed. Look above for error message
 ```
-
-### Snakemake must be installed, the teknonaturalist environment must be created, and the databases prior to running Snakemake. Directions and resources are provided in [README.md](/README.md) and setup_resources directory.  
+ 
 Once all setup is complete...
 
-1. Before running Snakemake, extract PE reads into teknonaturalist/data/orig.fastqs. Make sure they are gzipped (fastq.gz extension). A guide is provided in the Fastq.file.prep.txt file
+1. Move/confirm paired end fastq files  are present in teknonaturalist/data/orig.fastqs. A guide is provided in [Fastq.file.prep.txt](/0_Fastq_file_setup/Fastq.file.prep.txt) 
 
 2. Navigate to the teknonaturalist working directory.
 ```
@@ -29,8 +28,13 @@ conda activate teknonaturalist
 mamba activate teknonaturalist
 ```
 
-4. Ensure that the 1. environment.yaml , 2. Snakefile file (can be re-titled) 3. 'data' directory are in the working directory and 4. teknonaturalist/database and teknonaturalist/assembly directories are setup correctly (see README.md). This can be checked with the provided python script 'check_before_running_teknonaturalist.py' and cross-checked with the 'snakemake_directory_structure.png' file.
+4. Ensure that the 1. environment.yaml , 2. Snakefile file (can be re-titled) 3. 'data' directory are in the working directory and 4. teknonaturalist/database and teknonaturalist/assembly directories are setup correctly (see README.md). Perform quick check:
 ```
+python3.12 check_before_running_teknonaturalist.py
+```
+
+[snakemake_directory_structure.png](/images/snakemake_directory_structure.png) may also be consulted.
+
 #If needed,
 mv Snakefile $PATH/teknonaturalist
 mv *.fastq $PATH/teknonaturalist
@@ -62,6 +66,6 @@ EXAMPLE: (multiple fastq files)
 snakemake --cores 20 --snakefile Snakefile data/final/{ERR2026264,ERR2026266}.ITSx
 ```
 
-8. Once fungal detection has finished, fungal classification may be executed using DNAbarcoder (Vu et al 2022). We have provided classification scripts that pool all samples in a dataset with a unique filename prefix (e.g., SRR92) and classify them as a batch ("Fungal.ITS.classifier") which may be run from the command line. The provided classification scripts format output data that is easily readable into R. Prior to using, verify 'teknonaturalist/dnabarcoder' directory exists with all necessary scripts from the Github (https://github.com/vuthuyduong/dnabarcoder). Prior to using, verify that teknonaturalist/dnabarcoder/ITS.refs directory with configured databases. 
+8. Once fungal detection has finished, fungal classification may be executed using DNAbarcoder (Vu et al 2022). We have provided classification scripts that pool all samples in a dataset with a unique filename prefix (e.g., SRR92) and classify them as a batch by running [Fungal.ITS.classifier.sh](/Fungal.ITS.classifier.sh) which may be run from the command line (see [Steps_for_Fungal.ITS.classifier.md](/4_Running_DNAbarcoder/Steps_for_Fungal.ITS.classifier.md) ). The provided classification scripts format output data that is easily readable into R. Prior to using, verify 'teknonaturalist/dnabarcoder' directory exists with all necessary scripts from their [Github repo](https://github.com/vuthuyduong/dnabarcoder). Prior to using, verify teknonaturalist/dnabarcoder/ITS.refs directory is present with configured databases (see [README.md](/README.md)). 
 
 9. R may be used to identify contigs that have flanking support at the class taxonomic rank. We have provided an [example using Betula data](https://github.com/nicholasbard/tekno-manuscript-analysis/blob/main/analyze.5.8S.R), which may be edited as needed.
