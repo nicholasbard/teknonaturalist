@@ -37,6 +37,7 @@ python3.12 check_before_running_teknonaturalist.py
 
 [snakemake_directory_structure.png](/images/snakemake_directory_structure.png) may also be consulted.
 
+```
 #If needed,
 mv Snakefile $PATH/teknonaturalist
 mv *.fastq $PATH/teknonaturalist
