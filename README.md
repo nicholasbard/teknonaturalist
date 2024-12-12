@@ -170,7 +170,7 @@ rm *.tar.gz
 
 # II. Setting up pipeline database and assembly for your host species <br>
 At this point your directory structure should look like this. However, you will need to customize it for your host plant species. <br>
-![Snakemake directory structure](/setup_resources/snakemake_directory_structure.png)<br>
+![Snakemake directory structure](/images/snakemake_directory_structure.png)<br>
 
 ### For Docker:
 We will continue to work on the Docker container you created. If you exited the container, you may restart and reconnect:
