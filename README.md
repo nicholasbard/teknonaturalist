@@ -235,7 +235,6 @@ bwa index -p assembly/<CONGENER_WITH_DOT>.assembly/<CONGENER_WITH_DOT>.bwa.index
 ```
 # IIIa. Running the pipeline with Snakemake <br>
 
-#### 
 ### If using Docker, import your files into the container. <br>
 
 If you haven't yet, exit container and determine container ID by listing recently run containers. <br>
@@ -282,7 +281,6 @@ Check files/directories have been set up by running [check_before_running_teknon
 ```
 python3.12 check_before_running_teknonaturalist.py
 ```
-
 
 Setup: Installation of Snakemake and teknonaturalist (must be run once before initial use)
 ============================================================
