@@ -1,7 +1,7 @@
 # Snakemake installation and setup instructions
 
-### These instructions include quick sets of instructions for setting up Conda, Mamba, and Snakemake.
-Please refer to their respective help pages if more extensive setup or troubleshooting is needed.
+### These instructions include quick sets of instructions for setting up Conda, Mamba, and Snakemake. <br>
+Please refer to their respective help pages if more extensive setup or troubleshooting is needed. <br>
 [Conda](https://conda.io/projects/conda/en/latest/user-guide/index.html) <br>
 [Mamba](https://mamba.readthedocs.io/en/latest/index.html) <br>
 [Snakemake](https://snakemake.readthedocs.io/en/stable/)<br>
@@ -9,7 +9,7 @@ Please refer to their respective help pages if more extensive setup or troublesh
 Some troubleshooting for newer Mac users (ARM) provided in Trobleshooting_mamba_conda_MACS.txt <br>
 
 ## Snakemake installation and setup instructions 
-teknonaturalist may be run using provided Snakemake and bash scripts. The program requires several programs that can be installed
+teknonaturalist may be run using provided Snakemake and bash scripts. The program requires several programs that can be installed <br>
 __A.__ using Mamba (from mini forge) and Snakemake (recommended) <br>
 __B.__ using Conda/Mamba and Snakemake (not recommended) <br>
 __C.__ manually (may be used if Snakemake malfunctions) <br>
