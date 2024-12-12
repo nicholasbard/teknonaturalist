@@ -4,7 +4,7 @@ Also See: https://snakemake.readthedocs.io/en/stable/
 ### This is a brief overview of the steps to run Snakemake for the teknonaturalist pipeline, once setup has been completed. 
 #### Note that all Snakemake setup, teknonaturalist environment creation, and database and assembly setup must be complete, and requisite files must be in the working directory. (see README and setup_resources)
 
-#### Note that Snakemake will ALWAYS trigger an alarm for ITSx upon completion. This error message may be ignored. It will read like this: <br>
+Also note that Snakemake is likely to trigger an alarm for ITSx upon completion. This error message may be ignored. It will read like this: <br>
 ```
 MissingOutputException in rule itsx in file $PATH/snakemake.fungi.pipeline/Snakefile.unequal.read, line 307:
 Job 0 completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-### wait:
