@@ -11,7 +11,7 @@ cd $PATH/teknonaturalist
 Make sure that dnabarcoder directory with prepared database is in teknonaturalist/ (teknonaturalist/dnabarcoder/)
 Remain in teknonaturalist/ directory to run these commands.
 
-### HEADER LINES INSTRUCTIONS
+### Instructions for editing header lines in code.
 Replace all ${text} in code, as follows.<br>
 Replace ${SRR} with common prefix for accession number, (e.g., SRR92).<br>
 Replace ${SAMPLE} with specific epithet (2nd word) of plant species name (e.g., ermanii).<br>
@@ -51,4 +51,4 @@ sed 's/\t/,/;s/\t//;s/\t/,/;s/\t/,/;s/\t/,/;s/\t/,/;s/\t/,/;s/\t/,/;s/\t/,/;s/\t
 sed -i '1s/^/ID,read,dir,region,taxon,kingdom,phylum,class,order,family,genus,species,rank,cut-off,confidence,referenceID,blast.score,blast.sim,blast.coverage\n/' data/finalcombined/${SAMPLE}.5_8S.labeled.csv
 ```
 
-## We recommend scientific discretion be applied for fungal classifications made. Low confidence observations may be informative though we advise these to be treated cautiously. Secondary classification techniques (e.g., BLAST) may be conducted and compared.
+### We recommend scientific discretion be applied for fungal classifications made. Low confidence observations may be informative in certain contexts, though we advise these to be treated cautiously. Secondary classification techniques (e.g., BLAST) may be conducted and compared.
