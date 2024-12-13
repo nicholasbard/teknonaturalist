@@ -57,9 +57,8 @@ Users can either progress through the README, or progress through the numbered d
 We recommend that first-time users attempt to progress through the README first. However, teknonaturalist is intended to be synchronous with 
 different approaches (Snakemake, Docker, and shell scripts) during setup and execution such that a mixed approach can be used if the user 
 desires (for instance, one could use Docker to construct the databases and structure, but using bash for remaining setup and execution). <br><br>
-##### We provide a one size fits all approach for database construction, however users may wish to modify the databases used (e.g., update the sources when new versions are released) and may consult the following for details on how we set them up:
-
-[Prep_taxon_specific_assembly_and_databases.sh](/2_Setup_assembly_and_databases/Prep_taxon_specific_assembly_and_databases.sh), [DNAbarcoder.prep.txt](/Custom.setup/DNAbarcoder.prep.txt), and [Manual_prep_of_non_taxon_specific_databases.txt](/Custom.setup/Manual_prep_of_non_taxon_specific_databases.txt) <br><br>
+_We provide a one size fits all approach for database construction, however users may wish to modify the databases used (e.g., update the sources when new versions are released) and may consult the following for details on how we set them up:_
+[Prep_taxon_specific_assembly_and_databases.sh](/2_Setup_assembly_and_databases/Prep_taxon_specific_assembly_and_databases.sh), [DNAbarcoder.prep.txt](/Custom.setup/DNAbarcoder.prep.txt), and [Manual_prep_of_non_taxon_specific_databases.txt](/Custom.setup/Manual_prep_of_non_taxon_specific_databases.txt) <br>
 
 Ia. Quick basic setup and test: Docker
 ============================================================
