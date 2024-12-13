@@ -385,8 +385,7 @@ This file explains how the databases were built. The file may be modified to cre
 __[DNAbarcoder Setup](/setup_resources/DNAbarcoder.setup.txt)__ <br>
 This file explains how fungal ITS databases for fungal classification with DNAbarcoder were built. The file may be modified to create customized databases. DNAbarcoder must be installed in the __teknonaturalist__ directory (teknonaturalist/dnabarcoder/) prior to using classification scripts. <br><br>
 
-### Additional information not in repository 
-============================================================
+## Additional information not in repository 
 
 [Analyze Flanking 5.8S and ITS Sequences]([/R_scripts/analyze.5.8S.R](https://github.com/nicholasbard/tekno-manuscript-analysis/blob/main/analyze.5.8S.R)) <br>
 An example R script (from the teknonaturalist paper) to identify classified fungal sequences with flanking sequence support at class taxonomic rank. <br>
