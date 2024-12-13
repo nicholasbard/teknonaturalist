@@ -360,30 +360,24 @@ __[MANUAL_package_install_for_bash_script.txt](/1_Basic_setup_and_install/MANUAL
 <br> This file provides an alternative method for setting up the packages need to run teknonaturalist.<br>
 __[Extract ITS.refs Database for DNAbarcoder](extract_ITS.refs_database_for_dnabarcoder.py)__ <br>
 A python script to extract ITS reference database for DNAbarcoder (available at https://osf.io/8g6we/) <br><br>
-
 ### Setup files for running a new plant taxon 
 __[Prep Taxon Specific Assembly and Databases](/2_Setup_assembly_and_databases/Prep_taxon_specific_assembly_and_databases.sh)__ (must be run for each new plant taxon assesed with __teknonaturalist__; the PlanITS database only needs to be setup once for each genus.) </details> <br><br>
-
 ### Executing teknonaturalist 
 __[Fastq.gz file prep](/0_Fastq_file_setup/Fastq.file.prep.txt)__ <br>
 Instructions for obtaining and formatting input fastq.gz files are provided here. <br>
 __[Check Before Running teknonaturalist](check_before_running_teknonaturalist.py)__ <br>
  A python script to be used prior to executing __teknonaturalist__ that checks for input files, non-empty assembly and database directories, and an activated teknonaturalist environment.<br>
-
 __[Running_teknonaturalist_with_Snakemake_Overview](/3_Running_teknonaturalist/Running_teknonaturalist_with_Snakemake_Overview.txt)__ <br>
 This file provides a brief guide and directions to run the fungal ITS detection process with __teknonaturalist__ using Snakemake. <br>
 __[Snakefile](/Snakefile)__ <br>
-This file will may be edited to execute the fungal ITS detection process using Snakemake.<br><br>
-
+This file will may be edited to execute the fungal ITS detection process using Snakemake.<br>
 __[Running_teknonaturalist_with_bash.txt](/3_Running_teknonaturalist/Running_teknonaturalist_with_bash.txt)__ <br>
 This file provides a brief set of directions to run the fungal ITS detection process with __teknonaturalist__ using bash scripts. <br>
 __[teknonaturalist.Fungal.ITS.detection.unequal.reads.sh](/teknonaturalist.Fungal.ITS.detection.unequal.reads.sh)__ and __[teknonaturalist.Fungal.ITS.detection.equal.reads.sh](/teknonaturalist.Fungal.ITS.detection.equal.reads.sh)__ <br>
 These files  may be edited to execute the fungal ITS detection process using bash. <br><br>
-
 ### Executing DNAbarcoder: fungal taxonomic classification
 __[Fungal ITS Classifier bash Script](/Fungal.ITS.classifier.sh)__ and __[Steps_for_Fungal ITS Classifier.md](/4_Running_DNAbarcoder/Steps_for_Fungal_ITS_Classifier.md)__ <br>
 A file to pool sequences from different outputs and classify fungal taxa in a dataset of plant genomes after the fungal ITS detection process. <br><br>
-
 ### Advanced: Database modification 
 __[Manual Prep of non-Taxon Specific Databases](/Custom.setup/Manual_prep_of_non_taxon_specific_databases.txt)__ <br>
 This file explains how the databases were built. The file may be modified to create customized databases different from those provided at https://osf.io/8g6we/ <br>
@@ -402,12 +396,10 @@ An example R script (from the teknonaturalist paper) to identify classified fung
 			a. fungi.tar.gz 
 			b. uchime_datasets.tar.gz
 			c. univec.tar.gz
-		
   		2. Betula:
 			a. genbank.tar.gz (needed for each plant species)
 			b. PLANiITS.tar.gz (needed for each plant genus)
 			c. assembly.tar.gz (assembly of the same plant species , or a closely related congener)
-   
    		3. ITS.refs.tar.gz - Example fungal ITS reference for use with DNAbarcoder
 
 #### R scripts for creating supplemental files and figures for our teknonaturalist paper may be found at our [tekno-manuscript-analysis github repo](https://github.com/nicholasbard/tekno-manuscript-analysis)
