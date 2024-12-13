@@ -346,7 +346,8 @@ __4.__ Fungal classification may be run on multiple files with DNAbarcoder - [St
 # File Guide 
 <details>
 <summary> 
-Docker </summary>
+### Docker 
+</summary>
 __[Dockerfile](/Docker/Dockerfile)__ <br>
 This file creates an image that fully sets up the teknonaturalist directory and file structure, installs all programs, and successfully runs through a demo of teknonaturalist and DNAbarcoder using mini input files ([SRRdemo_1.fastq](/Docker/SRRdemo_1.fastq) and [SRRdemo_2.fastq](/Docker/SRRdemo_2.fastq)) and a [demoSnakefile](/Docker/demoSnakefile).</details> <br><br>
 <details>
