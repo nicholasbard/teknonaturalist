@@ -194,8 +194,7 @@ docker start <docker_container_identifier>
 docker attach <docker_container_identifier>
 ```
 
-## For everybody: <br>
-## Building databases for your host plant taxon of interest.<br>
+## For everybody: <br> Building databases for your host plant taxon of interest.<br>
 #### The following process may be run as a bash script after editing: [Prep_taxon_specific_assembly_and_databases.sh](/2_Setup_assembly_and_databases/Prep_taxon_specific_assembly_and_databases.sh).
 
 ### a. PLANiTS dataset for the host genus.
