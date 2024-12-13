@@ -1,0 +1,9 @@
+# One extremely minor step has been updated since conducting data analysis for our teknonaturalist paper,
+# due to recent issues accessing fastx_toolkit using mamba. We hope this change will make life easier for new users. 
+# We are keeping the original bash scripts used for our data analysis here for complete transparency. They are also present in earlier commits.
+
+# fasta_formatter was originally used to convert multi-line sequence fasta files to single-line sequence fasta files:
+fasta_formatter -i data/nonchimera/nonchimera.filtered.reads.2.${SRRnumber}.fasta | seqtk rename > data/nonchimera/chimera.filter.${SRRnumber}.fasta
+
+# However, we now suggest using seqkit seq to perform the same function:
+seqtk seq -i data/nonchimera/nonchimera.filtered.reads.2.${SRRnumber}.fasta | seqtk rename > data/nonchimera/chimera.filter.${SRRnumber}.fasta
