@@ -104,6 +104,14 @@ snakemake --cores 1 --snakefile demoSnakefile data/final/SRRdemo.ITS
 snakemake --cores 1 --snakefile demoSnakefile data/final/SRRdemo.ITS > data/logs/demoSnakefile.log 2>&1
 ```
 
+__Note__ that Snakemake is likely to trigger an alarm for ITSx upon completion. This error message may be ignored. It will read like this: <br>
+```
+MissingOutputException in rule itsx in file $PATH/Snakefile, line 307:
+Job 0 completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-### wait:
+data/final/ERR2026254.ITSx
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+```
 Test DNAbarcoder (fungal classification) with fake data.
 ```
 python3.12 dnabarcoder/dnabarcoder.py search -i data/final/F.c.reads.SRRdemo.fasta -r dnabarcoder/ITS.refs/unite2024/unite2024ITS1.unique.phylum.fasta -ml 50 -p ../data/finalcombined/SRRdemo
