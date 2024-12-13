@@ -277,7 +277,18 @@ python3.12 check_before_running_teknonaturalist.py
 ### To run teknonaturalist with Snakemake, edit the 'Customizable Section' in [Snakefile](/Snakefile) with a text editing tool and save files.
 Files contain annotations with important information to guide the user. <br>
 At minimum, text within <> must be edited (with the <> deleted as well). <br>
-Note: Multiple SRR files may be added in, separated by ",".
+Note: Multiple SRR files may be added in, separated by ",".<br><br>
+
+Now you are ready to run teknonaturalist on your data with Snakemake!<br>
+First try a dry run (use -np tag). This evaluates the process from the end to the beginning without actually running anything (starting with output files, then working up to inputs).
+```
+snakemake -np --cores {CORE NUMBER} --snakefile {Snakefile name} {Output file}
+```
+
+If no errors were detected, run Snakemake!
+```
+snakemake --cores {CORE NUMBER} --snakefile {Snakefile name} {Output file}
+```
 
 # IIIb. Running the pipeline with bash <br>
 Also see [Running_teknonaturalist_with_bash_.txt](/3_Running_teknonaturalist/Running_teknonaturalist_with_bash.txt)
