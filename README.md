@@ -345,11 +345,12 @@ __4.__ Fungal classification may be run on multiple files with DNAbarcoder - [St
 
 # File Guide 
 <details>
-<summary> ### Docker </summary>
+<summary> 
+Docker </summary>
 __[Dockerfile](/Docker/Dockerfile)__ <br>
-This file creates an image that fully sets up the teknonaturalist directory and file structure, installs all programs, and successfully runs through a demo of teknonaturalist and DNAbarcoder using mini input files ([SRRdemo_1.fastq](/Docker/SRRdemo_1.fastq) and [SRRdemo_2.fastq](/Docker/SRRdemo_2.fastq)) and a [demoSnakefile](/Docker/demoSnakefile).<br><br>
+This file creates an image that fully sets up the teknonaturalist directory and file structure, installs all programs, and successfully runs through a demo of teknonaturalist and DNAbarcoder using mini input files ([SRRdemo_1.fastq](/Docker/SRRdemo_1.fastq) and [SRRdemo_2.fastq](/Docker/SRRdemo_2.fastq)) and a [demoSnakefile](/Docker/demoSnakefile).</details> <br><br>
 <details>
-<summary> ### One time setup files: Installation of Snakemake, teknonaturalist, DNAbarcoder (must be run once before initial use)</summary>
+<summary> One time setup files: Installation of Snakemake, teknonaturalist, DNAbarcoder (must be run once before initial use)</summary>
 __[Snakemake Setup](/1_Basic_setup_and_install/teknonaturalist_setup.md)__ 
 <br> This file contains key information for installing required software, including Mamba/Conda and Snakemake.<br><br>
 __[teknonaturalist Setup](/1_Basic_setup_and_install/teknonaturalist_setup.md)__ 
@@ -361,14 +362,14 @@ This file is required for setting up the teknonaturalist environment along with 
 __[MANUAL_package_install_for_bash_script.txt](/1_Basic_setup_and_install/MANUAL_package_install_for_bash_script.txt)__ 
 <br> This file provides an alternative method for setting up the packages need to run teknonaturalist.<br><br>
 __[Extract ITS.refs Database for DNAbarcoder](extract_ITS.refs_database_for_dnabarcoder.py)__ <br>
-A python script to extract ITS reference database for DNAbarcoder (available at https://osf.io/8g6we/)<br><br>
+A python script to extract ITS reference database for DNAbarcoder (available at https://osf.io/8g6we/) </details> <br><br>
 
 <details>
-<summary> ### Setup files for running a new plant taxon </summary>
-__[Prep Taxon Specific Assembly and Databases](/2_Setup_assembly_and_databases/Prep_taxon_specific_assembly_and_databases.sh)__ (must be run for each new plant taxon assesed with __teknonaturalist__; the PlanITS database only needs to be setup once for each genus.) <br><br>
+<summary> Setup files for running a new plant taxon </summary>
+__[Prep Taxon Specific Assembly and Databases](/2_Setup_assembly_and_databases/Prep_taxon_specific_assembly_and_databases.sh)__ (must be run for each new plant taxon assesed with __teknonaturalist__; the PlanITS database only needs to be setup once for each genus.) </details> <br><br>
 
 <details>
-<summary> ### Executing teknonaturalist </summary>
+<summary> Executing teknonaturalist </summary>
 __[Fastq.gz file prep](/0_Fastq_file_setup/Fastq.file.prep.txt)__ <br>
 Instructions for obtaining and formatting input fastq.gz files are provided here. <br><br>
 __[Check Before Running teknonaturalist](check_before_running_teknonaturalist.py)__ <br>
@@ -382,20 +383,20 @@ This file will may be edited to execute the fungal ITS detection process using S
 __[Running_teknonaturalist_with_bash.txt](/3_Running_teknonaturalist/Running_teknonaturalist_with_bash.txt)__ <br>
 This file provides a brief set of directions to run the fungal ITS detection process with __teknonaturalist__ using bash scripts. <br>
 __[teknonaturalist.Fungal.ITS.detection.unequal.reads.sh](/teknonaturalist.Fungal.ITS.detection.unequal.reads.sh)__ and __[teknonaturalist.Fungal.ITS.detection.equal.reads.sh](/teknonaturalist.Fungal.ITS.detection.equal.reads.sh)__ <br>
-These files  may be edited to execute the fungal ITS detection process using bash.<br><br>
+These files  may be edited to execute the fungal ITS detection process using bash. </details><br><br>
 
 
 <details>
-<summary> ### Executing DNAbarcoder: fungal taxonomic classification </summary>
+<summary> Executing DNAbarcoder: fungal taxonomic classification </summary>
 __[Fungal ITS Classifier bash Script](/Fungal.ITS.classifier.sh)__ and __[Steps_for_Fungal ITS Classifier.md](/4_Running_DNAbarcoder/Steps_for_Fungal_ITS_Classifier.md)__ <br>
-A file to pool sequences from different outputs and classify fungal taxa in a dataset of plant genomes after the fungal ITS detection process.<br><br>
+A file to pool sequences from different outputs and classify fungal taxa in a dataset of plant genomes after the fungal ITS detection process. </details> <br><br>
 
 <details>
-<summary> ### Advanced: Database modification </summary>
+<summary> Advanced: Database modification </summary>
 __[Manual Prep of non-Taxon Specific Databases](/Custom.setup/Manual_prep_of_non_taxon_specific_databases.txt)__ <br>
 This file explains how the databases were built. The file may be modified to create customized databases different from those provided at https://osf.io/8g6we/ <br><br>
 __[DNAbarcoder Setup](/setup_resources/DNAbarcoder.setup.txt)__ <br>
-This file explains how fungal ITS databases for fungal classification with DNAbarcoder were built. The file may be modified to create customized databases. DNAbarcoder must be installed in the __teknonaturalist__ directory (teknonaturalist/dnabarcoder/) prior to using classification scripts.<br><br>
+This file explains how fungal ITS databases for fungal classification with DNAbarcoder were built. The file may be modified to create customized databases. DNAbarcoder must be installed in the __teknonaturalist__ directory (teknonaturalist/dnabarcoder/) prior to using classification scripts. </details> <br><br>
 
 <details>
 <summary> Additional information not in repository </summary>
@@ -421,6 +422,6 @@ An example R script (from the teknonaturalist paper) to identify classified fung
 #### R scripts for creating supplemental files and figures for our teknonaturalist paper may be found at our [tekno-manuscript-analysis github repo](https://github.com/nicholasbard/tekno-manuscript-analysis)
 
 #### [raw data](https://osf.io/8g6we/) from our paper is also available.
-Produced following fungal detection and classification in plant genomes available at https://osf.io/8g6we/. <br>
+Produced following fungal detection and classification in plant genomes available at https://osf.io/8g6we/. </details> <br>
 
 Dedicated to [Colin Richard Ferguson Ward](https://killdby.bandcamp.com)
