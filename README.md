@@ -99,7 +99,9 @@ rm *.tar.gz
 
 Test teknonaturalist (fungal identification) with fake data.
 ```
-snakemake --cores 1 --snakefile demoSnakefile data/final/F.c.e.reads.SRRdemo.fasta
+snakemake --cores 1 --snakefile demoSnakefile data/final/SRRdemo.ITS
+#Alternatively, to direct all stderr and stdout to log file:
+snakemake --cores 1 --snakefile demoSnakefile data/final/SRRdemo.ITS > data/logs/demoSnakefile.log 2>&1
 ```
 
 Test DNAbarcoder (fungal classification) with fake data.
