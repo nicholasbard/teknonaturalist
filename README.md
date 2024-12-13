@@ -52,7 +52,7 @@ fasterq-dump --split-files $PATH/SRR<###>.sra -O .
 # OR, for files with different read counts
 fasterq-dump --split-3 $PATH/SRR<###>.sra -O .
 ```
-# Setting up and running teknonaturalist with DNAbarcoder <br>
+# Setting up and running teknonaturalist (and DNAbarcoder) <br>
 Users can either progress through the README, or progress through the numbered directories in order. <br><br>
 We recommend that first-time users attempt to progress through the README first. However, teknonaturalist is intended to be synchronous with 
 different approaches (Snakemake, Docker, and shell scripts) during setup and execution such that a mixed approach can be used if the user 
@@ -137,11 +137,11 @@ rm *.tar.gz
 ```
 
 # Ib. Alternative - Basic setup without Docker <br>
-### Complete these steps: 
+## Complete these steps: 
 #### 1a. [Set up Snakemake](/1_Basic_setup_and_install/Snakemake_setup.md) OR 1b. [Manual package install with mamba/conda](/1_Basic_setup_and_install/MANUAL_package_install_for_bash_script.txt)
 #### 2. [Set up teknonaturalist using Snakemake](/1_Basic_setup_and_install/teknonaturalist_setup.md)  <br>
 
-#### Next, download basic databases. <br>
+Next, download basic databases. <br>
 You will customize these later for your host plant species. 
 
 ```
@@ -157,7 +157,7 @@ mv osfstorage/* .
 rm -r osfstorage
 ```
 
-#### Create necessary directories
+Create necessary directories
 ```
 # Make all directories.
 mkdir data
@@ -173,13 +173,13 @@ mkdir database/fungi
 mkdir database/PLANiTS
 ```
 
-#### Setup DNAbarcoder
+Setup DNAbarcoder
 ```
 git clone https://github.com/vuthuyduong/dnabarcoder.git
 mkdir dnabarcoder/ITS.refs
 ```
 
-#### Unpack database and assembly files using python scripts and remove clutter. <br>
+Unpack database and assembly files using python scripts and remove clutter. <br>
 This will produce the necessary file structure to run teknonaturalist.
 ```
 python ./extract_teknonaturalist_databases.py
@@ -191,7 +191,7 @@ rm *.tar.gz
 At this point your directory structure should look like this. However, you will need to customize it for your host plant species. <br>
 ![Snakemake directory structure](/images/snakemake_directory_structure.png)<br>
 
-## For Docker:
+## For Docker users:
 We will continue to work on the Docker container you created. If you exited the container, you may restart and reconnect:
   <br>
 If resuming from outside container:
@@ -337,10 +337,10 @@ snakemake --cores [CORES] --snakefile [SNAKEFILE] data/final/[SRR].ITS > data/lo
 
 # A recap for experienced, repeat users:
 __1.__ Paired end fastq files must be used - [Fastq.file.prep.txt](\0_Fastq_file_setup/Fastq.file.prep.txt)<br><br>
-__2.__ Only the assembly and taxon-specific databases must be changed if you apply teknonaturalist to another host plant, assuming you keep the basic database setup intact. - 2_Setup_assembly_and_databases/Prep_taxon_specific_assembly_and_databases.sh <br>
+__2.__ Only the assembly and taxon-specific databases must be changed if you apply teknonaturalist to another host plant, assuming you keep the basic database setup intact. - [Prep_taxon_specific_assembly_and_databases.sh](\Setup_assembly_and_databases/Prep_taxon_specific_assembly_and_databases.sh) 
 NOTE: The taxon-specific assemblies and databases, including the Betula examples, may be removed by the user to save space as long as directory structure is left intact.<br><br>
-__3.__ Fungal detection may be run on input files (teknonaturalist/data/orig.fastqs/*.fastq) by editing Snakefiles and running Snakemake [Snakefile](/Snakefile) <br> - or editing shell script files and running bash - [teknonaturalist.Fungal.ITS.detection.unequal.reads.sh](/teknonaturalist.Fungal.ITS.detection.unequal.reads.sh) OR [teknonaturalist.Fungal.ITS.detection.equal.reads.sh](/teknonaturalist.Fungal.ITS.detection.equal.reads.sh) <br>
-__4.__ Fungal classification may be run on multiple files with DNAbarcoder - [Steps_for_Fungal.ITS.classifier.md](/4_Running_DNAbarcoder/Steps_for_Fungal.ITS.classifier.md)<br> or by editing the shell script file and running bash - [Fungal.ITS.classifier.sh](/Fungal.ITS.classifier.sh)
+__3.__ Fungal detection may be run on input files (teknonaturalist/data/orig.fastqs/*.fastq) by editing Snakefiles and running Snakemake [Snakefile](/Snakefile) - or editing shell script files and running bash - [teknonaturalist.Fungal.ITS.detection.unequal.reads.sh](/teknonaturalist.Fungal.ITS.detection.unequal.reads.sh) OR [teknonaturalist.Fungal.ITS.detection.equal.reads.sh](/teknonaturalist.Fungal.ITS.detection.equal.reads.sh) <br><br>
+__4.__ Fungal classification may be run on multiple files with DNAbarcoder - [Steps_for_Fungal.ITS.classifier.md](/4_Running_DNAbarcoder/Steps_for_Fungal.ITS.classifier.md) or by editing the shell script file and running bash - [Fungal.ITS.classifier.sh](/Fungal.ITS.classifier.sh)
 
 
 
