@@ -346,18 +346,18 @@ __4.__ Fungal classification may be run on multiple files with DNAbarcoder - [St
 # File Guide 
 ### Docker 
 __[Dockerfile](/Docker/Dockerfile)__ <br>
-This file creates an image that fully sets up the teknonaturalist directory and file structure, installs all programs, and successfully runs through a demo of teknonaturalist and DNAbarcoder using mini input files ([SRRdemo_1.fastq](/Docker/SRRdemo_1.fastq) and [SRRdemo_2.fastq](/Docker/SRRdemo_2.fastq)) and a [demoSnakefile](/Docker/demoSnakefile). <br>
+This file creates an image that fully sets up the teknonaturalist directory and file structure, installs all programs, and successfully runs through a demo of teknonaturalist and DNAbarcoder using mini input files ([SRRdemo_1.fastq](/Docker/SRRdemo_1.fastq) and [SRRdemo_2.fastq](/Docker/SRRdemo_2.fastq)) and a [demoSnakefile](/Docker/demoSnakefile). <br><br>
 ### One time setup files: Installation of Snakemake, teknonaturalist, DNAbarcoder (must be run once before initial use)
 __[Snakemake Setup](/1_Basic_setup_and_install/teknonaturalist_setup.md)__ 
-<br> This file contains key information for installing required software, including Mamba/Conda and Snakemake.<br><br>
+<br> This file contains key information for installing required software, including Mamba/Conda and Snakemake.<br>
 __[teknonaturalist Setup](/1_Basic_setup_and_install/teknonaturalist_setup.md)__ 
-<br> This file contains key information for creating and activation of the __teknonaturalist__ environment. It also includes information for running teknonaturalist without Snakemake.<br><
+<br> This file contains key information for creating and activation of the __teknonaturalist__ environment. It also includes information for running teknonaturalist without Snakemake.<br>
 __[Extract Teknonaturalist Databases](/extract_teknonaturalist_databases.py)__ <br>
-A python script to extract all databases and assemblies provided at https://osf.io/8g6we/ <br><br>
+A python script to extract all databases and assemblies provided at https://osf.io/8g6we/ <br>
 __[environment.yaml](/environment.yaml)__ <br>
-This file is required for setting up the teknonaturalist environment along with required programs used. It does not need to be run, simply present in the teknonaturalist/ directory during environment activation. <br><br>
+This file is required for setting up the teknonaturalist environment along with required programs used. It does not need to be run, simply present in the teknonaturalist/ directory during environment activation. <br>
 __[MANUAL_package_install_for_bash_script.txt](/1_Basic_setup_and_install/MANUAL_package_install_for_bash_script.txt)__ 
-<br> This file provides an alternative method for setting up the packages need to run teknonaturalist.<br><br>
+<br> This file provides an alternative method for setting up the packages need to run teknonaturalist.<br>
 __[Extract ITS.refs Database for DNAbarcoder](extract_ITS.refs_database_for_dnabarcoder.py)__ <br>
 A python script to extract ITS reference database for DNAbarcoder (available at https://osf.io/8g6we/) <br><br>
 
@@ -368,7 +368,7 @@ __[Prep Taxon Specific Assembly and Databases](/2_Setup_assembly_and_databases/P
 __[Fastq.gz file prep](/0_Fastq_file_setup/Fastq.file.prep.txt)__ <br>
 Instructions for obtaining and formatting input fastq.gz files are provided here. <br>
 __[Check Before Running teknonaturalist](check_before_running_teknonaturalist.py)__ <br>
- A python script to be used prior to executing __teknonaturalist__ that checks for input files, non-empty assembly and database directories, and an activated teknonaturalist environment.<br><br>
+ A python script to be used prior to executing __teknonaturalist__ that checks for input files, non-empty assembly and database directories, and an activated teknonaturalist environment.<br>
 
 __[Running_teknonaturalist_with_Snakemake_Overview](/3_Running_teknonaturalist/Running_teknonaturalist_with_Snakemake_Overview.txt)__ <br>
 This file provides a brief guide and directions to run the fungal ITS detection process with __teknonaturalist__ using Snakemake. <br>
@@ -378,7 +378,7 @@ This file will may be edited to execute the fungal ITS detection process using S
 __[Running_teknonaturalist_with_bash.txt](/3_Running_teknonaturalist/Running_teknonaturalist_with_bash.txt)__ <br>
 This file provides a brief set of directions to run the fungal ITS detection process with __teknonaturalist__ using bash scripts. <br>
 __[teknonaturalist.Fungal.ITS.detection.unequal.reads.sh](/teknonaturalist.Fungal.ITS.detection.unequal.reads.sh)__ and __[teknonaturalist.Fungal.ITS.detection.equal.reads.sh](/teknonaturalist.Fungal.ITS.detection.equal.reads.sh)__ <br>
-These files  may be edited to execute the fungal ITS detection process using bash. </details><br><br>
+These files  may be edited to execute the fungal ITS detection process using bash. <br><br>
 
 ### Executing DNAbarcoder: fungal taxonomic classification
 __[Fungal ITS Classifier bash Script](/Fungal.ITS.classifier.sh)__ and __[Steps_for_Fungal ITS Classifier.md](/4_Running_DNAbarcoder/Steps_for_Fungal_ITS_Classifier.md)__ <br>
@@ -386,7 +386,7 @@ A file to pool sequences from different outputs and classify fungal taxa in a da
 
 ### Advanced: Database modification 
 __[Manual Prep of non-Taxon Specific Databases](/Custom.setup/Manual_prep_of_non_taxon_specific_databases.txt)__ <br>
-This file explains how the databases were built. The file may be modified to create customized databases different from those provided at https://osf.io/8g6we/ <br><br>
+This file explains how the databases were built. The file may be modified to create customized databases different from those provided at https://osf.io/8g6we/ <br>
 __[DNAbarcoder Setup](/setup_resources/DNAbarcoder.setup.txt)__ <br>
 This file explains how fungal ITS databases for fungal classification with DNAbarcoder were built. The file may be modified to create customized databases. DNAbarcoder must be installed in the __teknonaturalist__ directory (teknonaturalist/dnabarcoder/) prior to using classification scripts. <br><br>
 
