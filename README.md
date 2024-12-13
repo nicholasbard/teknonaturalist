@@ -182,7 +182,7 @@ rm *.tar.gz
 At this point your directory structure should look like this. However, you will need to customize it for your host plant species. <br>
 ![Snakemake directory structure](/images/snakemake_directory_structure.png)<br>
 
-### For Docker:
+## For Docker:
 We will continue to work on the Docker container you created. If you exited the container, you may restart and reconnect:
   <br>
 If resuming from outside container:
@@ -193,9 +193,10 @@ docker ps -a
 docker start <docker_container_identifier>
 docker attach <docker_container_identifier>
 ```
-# Now everybody! <br> <br>
+
+## For everybody: <br>
 ## Building databases for your host plant taxon of interest.<br>
-#### The following code may be alternatively edited into [Prep_taxon_specific_assembly_and_databases.sh](/2_Setup_assembly_and_databases/Prep_taxon_specific_assembly_and_databases.sh) and run as a bash script.
+#### The following process may be run as a bash script after editing: [Prep_taxon_specific_assembly_and_databases.sh](/2_Setup_assembly_and_databases/Prep_taxon_specific_assembly_and_databases.sh).
 
 ### a. PLANiTS dataset for the host genus.
 Replace <GENUS> with name of host genus.<br>
