@@ -32,7 +32,6 @@ ADAP2S = 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT'
 ### END OF CUSTOMIZABLE SECTION ###
 ###################################
 
-
 # Advanced parameters must be edited directly in the corresponding rule of the Snakefile, if desired. Consult the material for the corresponding program for information.
 
 rule all:
@@ -104,12 +103,18 @@ rule vsearch_unequal:
         collc="data/trimmed2/{srr}.collapsed.q.fastq",
         colltrc="data/trimmed2/{srr}.collapsed.truncated.q.fastq",
         strunc="data/trimmed2/{srr}.sb.truncated.q.fastq"
+    log:
+        R1cl="data/logs/vsearch.p1t.{srr}.log",
+        R2cl="data/logs/vsearch.p2t.{srr}.log",
+        collcl="data/logs/vsearch.coll.{srr}.log",
+        colltrcl="data/logs/vsearch.colltrunc.{srr}.log",
+        struncl="data/logs/vsearch.sbtrunc.{srr}.log"
     shell:
-        "vsearch --fastx_filter {input.R1b} -fastq_maxee_rate 0.02 -fastqout {output.R1c} ;\
-        vsearch --fastx_filter {input.R2b} -fastq_maxee_rate 0.02 -fastqout {output.R2c} ;\
-        vsearch --fastx_filter {input.collb} -fastq_maxee_rate 0.02 -fastqout {output.collc} ;\
-        vsearch --fastx_filter {input.colltrb} -fastq_maxee_rate 0.02 -fastqout {output.colltrc} ;\
-        vsearch --fastx_filter {input.strunb} -fastq_maxee_rate 0.02 -fastqout {output.strunc} "
+        "vsearch --fastx_filter {input.R1b} --log {log.R1cl} -fastq_maxee_rate 0.02 -fastqout {output.R1c} ;\
+        vsearch --fastx_filter {input.R2b} --log {log.R2cl} -fastq_maxee_rate 0.02 -fastqout {output.R2c} ;\
+        vsearch --fastx_filter {input.collb} --log {log.collcl} -fastq_maxee_rate 0.02 -fastqout {output.collc} ;\
+        vsearch --fastx_filter {input.colltrb} --log {log.colltrcl} -fastq_maxee_rate 0.02 -fastqout {output.colltrc} ;\
+        vsearch --fastx_filter {input.strunb} --log {log.struncl} -fastq_maxee_rate 0.02 -fastqout {output.strunc} "
 
 rule vsearch_equal:
     input:
@@ -122,11 +127,16 @@ rule vsearch_equal:
         R2c="data/trimmed2/{srr}.pair2.truncated.q.fastq",
         collc="data/trimmed2/{srr}.collapsed.q.fastq",
         colltrc="data/trimmed2/{srr}.collapsed.truncated.q.fastq"
+    log:
+        R1cl="data/logs/vsearch.p1t.{srr}.log",
+        R2cl="data/logs/vsearch.p2t.{srr}.log",
+        collcl="data/logs/vsearch.coll.{srr}.log",
+        colltrcl="data/logs/vsearch.colltrunc.{srr}.log"
     shell:
-        "vsearch --fastx_filter {input.R1b} -fastq_maxee_rate 0.02 -fastqout {output.R1c} ;\
-        vsearch --fastx_filter {input.R2b} -fastq_maxee_rate 0.02 -fastqout {output.R2c} ;\
-        vsearch --fastx_filter {input.collb} -fastq_maxee_rate 0.02 -fastqout {output.collc} ;\
-        vsearch --fastx_filter {input.colltrb} -fastq_maxee_rate 0.02 -fastqout {output.colltrc}"
+        "vsearch --fastx_filter {input.R1b} --log {log.R1cl} -fastq_maxee_rate 0.02 -fastqout {output.R1c} ;\
+        vsearch --fastx_filter {input.R2b} --log {log.R2cl} -fastq_maxee_rate 0.02 -fastqout {output.R2c} ;\
+        vsearch --fastx_filter {input.collb} --log {log.collcl} -fastq_maxee_rate 0.02 -fastqout {output.collc} ;\
+        vsearch --fastx_filter {input.colltrb} --log {log.colltrcl} -fastq_maxee_rate 0.02 -fastqout {output.colltrc} "
 
 ##### Filter out simple repeats (Poly A's, etc) of 50bp, depending on QC
 rule cutadapt_unequal:
@@ -144,12 +154,18 @@ rule cutadapt_unequal:
         strund="data/trimmed3/{srr}.sb.truncated.q.p.fastq"
     params:
         thread=THREADS
+    log:
+        R1dl="data/logs/cutadapt.p1t.{srr}.log.cutadapt.json",
+        R2dl="data/logs/cutadapt.p2t.{srr}.log.cutadapt.json",
+        colldl="data/logs/cutadapt.coll.{srr}.log.cutadapt.json",
+        colltrdl="data/logs/cutadapt.colltrunc.{srr}.log.cutadapt.json",
+        strundl="data/logs/cutadapt.sbtrunc.{srr}.log.cutadapt.json"
     shell:
-        "cutadapt -a 'A{{50}}' -a 'G{{50}}' -a 'T{{50}}' -a 'C{{50}}' -o {output.R1d} {input.R1c} -j {params} ;\
-        cutadapt -a 'A{{50}}' -a 'G{{50}}' -a 'T{{50}}' -a 'C{{50}}' -o {output.R2d} {input.R2c} -j {params} ;\
-        cutadapt -a 'A{{50}}' -a 'G{{50}}' -a 'T{{50}}' -a 'C{{50}}' -o {output.colld} {input.collc} -j {params} ;\
-        cutadapt -a 'A{{50}}' -a 'G{{50}}' -a 'T{{50}}' -a 'C{{50}}' -o {output.colltrd} {input.colltrc} -j {params} ;\
-        cutadapt -a 'A{{50}}' -a 'G{{50}}' -a 'T{{50}}' -a 'C{{50}}' -o {output.strund} {input.strunc} -j {params}"
+        "cutadapt -a 'A{{50}}' -a 'G{{50}}' -a 'T{{50}}' -a 'C{{50}}' -o {output.R1d} {input.R1c} -j {params} --json {log.R1dl} ;\
+        cutadapt -a 'A{{50}}' -a 'G{{50}}' -a 'T{{50}}' -a 'C{{50}}' -o {output.R2d} {input.R2c} -j {params} --json {log.R2dl} ;\
+        cutadapt -a 'A{{50}}' -a 'G{{50}}' -a 'T{{50}}' -a 'C{{50}}' -o {output.colld} {input.collc} -j {params} --json {log.colldl} ;\
+        cutadapt -a 'A{{50}}' -a 'G{{50}}' -a 'T{{50}}' -a 'C{{50}}' -o {output.colltrd} {input.colltrc} -j {params} --json {log.colltrdl} ;\
+        cutadapt -a 'A{{50}}' -a 'G{{50}}' -a 'T{{50}}' -a 'C{{50}}' -o {output.strund} {input.strunc} -j {params} --json {log.strundl} "
 
 rule cutadapt_equal:
     input:
@@ -164,11 +180,16 @@ rule cutadapt_equal:
         colltrd="data/trimmed3/{srr}.collapsed.truncated.q.p.fastq"
     params:
         thread=THREADS
+    log:
+        R1dl="data/logs/cutadapt.p1t.{srr}.log",
+        R2dl="data/logs/cutadapt.p2t.{srr}.log",
+        colldl="data/logs/cutadapt.coll.{srr}.log",
+        colltrdl="data/logs/cutadapt.colltrunc.{srr}.log"
     shell:
-        "cutadapt -a 'A{{50}}' -a 'G{{50}}' -a 'T{{50}}' -a 'C{{50}}' -o {output.R1d} {input.R1c} -j {params} ;\
-        cutadapt -a 'A{{50}}' -a 'G{{50}}' -a 'T{{50}}' -a 'C{{50}}' -o {output.R2d} {input.R2c} -j {params} ;\
-        cutadapt -a 'A{{50}}' -a 'G{{50}}' -a 'T{{50}}' -a 'C{{50}}' -o {output.colld} {input.collc} -j {params} ;\
-        cutadapt -a 'A{{50}}' -a 'G{{50}}' -a 'T{{50}}' -a 'C{{50}}' -o {output.colltrd} {input.colltrc} -j {params}"
+        "cutadapt -a 'A{{50}}' -a 'G{{50}}' -a 'T{{50}}' -a 'C{{50}}' -o {output.R1d} {input.R1c} -j {params} --json {log.R1dl} ;\
+        cutadapt -a 'A{{50}}' -a 'G{{50}}' -a 'T{{50}}' -a 'C{{50}}' -o {output.R2d} {input.R2c} -j {params} --json {log.R2dl} ;\
+        cutadapt -a 'A{{50}}' -a 'G{{50}}' -a 'T{{50}}' -a 'C{{50}}' -o {output.colld} {input.collc} -j {params} --json {log.colldl} ;\
+        cutadapt -a 'A{{50}}' -a 'G{{50}}' -a 'T{{50}}' -a 'C{{50}}' -o {output.colltrd} {input.colltrc} -j {params} --json {log.colltrdl} "
 
 ##### Combine all contigs.
 rule cat_unequal:
@@ -210,8 +231,10 @@ rule vsearch2:
         "data/QC/{srr}.QC.fasta"
     output:
         "data/CQC/{srr}.CQC.fasta"
+    log:    
+        "data/logs/vsearch2.{srr}.log"
     shell:
-        "vsearch --derep_fulllength {input} --output {output}"
+        "vsearch --derep_fulllength {input} --log {log} --output {output}"
 
 ##### UNIvec file filtration step.
 rule univec:
@@ -223,8 +246,6 @@ rule univec:
         rep="data/logs/{srr}.univec.report"
     params:
         thread=THREADS
-    log:
-        "data/logs/{srr}_univec.kraken2_reads.log"
     shell:
         "kraken2 {input} --threads {params} -db database/univec/ -output {output.univec} --report {output.rep} --use-names --unclassified-out {output.uCQC}"
 
@@ -234,8 +255,6 @@ rule fastmap:
         uCQC2="data/krakenout/uCQC.{srr}.fasta"
     output:
         "data/bwa/{srr}.bwafastmap"
-    log:
-        "data/logs/{srr}.fastmap.log"
     params: 
         cong=CONGS
     shell:
@@ -269,8 +288,6 @@ rule kraken2:
         report2="data/logs/{srr}.raw.kraken.report"
     params:
         thread=THREADS
-    log:
-        "data/logs/{srr}.raw.kraken2_reads.log"
     shell:
         "kraken2 {input.nomatch} --threads {params} -db {input.kraken2db} -output {output.krakenout} --report {output.report2} --use-names --report-minimizer-data --classified-out {output.rawclass}"
 
@@ -346,8 +363,10 @@ rule vsearch3:
         ITS1filt="data/nonchimera/ITS1.filtered.{srr}.txt"
     params:
         uchime1 = UCHIME1S
+    log:    
+        "data/logs/vsearch3.{srr}.log"
     shell:
-        "vsearch --uchime_ref {input.nogen} --db {params} --nonchimeras {output.nonchim} --uchimeout {output.ITS1filt}"
+        "vsearch --uchime_ref {input.nogen} --db {params} --log {log} --nonchimeras {output.nonchim} --uchimeout {output.ITS1filt}"
 rule vsearch4:
     input:
         nogen2="data/nonchimera/nonchimera.filtered.reads.{srr}.fasta"
@@ -356,8 +375,10 @@ rule vsearch4:
         ITS2filt="data/nonchimera/ITS2.filtered.{srr}.txt"
     params:
         uchime2 = UCHIME2S
+    log:    
+        "data/logs/vsearch4.{srr}.log"
     shell:
-        "vsearch --uchime_ref {input.nogen2} --db {params} --nonchimeras {output.nonchim2} --uchimeout {output.ITS2filt}"
+        "vsearch --uchime_ref {input.nogen2} --db {params} --log {log} --nonchimeras {output.nonchim2} --uchimeout {output.ITS2filt}"
 rule seqtk:
     input:
         "data/nonchimera/nonchimera.filtered.reads.2.{srr}.fasta"
@@ -370,10 +391,12 @@ rule vsearch5:
         "data/nonchimera/chimera.filter.{srr}.fasta"
     output:
         "data/nonchimera/Final.chim.filter.{srr}.fasta"
+    log:    
+        "data/logs/vsearch5.{srr}.log"
     shell:
-        "vsearch --derep_fulllength {input} --output {output}"
+        "vsearch --derep_fulllength {input} --log {log} --output {output}"
 
-##### Assemble with Megahit (minimum contig size 200).
+##### Assemble with Megahit (minimum contig size 200). NOTE: log file is in data/meta/{srr} directory.
 rule megahit:
     input:
         "data/nonchimera/Final.chim.filter.{srr}.fasta"
@@ -383,8 +406,6 @@ rule megahit:
     params:
         threadm=THREADMEGAS,
         mem=MEMS
-    log:
-        "data/logs/megahit.{srr}.log"
     shell:
         "megahit -r {input} --presets meta-sensitive --keep-tmp-files -m {params.mem} -o {output.outdir} -t {params.threadm} -f"
 
@@ -404,8 +425,10 @@ rule vsearch6:
         "data/final/contigs.reads.{srr}.fasta"
     output:
         "data/final/F.c.reads.{srr}.fasta"
+    log:    
+        "data/logs/vsearch6.{srr}.log"
     shell:
-        "vsearch --derep_fulllength {input} --output {output}"
+        "vsearch --derep_fulllength {input} --log {log} --output {output}"
 
 ##### Make unique identifiers for sequence names.
 rule awk:
