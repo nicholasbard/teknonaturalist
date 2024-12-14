@@ -27,37 +27,10 @@ __Docker__ (Recommended) <br>
 [Docker Engine](https://docs.docker.com) or [Docker Desktop](https://www.docker.com/products/docker-desktop/) will work. <br>
 _We provide a Dockerfile that sets up and activates the teknonaturalist Snakemake environment_ <br>
 
-
-# Required input files:
-The __teknonaturalist__ pipeline requires paired end fastq files to run.
-<br>
-
-### Quick fastq retrieval: <br>
-See also [Fastq.file.prep.txt](/0_Fastq_file_Setup/Fastq.file.prep.txt) <br>
-Paired-end fastq files may be retrieved using [SRA Tools](https://github.com/ncbi/sra-tools)<br><br>
-Navigate to teknonaturalist directory
-
-```
-cd $PATH/teknonaturalist
-```
-
-Obtain SRA files from NCBI SRA.
-```
-prefetch SRR<###>.sra
-```
-
-Create fastq files from NCBI SRA. Note that $PATH to local SRA file repository may be different among users.
-```
-fasterq-dump --split-files $PATH/SRR<###>.sra -O .
-# OR, for files with different read counts
-fasterq-dump --split-3 $PATH/SRR<###>.sra -O .
-```
-# Setting up and running teknonaturalist (and DNAbarcoder) <br>
-Users can either progress through the README, or progress through the numbered directories in order. <br><br>
-We recommend that first-time users attempt to progress through the README first. However, teknonaturalist is intended to be synchronous with 
-different approaches (Snakemake, Docker, and shell scripts) during setup and execution such that a mixed approach can be used if the user 
-desires (for instance, one could use Docker to construct the databases and structure, but using bash for remaining setup and execution). <br><br>
-_We provide a one size fits all approach for database construction, however users may wish to modify the databases used (e.g., update the sources when new versions are released) and may consult the following for details on how we set them up:_
+# Set up and run teknonaturalist (and DNAbarcoder) <br>
+#### We recommend that users go through the README first in order to successfully set up and execute teknonaturalist and DNAbarcoder using mock _Betula ermanii_ data. This 1) quickly orients the user and 2) sets up much of what is needed to run the pipeline on different genomic data (further required setup is described here, subsequently).
+The order of the numbered directories is largely synchronous with this README. These directories contain more detailed information. The scripts and instructions in these directories may also be executed as an alternative and/or complementary approach to provide users with flexible options for the __teknonaturalist__ pipeline (i.e., without Docker, only via bash, etc). <br><br>
+_We provide a one size fits all approach for database construction, however users may wish to modify the databases used (e.g., update the sources when new versions are released) and may consult the following for details on how we set them up, available here:_
 [Prep_taxon_specific_assembly_and_databases.sh](/2_Setup_assembly_and_databases/Prep_taxon_specific_assembly_and_databases.sh), [DNAbarcoder.prep.txt](/Custom.setup/DNAbarcoder.prep.txt), and [Manual_prep_of_non_taxon_specific_databases.txt](/Custom.setup/Manual_prep_of_non_taxon_specific_databases.txt) <br>
 
 Ia. Quick basic setup and test: Docker
@@ -186,6 +159,32 @@ python ./extract_teknonaturalist_databases.py
 python ./extract_ITS.refs_database_for_dnabarcoder.py
 rm *.tar.gz
 ```
+# Required input files:
+#### The __teknonaturalist__ pipeline requires paired end fastq files to run.<br>
+### Quick fastq retrieval: <br>
+See also [Fastq.file.prep.txt](/0_Fastq_file_Setup/Fastq.file.prep.txt) <br>
+Paired-end fastq files may be retrieved using [SRA Tools](https://github.com/ncbi/sra-tools)<br><br>
+Navigate to teknonaturalist directory
+
+```
+cd $PATH/teknonaturalist
+```
+
+Obtain SRA files from NCBI SRA.
+```
+prefetch SRR<###>.sra
+```
+
+Create fastq files from NCBI SRA. Note that $PATH to local SRA file repository may be different among users.
+```
+fasterq-dump --split-files $PATH/SRR<###>.sra -O .
+```
+
+OR, for files with different read counts
+```
+fasterq-dump --split-3 $PATH/SRR<###>.sra -O .
+```
+<br>
 
 # II. Setting up pipeline database and assembly for your host species <br>
 At this point your directory structure should look like this. However, you will need to customize it for your host plant species. <br>
