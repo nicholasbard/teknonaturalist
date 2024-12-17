@@ -85,7 +85,7 @@ python3.12 dnabarcoder/dnabarcoder.py classify -i data/finalcombined/SRRdemo.uni
 
 Check that it completed:
 ```
-head data/finalcombined/SRRdemo.ITS.classified
+head data/finalcombined/SRRdemo.ITS2.classified
 ```
 
 If that all looks good, proceed to customizing.
