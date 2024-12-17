@@ -24,3 +24,4 @@ dependencies:
   - ncbi-genome-download =0.3.3
   - ncbi-datasets-cli
   - git
+  - biopython
