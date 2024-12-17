@@ -50,18 +50,8 @@ docker build -t teknonaturalist .
 The image can now be run and tested on demo data provided. 
 
 ### 2. Run test Docker image
-#### Option 1: Recommended - Bind Mount to save volume locally.
-Use 'bind mount' to save the basic __teknonaturalist__ and [DNAbarcoder](https://github.com/vuthuyduong/dnabarcoder) setup, including databases and assembly. This will save databases locally in persistent volume ('teknonaturalist') that will not be removed if the Docker container is deleted. <br>
-Basically, this means that database files will not need to be re-downloaded if a new Docker image is built, and are saved as tar.gz files. <br>
 ```
-# Note: The volume name may be customized by modifying code to <custom>:/app.
-docker run -d -v teknonaturalist:/app -it teknonaturalist
-```
-
-#### Option 2: Will not save databases (takes a few minutes for every build).
-```
-# Note: The volume name may be customized by modifying code to <custom>:/app.
-docker run -v -it teknonaturalist
+docker run -it teknonaturalist
 ```
 
 Unpack database and assembly files using python scripts and remove clutter.
@@ -73,23 +63,24 @@ rm *.tar.gz
 
 Test teknonaturalist (fungal identification) with fake data.
 ```
-snakemake --cores 1 --snakefile demoSnakefile data/final/SRRdemo.ITS
+snakemake --cores 1 --snakefile demoSnakefile data/final/SRRdemo.ITSx
 #Alternatively, to direct all stderr and stdout to log file:
-snakemake --cores 1 --snakefile demoSnakefile data/final/SRRdemo.ITS > data/logs/demoSnakefile.log 2>&1
+snakemake --cores 1 --snakefile demoSnakefile data/final/SRRdemo.ITSx > data/logs/demoSnakefile.log 2>&1
 ```
 
-__Note__ that Snakemake is likely to trigger an alarm for ITSx upon completion. This error message may be ignored. It will read like this: <br>
+__Note__ that Snakemake is likely to trigger an alarm for ITSx upon completion. This error message may be ignored. It will read something like this: <br>
 ```
-MissingOutputException in rule itsx in file $PATH/Snakefile, line 307:
-Job 0 completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-### wait:
-data/final/ERR2026254.ITSx
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule itsx in file /teknonaturalist/demoSnakefile, line 412:
+Job 0 completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+data/final/SRRdemo.ITSx (missing locally, parent dir contents: contigs.reads.SRRdemo.fasta, SRRdemo.ITSx.5_8S.full_and_partial.fasta, SRRdemo.ITSx_no_detections.fasta, F.c.e.reads.SRRdemo.fasta, SRRdemo.ITSx.graph, SRRdemo.ITSx.summary.txt, SRRdemo.ITSx.LSU.fasta, SRRdemo.ITSx.ITS2.full_and_partial.fasta, SRRdemo.ITSx.5_8S.fasta, SRRdemo.ITSx.positions.txt, SRRdemo.ITSx.full.fasta, SRRdemo.ITSx.SSU.full_and_partial.fasta, SRRdemo.ITSx.ITS1.fasta, SRRdemo.ITSx.ITS2.fasta, SRRdemo.ITSx_no_detections.txt, SRRdemo.ITSx.problematic.txt, SRRdemo.ITSx.SSU.fasta, SRRdemo.ITSx.ITS1.full_and_partial.fasta, F.c.reads.SRRdemo.fasta, SRRdemo.ITSx.LSU.full_and_partial.fasta, SRRdemo.ITSx.full_and_partial.fasta)
 Shutting down, this might take some time.
 Exiting because a job execution failed. Look above for error message
 ```
 Test DNAbarcoder (fungal classification) with fake data.
 ```
-python3.12 dnabarcoder/dnabarcoder.py search -i data/final/F.c.reads.SRRdemo.fasta -r dnabarcoder/ITS.refs/unite2024/unite2024ITS1.unique.phylum.fasta -ml 50 -p ../data/finalcombined/SRRdemo
-python3.12 dnabarcoder/dnabarcoder.py classify -i data/finalcombined/SRRdemo.unite2024ITS1.unique.phylum_BLAST.bestmatch -c dnabarcoder/ITS.refs/unite2024/unite2024ITS1.unique.phylum.classification -cutoffs dnabarcoder/ITS.refs/unite2024/unite2024ITS1.unique.cutoffs.best.json -p ../data/finalcombined/SRRdemo.ITS1
+python3.12 dnabarcoder/dnabarcoder.py search -i data/final/SRRdemo.ITSx.ITS2.full_and_partial.fasta -r dnabarcoder/ITS.refs/unite2024/unite2024ITS2.unique.phylum.fasta -ml 50 -p ../data/finalcombined/SRRdemo
+python3.12 dnabarcoder/dnabarcoder.py classify -i data/finalcombined/SRRdemo.unite2024ITS2.unique.phylum_BLAST.bestmatch -c dnabarcoder/ITS.refs/unite2024/unite2024ITS2.unique.phylum.classification -cutoffs dnabarcoder/ITS.refs/unite2024/unite2024ITS2.unique.cutoffs.best.json -p ../data/finalcombined/SRRdemo.ITS2
 ```
 
 Check that it completed:
