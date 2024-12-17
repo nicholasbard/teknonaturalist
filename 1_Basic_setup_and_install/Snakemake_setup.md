@@ -29,12 +29,12 @@ NOTE: Swapping the command 'conda' with 'mamba' (or vice versa) may be helpful i
 	
 ### Option 2. Snakemake installation via Mamba installation
 #### A. Install Mamba using Miniforge, as noted here: 
- 	https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html
+https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html <br>
 Miniforge is available here:
-	https://github.com/conda-forge/miniforge <br>
+https://github.com/conda-forge/miniforge <br>
 
 #### B. Install Snakemake, as noted here:
- 	https://snakemake.readthedocs.io/en/stable/getting_started/installation.html
+https://snakemake.readthedocs.io/en/stable/getting_started/installation.html
 using these commands (if 'mamba' doesn't work, try using 'conda')
 ```
 mamba activate base
@@ -45,7 +45,7 @@ mamba create -c conda-forge -c bioconda -n snakemake snakemake
 ### Option 3. Snakemake installation via Mamba installation via Conda (not recommended)
 
 #### A. Install Conda, as noted here: 
-	https://conda.io/projects/conda/en/latest/user-guide/index.html
+https://conda.io/projects/conda/en/latest/user-guide/index.html
 
 #### B. Once Conda is installed, install Mamba using Conda:
 ```
@@ -53,7 +53,7 @@ conda install -n base -c conda-forge mamba
 ```
 
 #### C. Install Snakemake, as noted here:
- 	https://snakemake.readthedocs.io/en/stable/getting_started/installation.html
+https://snakemake.readthedocs.io/en/stable/getting_started/installation.html
 using these commands (if 'mamba' doesn't work, try using 'conda')
 ```
 mamba activate base
