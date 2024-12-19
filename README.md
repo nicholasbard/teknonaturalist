@@ -105,51 +105,6 @@ rm *.tar.gz
 #### 1a. [Set up Snakemake](/1_Basic_setup_and_install/Snakemake_setup.md) OR 1b. [Manual package install with mamba/conda](/1_Basic_setup_and_install/MANUAL_package_install_for_bash_script.txt)
 #### 2. [Set up teknonaturalist using Snakemake](/1_Basic_setup_and_install/teknonaturalist_setup.md)  <br>
 
-Next, download basic databases. <br>
-You will customize these later for your host plant species. 
-
-```
-# Download databases to run teknonaturalist
-osf -p j57fs clone .
-
-# Download sample species (Betula nana) assembly to run teknonaturalist with sample file
-osf -p vnh3b clone .
-
-# Download premade ITS and 5.8S sequences for use with DNAbarcoder; move all to correct location.
-osf -p 38uk2 clone .
-mv osfstorage/* .
-rm -r osfstorage
-```
-
-Create necessary directories
-```
-# Make all directories.
-mkdir data
-mkdir data/orig.fastqs
-mkdir data/finalcombined
-mkdir assembly
-mkdir assembly/Betula.nana.assembly
-mkdir database
-mkdir database/univec
-mkdir database/uchime_datasets
-mkdir database/genbank
-mkdir database/fungi
-mkdir database/PLANiTS
-```
-
-Setup DNAbarcoder
-```
-git clone https://github.com/vuthuyduong/dnabarcoder.git
-mkdir dnabarcoder/ITS.refs
-```
-
-Unpack database and assembly files using python scripts and remove clutter. <br>
-This will produce the necessary file structure to run teknonaturalist.
-```
-python ./extract_teknonaturalist_databases.py
-python ./extract_ITS.refs_database_for_dnabarcoder.py
-rm *.tar.gz
-```
 # Required input files:
 #### The __teknonaturalist__ pipeline requires paired end fastq files to run.<br>
 ### Quick fastq retrieval: <br>
@@ -216,7 +171,7 @@ makeblastdb -in database/PLANiTS/<GENUS>.fasta -dbtype nucl
 Replace <FOCAL_NO_DOT> with FULL species name, e.g. Delphinium menziesii
 Replace <FOCAL_WITH_DOT> with FULL species name, separated by . , e.g., Delphinium.menziesii
 ```
-esearch -db nuccore -query '"<FOCAL_NO_DOT>"[Organism] OR $<FOCAL_NO_DOT>[All Fields] AND "<FOCAL_NO_DOT>"[porgn] AND ddbj_embl_genbank[filter] AND is_nuccore[filter]' | efetch -format fasta > database/genbank/<FOCAL_WITH_DOT>.Genbank.nucl.fasta
+esearch -db nuccore -query '"<FOCAL_NO_DOT>"[Organism] OR <FOCAL_NO_DOT>[All Fields] AND "<FOCAL_NO_DOT>"[porgn] AND ddbj_embl_genbank[filter] AND is_nuccore[filter]' | efetch -format fasta > database/genbank/<FOCAL_WITH_DOT>.Genbank.nucl.fasta
 ```
 Make Blast database for your targe host plant species.
 ```
@@ -240,7 +195,7 @@ gunzip assembly/<CONGENER_WITH_DOT>.assembly/genbank/plant/${ac}/*.gz
 
 Index reference assembly with bwa.
 ```
-bwa index -p assembly/<CONGENER_WITH_DOT>.assembly/<CONGENER_WITH_DOT>.bwa.index <CONGENER_WITH_DOT>.assembly/genbank/plant/${ac}/*.fna
+bwa index -p assembly/<CONGENER_WITH_DOT>.assembly/<CONGENER_WITH_DOT>.bwa.index assembly/<CONGENER_WITH_DOT>.assembly/genbank/plant/${ac}/*.fna
 ```
 # IIIa. Running the pipeline with Snakemake <br>
 
