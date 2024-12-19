@@ -100,6 +100,6 @@ ac=$(ls assembly/${cong}.assembly/genbank/plant | head -1)
 gunzip assembly/${cong}.assembly/genbank/plant/${ac}/*.gz
 
 # Index reference assembly with bwa.
-bwa index -p assembly/${cong}.assembly/${cong}.bwa.index ${cong}.assembly/genbank/plant/${ac}/*.fna
+bwa index -p assembly/${cong}.assembly/${cong}.bwa.index assembly/${cong}.assembly/genbank/plant/${ac}/*.fna
 
 
