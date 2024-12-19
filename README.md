@@ -110,7 +110,8 @@ rm *.tar.gz
 ### Quick fastq retrieval: <br>
 See also [Fastq.file.prep.txt](/0_Fastq_file_Setup/Fastq.file.prep.txt) <br>
 Paired-end fastq files may be retrieved using [SRA Tools](https://github.com/ncbi/sra-tools)<br><br>
-Navigate to teknonaturalist directory
+NOTE: At present, prefetch of SRA files and fasterq-dump must be performed outside of Docker container (due to incompatibilities with SRA-tools).
+Once outside the container, navigate to teknonaturalist directory
 
 ```
 cd $PATH/teknonaturalist
