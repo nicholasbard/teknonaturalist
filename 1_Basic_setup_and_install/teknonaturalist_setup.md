@@ -35,7 +35,7 @@ Now that the teknonaturalist Snakemake environment is activated, all programs ne
 ### Download basic databases. 
 You will customize these later for your host plant species. 
 
-Download databases to run teknonaturalist
+Download databases to run teknonaturalist. NOTE: Remain in the same working directory ($PATH/teknonaturalist/).
 ```
 osf -p j57fs clone .
 ```
