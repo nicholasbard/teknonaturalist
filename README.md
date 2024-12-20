@@ -12,11 +12,11 @@ Source code available at:<br>
 https://github.com/nicholasbard/teknonaturalist<br>
 <br>
 Version: 1.1.0<br>
-teknonaturalist: A Snakemake pipeline for assessing fungal diversity from plant genome bycatch<br>
+__teknonaturalist__: A Snakemake pipeline for assessing fungal diversity from plant genome bycatch<br>
 Copyright (C) 2023 Nicholas Bard et al.<br>
 Contact: Nicholas Bard, nicholas.bard[at]botany[dot]ubc[dot]ca<br>
 Programmer: Nicholas Bard<br>
-Use of all databases used teknonaturalist requires proper citation according to their respective licensing (see References).
+Use of all databases used by __teknonaturalist__ requires proper citation according to their respective licensing (see References).
 <br>
 
 Dependencies:
@@ -61,7 +61,7 @@ python ./extract_ITS.refs_database_for_dnabarcoder.py
 rm *.tar.gz
 ```
 
-Test teknonaturalist (fungal identification) with fake data.
+Test __teknonaturalist__ (fungal identification) with fake data.
 ```
 snakemake --cores 1 --snakefile demoSnakefile data/final/SRRdemo.ITSx
 #Alternatively, to direct all stderr and stdout to log file:
@@ -221,7 +221,7 @@ docker attach <docker_container_identifier>
 ```
 
 ### If not using Docker:
-Ensure [Snakefile](/Snakefile) (or equivalent) and [environment.yaml](/environment.yaml) are in teknonaturalist directory.<br>
+Ensure [Snakefile](/Snakefile) (or equivalent) and [environment.yaml](/environment.yaml) are in __teknonaturalist__ directory.<br>
 Make sure fastq files are in teknonaturalist/data/orig.fastqs directory
 ```
 mv <PATH>/<to>/*.fastq $PATH/teknonaturalist/data/orig.fastqs
@@ -237,7 +237,7 @@ Files contain annotations with important information to guide the user. <br>
 At minimum, text within <> must be edited (with the <> deleted as well). <br>
 Note: Multiple SRR files may be added in, separated by ",".<br><br>
 
-Now you are ready to run teknonaturalist on your data with Snakemake!<br>
+Now you are ready to run __teknonaturalist__ on your data with Snakemake!<br>
 First try a dry run (use -np tag). This evaluates the process from the end to the beginning without actually running anything (starting with output files, then working up to inputs).
 ```
 snakemake -np --cores <CORE NUMBER> --snakefile <Snakefile name> <Output file>
@@ -286,7 +286,7 @@ snakemake --cores [CORES] --snakefile [SNAKEFILE] data/final/[SRR].ITS > data/lo
 
 # A recap for experienced, repeat users:
 __1.__ Paired end fastq files must be used - [Fastq.file.prep.txt](\0_Fastq_file_setup/Fastq.file.prep.txt)<br><br>
-__2.__ Only the assembly and taxon-specific databases must be changed if you apply teknonaturalist to another host plant, assuming you keep the basic database setup intact. - [Prep_taxon_specific_assembly_and_databases.sh](\Setup_assembly_and_databases/Prep_taxon_specific_assembly_and_databases.sh) 
+__2.__ Only the assembly and taxon-specific databases must be changed if you apply __teknonaturalist__ to another host plant, assuming you keep the basic database setup intact. - [Prep_taxon_specific_assembly_and_databases.sh](\Setup_assembly_and_databases/Prep_taxon_specific_assembly_and_databases.sh) 
 NOTE: The taxon-specific assemblies and databases, including the Betula examples, may be removed by the user to save space as long as directory structure is left intact.<br><br>
 __3.__ Fungal detection may be run on input files (teknonaturalist/data/orig.fastqs/*.fastq) by editing Snakefiles and running Snakemake [Snakefile](/Snakefile) - or editing shell script files and running bash - [teknonaturalist.Fungal.ITS.detection.unequal.reads.sh](/teknonaturalist.Fungal.ITS.detection.unequal.reads.sh) OR [teknonaturalist.Fungal.ITS.detection.equal.reads.sh](/teknonaturalist.Fungal.ITS.detection.equal.reads.sh) <br><br>
 __4.__ Fungal classification may be run on multiple files with DNAbarcoder - [Steps_for_Fungal.ITS.classifier.md](/4_Running_DNAbarcoder/Steps_for_Fungal.ITS.classifier.md) or by editing the shell script file and running bash - [Fungal.ITS.classifier.sh](/Fungal.ITS.classifier.sh)
@@ -296,18 +296,18 @@ __4.__ Fungal classification may be run on multiple files with DNAbarcoder - [St
 # File Guide 
 ### Docker 
 __[Dockerfile](/Docker/Dockerfile)__ <br>
-This file creates an image that fully sets up the teknonaturalist directory and file structure, installs all programs, and successfully runs through a demo of teknonaturalist and DNAbarcoder using mini input files ([SRRdemo_1.fastq](/Docker/SRRdemo_1.fastq) and [SRRdemo_2.fastq](/Docker/SRRdemo_2.fastq)) and a [demoSnakefile](/Docker/demoSnakefile). <br><br>
+This file creates an image that fully sets up the __teknonaturalist__ directory and file structure, installs all programs, and successfully runs through a demo of __teknonaturalist__ and DNAbarcoder using mini input files ([SRRdemo_1.fastq](/Docker/SRRdemo_1.fastq) and [SRRdemo_2.fastq](/Docker/SRRdemo_2.fastq)) and a [demoSnakefile](/Docker/demoSnakefile). <br><br>
 ### One time setup files: Installation of Snakemake, teknonaturalist, DNAbarcoder (must be run once before initial use)
 __[Snakemake Setup](/1_Basic_setup_and_install/teknonaturalist_setup.md)__ 
 <br> This file contains key information for installing required software, including Mamba/Conda and Snakemake.<br>
 __[teknonaturalist Setup](/1_Basic_setup_and_install/teknonaturalist_setup.md)__ 
-<br> This file contains key information for creating and activation of the __teknonaturalist__ environment. It also includes information for running teknonaturalist without Snakemake.<br>
+<br> This file contains key information for creating and activation of the __teknonaturalist__ environment. It also includes information for running __teknonaturalist__ without Snakemake.<br>
 __[Extract Teknonaturalist Databases](/extract_teknonaturalist_databases.py)__ <br>
 A python script to extract all databases and assemblies provided at https://osf.io/8g6we/ <br>
 __[environment.yaml](/environment.yaml)__ <br>
-This file is required for setting up the teknonaturalist environment along with required programs used. It does not need to be run, simply present in the teknonaturalist/ directory during environment activation. <br>
+This file is required for setting up the __teknonaturalist__ environment along with required programs used. It does not need to be run, simply present in the teknonaturalist/ directory during environment activation. <br>
 __[MANUAL_package_install_for_bash_script.txt](/1_Basic_setup_and_install/MANUAL_package_install_for_bash_script.txt)__ 
-<br> This file provides an alternative method for setting up the packages need to run teknonaturalist.<br>
+<br> This file provides an alternative method for setting up the packages need to run __teknonaturalist__.<br>
 __[Extract ITS.refs Database for DNAbarcoder](extract_ITS.refs_database_for_dnabarcoder.py)__ <br>
 A python script to extract ITS reference database for DNAbarcoder (available at https://osf.io/8g6we/) <br><br>
 ### Setup files for running a new plant taxon 
@@ -316,7 +316,7 @@ __[Prep Taxon Specific Assembly and Databases](/2_Setup_assembly_and_databases/P
 __[Fastq.gz file prep](/0_Fastq_file_setup/Fastq.file.prep.txt)__ <br>
 Instructions for obtaining and formatting input fastq.gz files are provided here. <br>
 __[Check Before Running teknonaturalist](check_before_running_teknonaturalist.py)__ <br>
- A python script to be used prior to executing __teknonaturalist__ that checks for input files, non-empty assembly and database directories, and an activated teknonaturalist environment.<br>
+ A python script to be used prior to executing __teknonaturalist__ that checks for input files, non-empty assembly and database directories, and an activated __teknonaturalist__ environment.<br>
 __[Running_teknonaturalist_with_Snakemake_Overview](/3_Running_teknonaturalist/Running_teknonaturalist_with_Snakemake_Overview.txt)__ <br>
 This file provides a brief guide and directions to run the fungal ITS detection process with __teknonaturalist__ using Snakemake. <br>
 __[Snakefile](/Snakefile)__ <br>
@@ -337,7 +337,7 @@ This file explains how fungal ITS databases for fungal classification with DNAba
 ## Additional information not in repository 
 
 [Analyze Flanking 5.8S and ITS Sequences]([/R_scripts/analyze.5.8S.R](https://github.com/nicholasbard/tekno-manuscript-analysis/blob/main/analyze.5.8S.R)) <br>
-An example R script (from the teknonaturalist paper) to identify classified fungal sequences with flanking sequence support at class taxonomic rank. <br>
+An example R script (from the __teknonaturalist__ paper) to identify classified fungal sequences with flanking sequence support at class taxonomic rank. <br>
 
 [Example database and assembly files for reference/use](https://osf.io/8g6we/) is divided into "non-taxon-specific", which may be used for any plant taxon; and "taxon-specific", which provides an example for directory structure. 
 		
@@ -355,5 +355,8 @@ An example R script (from the teknonaturalist paper) to identify classified fung
 
 #### [raw data](https://osf.io/8g6we/) from our paper is also available.
 Produced following fungal detection and classification in plant genomes available at https://osf.io/8g6we/. <br>
+
+### Citation:
+Bard, N.W., Davies, T.J., Cronk, Q.C. __teknonaturalist__: A Snakemake pipeline for assessing fungal diversity from plant genome bycatch. Molecular Ecology Resources. 
 
 Dedicated to [Colin Richard Ferguson Ward](https://killdby.bandcamp.com)
