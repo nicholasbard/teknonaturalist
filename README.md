@@ -150,7 +150,8 @@ docker attach <docker_container_identifier>
 ```
 
 ## For everybody: <br> Building databases for your host plant taxon of interest.<br>
-#### The following process may be run as a bash script after editing: [Prep_taxon_specific_assembly_and_databases.sh](/2_Setup_assembly_and_databases/Prep_taxon_specific_assembly_and_databases.sh).
+#### The following process may alternatively be run as a bash script after editing: [Prep_taxon_specific_assembly_and_databases.sh](/2_Setup_assembly_and_databases/Prep_taxon_specific_assembly_and_databases.sh).<br>
+Note: Memory constraints of the system and Docker may cause errors while accessing remote data. See: [Docker resource constraints](https://docs.docker.com/engine/containers/resource_constraints/)
 
 ### a. PLANiTS dataset for the host genus.
 Replace <GENUS> with name of host genus.<br>
@@ -239,12 +240,12 @@ Note: Multiple SRR files may be added in, separated by ",".<br><br>
 Now you are ready to run teknonaturalist on your data with Snakemake!<br>
 First try a dry run (use -np tag). This evaluates the process from the end to the beginning without actually running anything (starting with output files, then working up to inputs).
 ```
-snakemake -np --cores {CORE NUMBER} --snakefile {Snakefile name} {Output file}
+snakemake -np --cores <CORE NUMBER> --snakefile <Snakefile name> <Output file>
 ```
 
 If no errors were detected, run Snakemake!
 ```
-snakemake --cores {CORE NUMBER} --snakefile {Snakefile name} {Output file}
+snakemake --cores <CORE NUMBER> --snakefile <Snakefile name> <Output file>
 ```
 
 # IIIb. Running the pipeline with bash <br>
