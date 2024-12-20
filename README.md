@@ -124,12 +124,12 @@ prefetch SRR<###>.sra
 
 Create fastq files from NCBI SRA. Note that $PATH to local SRA file repository may be different among users.
 ```
-fasterq-dump --split-files $PATH/SRR<###>.sra -O .
+fasterq-dump --split-files <PATH_TO_SRA FILE>/SRR<###>.sra -O .
 ```
 
 OR, for files with different read counts
 ```
-fasterq-dump --split-3 $PATH/SRR<###>.sra -O .
+fasterq-dump --split-3 <PATH_TO_SRA FILE>/SRR<###>.sra -O .
 ```
 <br>
 
@@ -212,7 +212,9 @@ docker ps -a
 ```
 Now, import fastqs to main directory in container. Restart container and re-attach to it.
 ```
-docker cp $PATH/<SRRnumber>*.fastq <docker_container_identifier>:/teknonaturalist/data/orig.fastqs
+for file in <FILEPATH>/<SRRnumber>*.fastq; do
+    docker cp "$file" <docker_container_identifier>:/teknonaturalist/data/orig.fastqs
+done
 docker start <docker_container_identifier>
 docker attach <docker_container_identifier>
 ```
