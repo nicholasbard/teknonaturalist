@@ -19,7 +19,6 @@ dependencies:
   - seqtk =1.3
   - kraken2 =2.1.3
   - blast =2.13.0
-  - fastx_toolkit =0.0.14
   - megahit =1.2.9
   - itsx =1.1.3
   - ncbi-genome-download =0.3.3
